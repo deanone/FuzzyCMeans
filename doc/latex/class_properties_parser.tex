@@ -1,0 +1,272 @@
+\hypertarget{class_properties_parser}{}\section{Properties\+Parser Class Reference}
+\label{class_properties_parser}\index{Properties\+Parser@{Properties\+Parser}}
+
+
+{\ttfamily \#include $<$Properties\+Parser.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_properties_parser_a9fe7a2c812424ebf8db6c3c5afc50f65}{Properties\+Parser}} (std\+::string properties\+\_\+filename)
+\item 
+\mbox{\hyperlink{class_properties_parser_a78329eb9c674e1cf5b085d466709a4b6}{$\sim$\+Properties\+Parser}} ()
+\item 
+void \mbox{\hyperlink{class_properties_parser_a03f177b8082dad1abd2faf60db7a7a6a}{add\+Properties\+File}} (std\+::string properties\+\_\+filename)
+\item 
+bool \mbox{\hyperlink{class_properties_parser_a8011fb7f2f3f24c59d3c33d56be55033}{property\+Exists}} (std\+::string property\+\_\+name)
+\item 
+std\+::string \mbox{\hyperlink{class_properties_parser_af52ae62c22c070ab8f286cb29897dc17}{get\+Property\+As\+String}} (std\+::string property\+\_\+name)
+\item 
+int \mbox{\hyperlink{class_properties_parser_ad4fb34e07c2d93e3cf4daca6f1ed9b14}{get\+Property\+As\+Int}} (std\+::string property\+\_\+name)
+\item 
+bool \mbox{\hyperlink{class_properties_parser_a4d08af4f4c305273a64c281272011497}{get\+Property\+As\+Bool}} (std\+::string property\+\_\+name)
+\item 
+float \mbox{\hyperlink{class_properties_parser_acfdb8d26fd4d078aa37ae938adf67379}{get\+Property\+As\+Float}} (std\+::string property\+\_\+name)
+\item 
+double \mbox{\hyperlink{class_properties_parser_ab7a84135214c45cd91a9bb5377eaff5a}{get\+Property\+As\+Double}} (std\+::string property\+\_\+name)
+\item 
+std\+::string \mbox{\hyperlink{class_properties_parser_a29d380b8b5dfdf4e3872e02b33bbc765}{get\+Property\+As\+String\+Or\+Default\+To}} (std\+::string property\+\_\+name, std\+::string default\+\_\+property\+\_\+value)
+\item 
+int \mbox{\hyperlink{class_properties_parser_adadd7db8ea323a727804905d59f59d6d}{get\+Property\+As\+Int\+Or\+Default\+To}} (std\+::string property\+\_\+name, int default\+\_\+property\+\_\+value)
+\item 
+bool \mbox{\hyperlink{class_properties_parser_a8e5c2fd64020dd3a580457ca321179ec}{get\+Property\+As\+Bool\+Or\+Default\+To}} (std\+::string property\+\_\+name, bool default\+\_\+property\+\_\+value)
+\item 
+float \mbox{\hyperlink{class_properties_parser_a064cd4ecb149c7aa710d2c016a6d3371}{get\+Property\+As\+Float\+Or\+Default\+To}} (std\+::string property\+\_\+name, float default\+\_\+property\+\_\+value)
+\item 
+double \mbox{\hyperlink{class_properties_parser_a12598ce9403dd9e51f2a1206db9a27a9}{get\+Property\+As\+Double\+Or\+Default\+To}} (std\+::string property\+\_\+name, double default\+\_\+property\+\_\+value)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\mbox{\hyperlink{_properties_parser_8h_source}{Properties\+Parser.\+h}} \+: interface of the \mbox{\hyperlink{class_properties_parser}{Properties\+Parser}} class. Using this class one can read a properties file which contains values in the following form\+: \mbox{[}property\+Name\mbox{]} = \mbox{[}property\+Value\mbox{]} 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_properties_parser_a9fe7a2c812424ebf8db6c3c5afc50f65}\label{class_properties_parser_a9fe7a2c812424ebf8db6c3c5afc50f65}} 
+\index{Properties\+Parser@{Properties\+Parser}!Properties\+Parser@{Properties\+Parser}}
+\index{Properties\+Parser@{Properties\+Parser}!Properties\+Parser@{Properties\+Parser}}
+\subsubsection{\texorpdfstring{Properties\+Parser()}{PropertiesParser()}}
+{\footnotesize\ttfamily Properties\+Parser\+::\+Properties\+Parser (\begin{DoxyParamCaption}\item[{std\+::string}]{properties\+\_\+filename }\end{DoxyParamCaption})}
+
+Properties\+Parser.\+cpp\+: implementation of the \mbox{\hyperlink{class_properties_parser}{Properties\+Parser}} class.
+
+Constructor. Initializes the parser parsing the properties file and reading all properties in the {\ttfamily properties\+\_\+map}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em properties\+Filename} & the filename of the properties file. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_properties_parser_a78329eb9c674e1cf5b085d466709a4b6}\label{class_properties_parser_a78329eb9c674e1cf5b085d466709a4b6}} 
+\index{Properties\+Parser@{Properties\+Parser}!````~Properties\+Parser@{$\sim$\+Properties\+Parser}}
+\index{````~Properties\+Parser@{$\sim$\+Properties\+Parser}!Properties\+Parser@{Properties\+Parser}}
+\subsubsection{\texorpdfstring{$\sim$\+Properties\+Parser()}{~PropertiesParser()}}
+{\footnotesize\ttfamily Properties\+Parser\+::$\sim$\+Properties\+Parser (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Destructor. Destroys the map object properties\+\_\+map of the class and frees the corresponding memory. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_properties_parser_a03f177b8082dad1abd2faf60db7a7a6a}\label{class_properties_parser_a03f177b8082dad1abd2faf60db7a7a6a}} 
+\index{Properties\+Parser@{Properties\+Parser}!add\+Properties\+File@{add\+Properties\+File}}
+\index{add\+Properties\+File@{add\+Properties\+File}!Properties\+Parser@{Properties\+Parser}}
+\subsubsection{\texorpdfstring{add\+Properties\+File()}{addPropertiesFile()}}
+{\footnotesize\ttfamily void Properties\+Parser\+::add\+Properties\+File (\begin{DoxyParamCaption}\item[{std\+::string}]{properties\+\_\+filename }\end{DoxyParamCaption})}
+
+Parses a properties file and reads all properties in the {\ttfamily properties\+\_\+map}. It may be used consecutively to parse multiple properties files.
+
+
+\begin{DoxyParams}{Parameters}
+{\em properties\+Filename} & the filename of the properties file. \\
+\hline
+\end{DoxyParams}
+line is not a comment line \mbox{\Hypertarget{class_properties_parser_a4d08af4f4c305273a64c281272011497}\label{class_properties_parser_a4d08af4f4c305273a64c281272011497}} 
+\index{Properties\+Parser@{Properties\+Parser}!get\+Property\+As\+Bool@{get\+Property\+As\+Bool}}
+\index{get\+Property\+As\+Bool@{get\+Property\+As\+Bool}!Properties\+Parser@{Properties\+Parser}}
+\subsubsection{\texorpdfstring{get\+Property\+As\+Bool()}{getPropertyAsBool()}}
+{\footnotesize\ttfamily bool Properties\+Parser\+::get\+Property\+As\+Bool (\begin{DoxyParamCaption}\item[{std\+::string}]{property\+\_\+name }\end{DoxyParamCaption})}
+
+Returns the boolean value of a property.
+
+
+\begin{DoxyParams}{Parameters}
+{\em property\+\_\+name} & the name of the property of which the value is returned. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a boolean value for the property. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_properties_parser_a8e5c2fd64020dd3a580457ca321179ec}\label{class_properties_parser_a8e5c2fd64020dd3a580457ca321179ec}} 
+\index{Properties\+Parser@{Properties\+Parser}!get\+Property\+As\+Bool\+Or\+Default\+To@{get\+Property\+As\+Bool\+Or\+Default\+To}}
+\index{get\+Property\+As\+Bool\+Or\+Default\+To@{get\+Property\+As\+Bool\+Or\+Default\+To}!Properties\+Parser@{Properties\+Parser}}
+\subsubsection{\texorpdfstring{get\+Property\+As\+Bool\+Or\+Default\+To()}{getPropertyAsBoolOrDefaultTo()}}
+{\footnotesize\ttfamily bool Properties\+Parser\+::get\+Property\+As\+Bool\+Or\+Default\+To (\begin{DoxyParamCaption}\item[{std\+::string}]{property\+\_\+name,  }\item[{bool}]{default\+\_\+property\+\_\+value }\end{DoxyParamCaption})}
+
+Returns the boolean value of a property, if it exists, or a default value if the property does not exist.
+
+
+\begin{DoxyParams}{Parameters}
+{\em property\+\_\+name} & the name of the property of which the value is returned. \\
+\hline
+{\em defaultproperty\+\_\+value} & the default property value. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a boolean value for the property. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_properties_parser_ab7a84135214c45cd91a9bb5377eaff5a}\label{class_properties_parser_ab7a84135214c45cd91a9bb5377eaff5a}} 
+\index{Properties\+Parser@{Properties\+Parser}!get\+Property\+As\+Double@{get\+Property\+As\+Double}}
+\index{get\+Property\+As\+Double@{get\+Property\+As\+Double}!Properties\+Parser@{Properties\+Parser}}
+\subsubsection{\texorpdfstring{get\+Property\+As\+Double()}{getPropertyAsDouble()}}
+{\footnotesize\ttfamily double Properties\+Parser\+::get\+Property\+As\+Double (\begin{DoxyParamCaption}\item[{std\+::string}]{property\+\_\+name }\end{DoxyParamCaption})}
+
+Returns the double value of a property.
+
+
+\begin{DoxyParams}{Parameters}
+{\em property\+\_\+name} & the name of the property of which the value is returned. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a double value for the property. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_properties_parser_a12598ce9403dd9e51f2a1206db9a27a9}\label{class_properties_parser_a12598ce9403dd9e51f2a1206db9a27a9}} 
+\index{Properties\+Parser@{Properties\+Parser}!get\+Property\+As\+Double\+Or\+Default\+To@{get\+Property\+As\+Double\+Or\+Default\+To}}
+\index{get\+Property\+As\+Double\+Or\+Default\+To@{get\+Property\+As\+Double\+Or\+Default\+To}!Properties\+Parser@{Properties\+Parser}}
+\subsubsection{\texorpdfstring{get\+Property\+As\+Double\+Or\+Default\+To()}{getPropertyAsDoubleOrDefaultTo()}}
+{\footnotesize\ttfamily double Properties\+Parser\+::get\+Property\+As\+Double\+Or\+Default\+To (\begin{DoxyParamCaption}\item[{std\+::string}]{property\+\_\+name,  }\item[{double}]{default\+\_\+property\+\_\+value }\end{DoxyParamCaption})}
+
+Returns the double value of a property, if it exists, or a default value if the property does not exist.
+
+
+\begin{DoxyParams}{Parameters}
+{\em property\+\_\+name} & the name of the property of which the value is returned. \\
+\hline
+{\em defaultproperty\+\_\+value} & the default property value. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a double value for the property. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_properties_parser_acfdb8d26fd4d078aa37ae938adf67379}\label{class_properties_parser_acfdb8d26fd4d078aa37ae938adf67379}} 
+\index{Properties\+Parser@{Properties\+Parser}!get\+Property\+As\+Float@{get\+Property\+As\+Float}}
+\index{get\+Property\+As\+Float@{get\+Property\+As\+Float}!Properties\+Parser@{Properties\+Parser}}
+\subsubsection{\texorpdfstring{get\+Property\+As\+Float()}{getPropertyAsFloat()}}
+{\footnotesize\ttfamily float Properties\+Parser\+::get\+Property\+As\+Float (\begin{DoxyParamCaption}\item[{std\+::string}]{property\+\_\+name }\end{DoxyParamCaption})}
+
+Returns the float value of a property.
+
+
+\begin{DoxyParams}{Parameters}
+{\em property\+\_\+name} & the name of the property of which the value is returned. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a float value for the property. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_properties_parser_a064cd4ecb149c7aa710d2c016a6d3371}\label{class_properties_parser_a064cd4ecb149c7aa710d2c016a6d3371}} 
+\index{Properties\+Parser@{Properties\+Parser}!get\+Property\+As\+Float\+Or\+Default\+To@{get\+Property\+As\+Float\+Or\+Default\+To}}
+\index{get\+Property\+As\+Float\+Or\+Default\+To@{get\+Property\+As\+Float\+Or\+Default\+To}!Properties\+Parser@{Properties\+Parser}}
+\subsubsection{\texorpdfstring{get\+Property\+As\+Float\+Or\+Default\+To()}{getPropertyAsFloatOrDefaultTo()}}
+{\footnotesize\ttfamily float Properties\+Parser\+::get\+Property\+As\+Float\+Or\+Default\+To (\begin{DoxyParamCaption}\item[{std\+::string}]{property\+\_\+name,  }\item[{float}]{default\+\_\+property\+\_\+value }\end{DoxyParamCaption})}
+
+Returns the float value of a property, if it exists, or a default value if the property does not exist.
+
+
+\begin{DoxyParams}{Parameters}
+{\em property\+\_\+name} & the name of the property of which the value is returned. \\
+\hline
+{\em defaultproperty\+\_\+value} & the default property value. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a float value for the property. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_properties_parser_ad4fb34e07c2d93e3cf4daca6f1ed9b14}\label{class_properties_parser_ad4fb34e07c2d93e3cf4daca6f1ed9b14}} 
+\index{Properties\+Parser@{Properties\+Parser}!get\+Property\+As\+Int@{get\+Property\+As\+Int}}
+\index{get\+Property\+As\+Int@{get\+Property\+As\+Int}!Properties\+Parser@{Properties\+Parser}}
+\subsubsection{\texorpdfstring{get\+Property\+As\+Int()}{getPropertyAsInt()}}
+{\footnotesize\ttfamily int Properties\+Parser\+::get\+Property\+As\+Int (\begin{DoxyParamCaption}\item[{std\+::string}]{property\+\_\+name }\end{DoxyParamCaption})}
+
+Returns the integer value of a property.
+
+
+\begin{DoxyParams}{Parameters}
+{\em property\+\_\+name} & the name of the property of which the value is returned. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+an integer value for the property. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_properties_parser_adadd7db8ea323a727804905d59f59d6d}\label{class_properties_parser_adadd7db8ea323a727804905d59f59d6d}} 
+\index{Properties\+Parser@{Properties\+Parser}!get\+Property\+As\+Int\+Or\+Default\+To@{get\+Property\+As\+Int\+Or\+Default\+To}}
+\index{get\+Property\+As\+Int\+Or\+Default\+To@{get\+Property\+As\+Int\+Or\+Default\+To}!Properties\+Parser@{Properties\+Parser}}
+\subsubsection{\texorpdfstring{get\+Property\+As\+Int\+Or\+Default\+To()}{getPropertyAsIntOrDefaultTo()}}
+{\footnotesize\ttfamily int Properties\+Parser\+::get\+Property\+As\+Int\+Or\+Default\+To (\begin{DoxyParamCaption}\item[{std\+::string}]{property\+\_\+name,  }\item[{int}]{default\+\_\+property\+\_\+value }\end{DoxyParamCaption})}
+
+Returns the integer value of a property, if it exists, or a default value if the property does not exist.
+
+
+\begin{DoxyParams}{Parameters}
+{\em property\+\_\+name} & the name of the property of which the value is returned. \\
+\hline
+{\em defaultproperty\+\_\+value} & the default property value. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+an integer value for the property. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_properties_parser_af52ae62c22c070ab8f286cb29897dc17}\label{class_properties_parser_af52ae62c22c070ab8f286cb29897dc17}} 
+\index{Properties\+Parser@{Properties\+Parser}!get\+Property\+As\+String@{get\+Property\+As\+String}}
+\index{get\+Property\+As\+String@{get\+Property\+As\+String}!Properties\+Parser@{Properties\+Parser}}
+\subsubsection{\texorpdfstring{get\+Property\+As\+String()}{getPropertyAsString()}}
+{\footnotesize\ttfamily std\+::string Properties\+Parser\+::get\+Property\+As\+String (\begin{DoxyParamCaption}\item[{std\+::string}]{property\+\_\+name }\end{DoxyParamCaption})}
+
+Returns the string value of a property.
+
+
+\begin{DoxyParams}{Parameters}
+{\em property\+\_\+name} & the name of the property of which the value is returned. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a string value for the property. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_properties_parser_a29d380b8b5dfdf4e3872e02b33bbc765}\label{class_properties_parser_a29d380b8b5dfdf4e3872e02b33bbc765}} 
+\index{Properties\+Parser@{Properties\+Parser}!get\+Property\+As\+String\+Or\+Default\+To@{get\+Property\+As\+String\+Or\+Default\+To}}
+\index{get\+Property\+As\+String\+Or\+Default\+To@{get\+Property\+As\+String\+Or\+Default\+To}!Properties\+Parser@{Properties\+Parser}}
+\subsubsection{\texorpdfstring{get\+Property\+As\+String\+Or\+Default\+To()}{getPropertyAsStringOrDefaultTo()}}
+{\footnotesize\ttfamily std\+::string Properties\+Parser\+::get\+Property\+As\+String\+Or\+Default\+To (\begin{DoxyParamCaption}\item[{std\+::string}]{property\+\_\+name,  }\item[{std\+::string}]{default\+\_\+property\+\_\+value }\end{DoxyParamCaption})}
+
+Returns the string value of a property, if it exists, or a default value if the property does not exist.
+
+
+\begin{DoxyParams}{Parameters}
+{\em property\+\_\+name} & the name of the property of which the value is returned. \\
+\hline
+{\em defaultproperty\+\_\+value} & the default property value. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a string value for the property. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_properties_parser_a8011fb7f2f3f24c59d3c33d56be55033}\label{class_properties_parser_a8011fb7f2f3f24c59d3c33d56be55033}} 
+\index{Properties\+Parser@{Properties\+Parser}!property\+Exists@{property\+Exists}}
+\index{property\+Exists@{property\+Exists}!Properties\+Parser@{Properties\+Parser}}
+\subsubsection{\texorpdfstring{property\+Exists()}{propertyExists()}}
+{\footnotesize\ttfamily bool Properties\+Parser\+::property\+Exists (\begin{DoxyParamCaption}\item[{std\+::string}]{property\+\_\+name }\end{DoxyParamCaption})}
+
+Checks if a property exists.
+
+
+\begin{DoxyParams}{Parameters}
+{\em property\+\_\+name} & the name of the property to be checked. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} if property exists, {\ttfamily false} otherwise. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Properties\+Parser.\+h\item 
+Properties\+Parser.\+cpp\end{DoxyCompactItemize}
