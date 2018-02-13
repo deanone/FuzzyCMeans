@@ -1,6 +1,8 @@
 var searchData=
 [
   ['getcentroid',['getCentroid',['../class_cluster.html#a6f53e148f46f17c27309d18645e60d5b',1,'Cluster']]],
+  ['getexecutablepath',['getExecutablePath',['../namespacegnfnc.html#a83d25b352dc66d2317f398c5a3c67f81',1,'gnfnc']]],
+  ['getexecutablepathandmatchitwithfilename',['getExecutablePathAndMatchItWithFilename',['../namespacegnfnc.html#adf0284ac1df7768c93180ada79054488',1,'gnfnc']]],
   ['getid',['getID',['../class_cluster.html#a7e3843eaa486b9dd28de25a7c9f4e1f9',1,'Cluster']]],
   ['getpropertyasbool',['getPropertyAsBool',['../class_properties_parser.html#a4d08af4f4c305273a64c281272011497',1,'PropertiesParser']]],
   ['getpropertyasboolordefaultto',['getPropertyAsBoolOrDefaultTo',['../class_properties_parser.html#a8e5c2fd64020dd3a580457ca321179ec',1,'PropertiesParser']]],
