@@ -4,12 +4,13 @@ FuzzyCMeans.cpp(46): warning C4018: '<': signed/unsigned mismatch
 FuzzyCMeans.cpp(83): warning C4018: '<': signed/unsigned mismatch
 FuzzyCMeans.cpp(103): warning C4018: '<': signed/unsigned mismatch
 FuzzyCMeans.cpp(179): warning C4018: '<': signed/unsigned mismatch
+  GenericFunc.cpp
   main.cpp
   Point.cpp
 Point.cpp(17): warning C4018: '<': signed/unsigned mismatch
 Point.cpp(114): warning C4018: '<': signed/unsigned mismatch
   PropertiesParser.cpp
   Generating code
-  All 735 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  All 831 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
   Finished generating code
   FuzzyCMeans.vcxproj -> D:\VisualStudio2015Projects\FuzzyCMeans\Release\FuzzyCMeans.exe

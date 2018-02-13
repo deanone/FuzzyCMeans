@@ -189,7 +189,7 @@ void FuzzyCMeans::runFuzzyCMeans()
 
 void FuzzyCMeans::printPartitionMatrix()
 {
-	std::cout << "Partition Matrix\n";
+	std::cout << "Partition Matrix:\n\n";
 	for (size_t point_id = 0; point_id < points.size(); ++point_id)
 		points[point_id].printMembershipCoefficients();
 	std::cout << std::endl;
@@ -197,7 +197,7 @@ void FuzzyCMeans::printPartitionMatrix()
 
 void FuzzyCMeans::printCentroids()
 {
-	std::cout << "Centroids\n";
+	std::cout << "Centroids:\n\n";
 	for (size_t cluster_id = 0; cluster_id < clusters.size(); ++cluster_id)
 		clusters[cluster_id].printCentroid();
 	std::cout << std::endl;

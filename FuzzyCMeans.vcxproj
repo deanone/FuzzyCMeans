@@ -144,6 +144,7 @@
   <ItemGroup>
     <ClInclude Include="Cluster.h" />
     <ClInclude Include="FuzzyCMeans.h" />
+    <ClInclude Include="GenericFunc.h" />
     <ClInclude Include="MathFunc.h" />
     <ClInclude Include="Point.h" />
     <ClInclude Include="PropertiesParser.h" />
@@ -151,6 +152,7 @@
   <ItemGroup>
     <ClCompile Include="Cluster.cpp" />
     <ClCompile Include="FuzzyCMeans.cpp" />
+    <ClCompile Include="GenericFunc.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Point.cpp" />
     <ClCompile Include="PropertiesParser.cpp" />

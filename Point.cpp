@@ -130,9 +130,9 @@ void Point::printMembershipCoefficients()
 	for (size_t i = 0; i < w_old.size(); ++i)
 	{
 		if (i != (w_old.size() - 1))
-			std::cout << w_old[i] * 100.0 << ", ";
+			std::cout << w_old[i]  << ", ";
 		else
-			std::cout << w_old[i] * 100.0;
+			std::cout << w_old[i];
 	}
 	//std::cout << "," << std::accumulate(w_old.begin(), w_old.end(), 0.0);
 	std::cout << std::endl;
