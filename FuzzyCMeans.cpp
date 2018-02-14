@@ -176,8 +176,13 @@ bool FuzzyCMeans::isOver()
  */
 void FuzzyCMeans::runFuzzyCMeans()
 {
-	for (size_t iter = 0; iter < max_num_of_iterations; ++iter)
+	int start = clock();
+	size_t iter = 0;
+	double objective_value = 0.0;
+	for (iter = 0; iter < max_num_of_iterations; ++iter)
 	{
+		objective_value = computeObjectiveFunction();
+		std::cout << "Iteration count = " << iter << ", obj. fcn = " << objective_value << std::endl;
 		computeClusters();
 		computeNewMembershipCoefficients();
 		if (isOver())
@@ -185,6 +190,9 @@ void FuzzyCMeans::runFuzzyCMeans()
 		else
 			updateMembershipCoefficients();
 	}
+	int stop = clock();
+	double elapsed_time = (stop - start) / static_cast<double>(CLOCKS_PER_SEC);
+	std::cout << "Fuzzy c-means finished after " << (iter + 1) << " iteration(s) (" << elapsed_time << " sec.).\n\n";
 }
 
 void FuzzyCMeans::printPartitionMatrix()
@@ -201,4 +209,19 @@ void FuzzyCMeans::printCentroids()
 	for (size_t cluster_id = 0; cluster_id < clusters.size(); ++cluster_id)
 		clusters[cluster_id].printCentroid();
 	std::cout << std::endl;
+}
+
+double FuzzyCMeans::computeObjectiveFunction()
+{
+	double objective_value = 0.0;
+	for (size_t point_id = 0; point_id < points.size(); ++point_id)
+	{
+		for (size_t cluster_id = 0; cluster_id < clusters.size(); ++cluster_id)
+		{
+			double dist = mfnc::computeEuclideanDistance(*(points[point_id].getValues()), *(clusters[cluster_id].getCentroid()));
+			dist = std::pow(dist, 2.0);
+			objective_value += (std::pow(points[point_id].getWOldValue(cluster_id), m) * dist);
+		}
+	}
+	return objective_value;
 }

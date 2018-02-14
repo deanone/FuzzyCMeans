@@ -31,6 +31,7 @@ public:
 	void runFuzzyCMeans();
 	void printPartitionMatrix();
 	void printCentroids();
+	double computeObjectiveFunction();
 };
 
 #endif	//	!FuzzyCMeans_H

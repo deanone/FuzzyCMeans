@@ -8,7 +8,7 @@ d:\visualstudio2015projects\fuzzycmeans\fuzzycmeans\point.cpp(114): warning C401
 d:\visualstudio2015projects\fuzzycmeans\fuzzycmeans\fuzzycmeans.cpp(46): warning C4018: '<': signed/unsigned mismatch
 d:\visualstudio2015projects\fuzzycmeans\fuzzycmeans\fuzzycmeans.cpp(83): warning C4018: '<': signed/unsigned mismatch
 d:\visualstudio2015projects\fuzzycmeans\fuzzycmeans\fuzzycmeans.cpp(103): warning C4018: '<': signed/unsigned mismatch
-d:\visualstudio2015projects\fuzzycmeans\fuzzycmeans\fuzzycmeans.cpp(179): warning C4018: '<': signed/unsigned mismatch
+d:\visualstudio2015projects\fuzzycmeans\fuzzycmeans\fuzzycmeans.cpp(182): warning C4018: '<': signed/unsigned mismatch
   Cluster.cpp
   Generating Code...
   FuzzyCMeans.vcxproj -> D:\VisualStudio2015Projects\FuzzyCMeans\Debug\FuzzyCMeans.exe
