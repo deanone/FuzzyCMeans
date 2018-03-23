@@ -11,7 +11,7 @@ int main()
 	FuzzyCMeans fcm(dataset_filename, properties_fileName);
 	fcm.runFuzzyCMeans();
 	fcm.printCentroids();
-	fcm.printPartitionMatrix();
+	//fcm.printPartitionMatrix();
 	std::cin.get();
 	return 0;
 }
