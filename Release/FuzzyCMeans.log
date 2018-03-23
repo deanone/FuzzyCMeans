@@ -1,11 +1,7 @@
-﻿  FuzzyCMeans.cpp
-FuzzyCMeans.cpp(46): warning C4018: '<': signed/unsigned mismatch
-FuzzyCMeans.cpp(83): warning C4018: '<': signed/unsigned mismatch
-FuzzyCMeans.cpp(103): warning C4018: '<': signed/unsigned mismatch
-FuzzyCMeans.cpp(182): warning C4018: '<': signed/unsigned mismatch
+﻿  main.cpp
   Generating code
-  3 of 830 functions ( 0.4%) were compiled, the rest were copied from previous compilation.
+  4 of 832 functions ( 0.5%) were compiled, the rest were copied from previous compilation.
     0 functions were new in current compilation
-    3 functions had inline decision re-evaluated but remain unchanged
+    28 functions had inline decision re-evaluated but remain unchanged
   Finished generating code
   FuzzyCMeans.vcxproj -> D:\VisualStudio2015Projects\FuzzyCMeans\Release\FuzzyCMeans.exe
