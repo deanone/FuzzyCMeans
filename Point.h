@@ -23,6 +23,8 @@ public:
 
 	/*!
  	 * Constructor.
+ 	 * @param ID the ID of the Point.
+ 	 * @param k the number of clusters.
  	 */
 	Point(int ID, int k);
 	
@@ -33,7 +35,7 @@ public:
 
 	/*! 
 	 * Sets the ID of the Point.
-	 * @param _ID the ID of the Point.
+	 * @param ID the ID of the Point.
 	 */
 	void setID(int ID);
 
@@ -101,7 +103,7 @@ public:
 	double getWOldValue(int clusterID);
 	
 	/*!
-	 * Prints in the standard output the membership coefficients of the Point.
+	 * Prints to the standard output the membership coefficients of the Point.
 	 */
 	void printMembershipCoefficients();
 };

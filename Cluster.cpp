@@ -2,58 +2,42 @@
 
 #include <iostream>
 
-/*!
- * Constructor.
- * @param
- * @param
- */
-Cluster::Cluster(std::vector<double>& centroid, int id_) : id(id_)
+Cluster::Cluster(DoubleVector& centroid, int ID)
 {
+	this->ID = ID;
 	for (size_t i = 0; i < centroid.size(); ++i)
+	{
 		this->centroid.push_back(centroid[i]);
+	}
 }
 
-/*!
- * Destructor.
- */
 Cluster::~Cluster()
 {
-	if (!centroid.empty()) centroid.clear();
+	if (!centroid.empty())
+	{
+		centroid.clear();
+	}
 }
 
-/*!
- * Sets the ID of the cluster.
- * @param
- */
-void Cluster::setID(const int id)
+void Cluster::setID(int ID)
 {
-	this->id = id;
+	this->ID = ID;
 }
 
-/*!
- * Returns the ID of the cluster.
- * @return
- */
 int Cluster::getID() const
 {
-	return id;
+	return ID;
 }
 
-/*!
- * Sets the centroid of the cluster.
- * @param
- */
-void Cluster::setCentroid(std::vector<double>& centroid)
+void Cluster::setCentroid(DoubleVector& centroid)
 {
-	for (size_t i = 0; i < centroid.size(); ++i)
+	for (size_t i = 0; i < centroid.size(); ++i) 
+	{
 		this->centroid[i] =centroid[i];
+	}
 }
 
-/*!
- * Returns centroid of the cluster.
- * @return
- */
-std::vector<double>* Cluster::getCentroid()
+DoubleVector* Cluster::getCentroid()
 {
 	return &centroid;
 }
@@ -62,10 +46,14 @@ void Cluster::printCentroid()
 {
 	for (size_t i = 0; i < centroid.size(); ++i)
 	{
-		if (i != (centroid.size() - 1))
+		if (i != (centroid.size() - 1)) 
+		{
 			std::cout << centroid[i] << ", ";
-		else
+		}
+		else 
+		{
 			std::cout << centroid[i];
+		}
 	}
 	std::cout << std::endl;
 }
