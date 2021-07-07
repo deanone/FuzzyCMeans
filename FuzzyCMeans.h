@@ -1,13 +1,9 @@
-#ifndef FuzzyCMeans_H
-#define FuzzyCMeans_H
+#ifndef FUZZYCMEANS_H
+#define FUZZYCMEANS_H
 
+#include "DataTypes.h"
 #include "Point.h"
 #include "Cluster.h"
-
-// Implementation of the Fuzzy c-means clustering algorithm.
-// https://en.wikipedia.org/wiki/Fuzzy_clustering
-// author: asal
-// date: 09/02/2018
 
 class FuzzyCMeans
 {
@@ -20,8 +16,20 @@ public:
 	std::vector<Point> points;
 	std::vector<Cluster> clusters;
 public:
+
+	/*!
+	 * Constructor 1.
+	 */
 	FuzzyCMeans(std::string dataset_filename, std::string properties_fileName);
+	
+	/*!
+	 * Constructor 2.
+	 */
 	FuzzyCMeans(std::string dataset_filename, int dimension_, int k_, int max_num_Of_iterations_, int m_, double eps_);
+	
+	/*!
+	 * Destructor.
+	 */
 	~FuzzyCMeans();
 	
 	void computeClusters();
@@ -34,4 +42,4 @@ public:
 	double computeObjectiveFunction();
 };
 
-#endif	//	!FuzzyCMeans_H
+#endif	//	FUZZYCMEANS_H

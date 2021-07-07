@@ -14,7 +14,9 @@ namespace mfnc
 	{
 		std::vector<T> result;
 		for (size_t i = 0; i < v.size(); ++i)
+		{
 			result.push_back(c * v[i]);
+		}
 		return result;
 	}
 
@@ -24,7 +26,9 @@ namespace mfnc
 		// TODO: add check for vectors with different sizes
 		std::vector<T> result;
 		for (size_t i = 0; i < v_1.size(); ++i)
+		{
 			result.push_back(v_1[i] + v_2[i]);
+		}
 		return result;
 	}
 
@@ -32,7 +36,9 @@ namespace mfnc
 	void addToVector(std::vector<T>& v, const std::vector<T>& other_v)
 	{
 		for (size_t i = 0; i < v.size(); ++i)
+		{
 			v[i] += other_v[i];
+		}
 	}
 
 	template <typename T>
@@ -43,10 +49,12 @@ namespace mfnc
 		size_t s_2 = v_2.size();
 		size_t s = s_1 < s_2 ? s_1 : s_2;
 		for (size_t i = 0; i < s; ++i)
+		{
 			dist += std::pow(v_1[i] - v_2[i], 2.0);
+		}
 		dist = sqrt(dist);
 		return dist;
 	}
 }
 
-#endif	//	!MATH_FUNC_H
+#endif	//	MATH_FUNC_H

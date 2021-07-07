@@ -8,9 +8,6 @@
 #include <iostream>
 #include <ctime>
 
-/*!
- * Constructor.
- */
 FuzzyCMeans::FuzzyCMeans(std::string dataset_filename, std::string properties_fileName)
 {
 	srand(static_cast<unsigned int>(time(NULL)));
@@ -52,9 +49,6 @@ FuzzyCMeans::FuzzyCMeans(std::string dataset_filename, std::string properties_fi
 	}
 }
 
-/*!
- * Constructor 2.
- */
 FuzzyCMeans::FuzzyCMeans(std::string dataset_filename, int dimension_, int k_, int max_num_of_iterations_, int m_, double eps_) :
 	dimension(dimension_), k(k_), max_num_of_iterations(max_num_of_iterations_), m(m_), eps(eps_)
 {
@@ -89,9 +83,6 @@ FuzzyCMeans::FuzzyCMeans(std::string dataset_filename, int dimension_, int k_, i
 	}
 }
 
-/*!
- * Destructor.
- */
 FuzzyCMeans::~FuzzyCMeans()
 {
 	if (!points.empty()) points.clear();
