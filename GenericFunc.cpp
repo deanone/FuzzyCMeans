@@ -1,39 +1,18 @@
-/*!
-* GenericFunc.cpp : imlementation of the gnfnc namespace.
-*/
-
-/*!
-* project specific required inclusions
-*/
 #include "GenericFunc.h"
-#include <Windows.h>
-#include <vector>
-#include <sstream>
 
-std::string gnfnc::getExecutablePath()
+std::string gf::getExecutablePath()
 {
-	std::vector<char> executablePath(MAX_PATH);
-	DWORD result = ::GetModuleFileNameA(NULL, &executablePath[0], static_cast<DWORD>(executablePath.size()));
-	while (result == executablePath.size())
-	{
-		executablePath.resize(executablePath.size() * 2);
-		result = ::GetModuleFileNameA(NULL, &executablePath[0], static_cast<DWORD>(executablePath.size()));
-	}
-	if (result == 0)
-		throw std::runtime_error("GetModuleFileName() failed");
-	return std::string(executablePath.begin(), executablePath.begin() + result);
+    char result[ PATH_MAX ];
+    ssize_t count = readlink( "/proc/self/exe", result, PATH_MAX );
+    return std::string( result, (count > 0) ? count : 0 );
 }
 
-/*!
-*Function that concatenates the path of the project's executable with a filename.
-*@return the concatenation of the path of the project's executable with a filename.
-*/
-std::string gnfnc::getExecutablePathAndMatchItWithFilename(const std::string& fileName)
+std::string gf::getExecutablePathAndMatchItWithFilename(std::string filename)
 {
-	std::string execPath = getExecutablePath();
-	size_t found = execPath.find_last_of("\\");
-	execPath = execPath.substr(0, found);
-	std::stringstream ss;
-	ss << execPath << "\\" << fileName;
-	return ss.str();
+    std::string execPath = getExecutablePath();
+    size_t found = execPath.find_last_of("/");
+    execPath = execPath.substr(0, found);
+    std::stringstream ss;
+    ss << execPath << "/" << filename;
+    return ss.str();
 }

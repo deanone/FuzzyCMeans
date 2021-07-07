@@ -1,13 +1,13 @@
-#include <string>
-#include <iostream>
-
 #include "FuzzyCMeans.h"
 #include "GenericFunc.h"
 
+#include <string>
+#include <iostream>
+
 int main()
 {
-	std::string dataset_filename = gnfnc::getExecutablePathAndMatchItWithFilename("data.csv");
-	std::string properties_fileName = gnfnc::getExecutablePathAndMatchItWithFilename("fcm.properties");
+	std::string dataset_filename = gf::getExecutablePathAndMatchItWithFilename("data.csv");
+	std::string properties_fileName = gf::getExecutablePathAndMatchItWithFilename("fcm.properties");
 	FuzzyCMeans fcm(dataset_filename, properties_fileName);
 	fcm.runFuzzyCMeans();
 	fcm.printCentroids();

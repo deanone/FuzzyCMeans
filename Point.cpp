@@ -4,135 +4,134 @@
 #include <iostream>
 #include <numeric>
 
-/*!
- * Constructor.
- */
-Point::Point() : id(-1)
+Point::Point() : ID(-1)
 {
 }
 
-Point::Point(const int id, const int k)
+Point::Point(int ID, int k)
 {
-	this->id = id;
-	for (size_t cluster_id = 0; cluster_id < k; ++cluster_id)
+	this->ID = ID;
+	for (size_t i = 0; i < k; ++i)
 	{
-		double initial_coefficient = ((double)rand() / (RAND_MAX));
-		w_old.push_back(initial_coefficient);
+		double initialCoefficient = (static_cast<double>(rand()) / (RAND_MAX));
+		wOld.push_back(initialCoefficient);
 	}
-	w_new.assign(k, 0.0);
+	wNew.assign(k, 0.0);
 }
 
-/*!
- * Destructor.
- */
 Point::~Point()
 {
-	if (!values.empty()) values.clear();
-	if (!w_old.empty()) w_old.clear();
-	if (!w_new.empty()) w_new.clear();
+	if (!values.empty())
+	{
+		values.clear();	
+	}
+	if (!wOld.empty())
+	{
+		wOld.clear();
+	}
+	if (!wNew.empty())
+	{
+		wNew.clear();	
+	}
 }
 
-/*!
- * Sets the ID of the point.
- */
-void Point::setID(const int id)
+void Point::setID(int ID)
 {
-	this->id = id;
+	this->ID = ID;
 }
 
-/*
- * Returns the ID of the point.
- * @return
- */
 int Point::getID() const
 {
-	return id;
+	return ID;
 }
 
-/*!
- * Add value to the values vector of the point.
- * @param
- */
-void Point::addValue(const double value)
+void Point::addValue(double val)
 {
-	values.push_back(value);
+	values.push_back(val);
 }
 
-/*!
- * Get a value from the values vector of the point, for a specific index.
- * @param
- * @return
- */
-double Point::getValue(const size_t index)
+double Point::getValue(size_t index)
 {
-	return (index >= 0 && index < values.size()) ? values[index] : -1.0;	// -1.0 error indicator
+	if (index >= 0 && index < values.size())
+	{
+		return values[index];
+	}
+	else
+	{
+		return -1.0;	//	-1.0 error indicator
+	}
 }
 
-/*!
- * Get the size of the values vector of the point.
- * @return
- */
 size_t Point::getValuesSize()
 {
 	return values.size();
 }
 
-/*!
- * Change a value of the values vector of the point, at a specific index.
- * @param
- * @param
- */
-void Point::changeValue(const size_t index, const double newValue)
+void Point::changeValue(size_t index, double valNew)
 {
 	if (index >= 0 && index < values.size())
-		values[index] = newValue;
+	{
+		values[index] = valNew;
+	}
 }
 
-std::vector<double>* Point::getValues()
+DoubleVector* Point::getValues()
 {
 	return &values;
 }
 
-void Point::updateWNew(std::vector<double>& w_new)
+void Point::updateWNew(DoubleVector& wNew)
 {
-	for (size_t i = 0; i < w_new.size(); ++i)
-		this->w_new[i] = w_new[i];
-}
-
-bool Point::compareW(const double eps)
-{
-	double dist = mfnc::computeEuclideanDistance(w_old, w_new);
-	if (dist <= eps)
-		return true;
-	else
-		return false;
-}
-
-double Point::getWOldValue(const int clusterID)
-{
-	double w_old_value = -1.0;
-	if ((clusterID >= 0) && (clusterID < w_old.size()))
-		w_old_value = w_old[clusterID];
-	return w_old_value;
+	for (size_t i = 0; i < wNew.size(); ++i)
+	{
+		this->wNew[i] = wNew[i];
+	}
 }
 
 void Point::updateW()
 {
-	for (size_t i = 0; i < w_old.size(); ++i)
+	for (size_t i = 0; i < wOld.size(); ++i)
 	{
-		w_old[i] = w_new[i];
-		w_new[i] = 0.0;
+		wOld[i] = wNew[i];
+		wNew[i] = 0.0;
 	}
+}
+
+bool Point::compareW(double eps)
+{
+	double dist = mfnc::computeEuclideanDistance(wOld, wNew);
+	if (dist <= eps)
+	{
+		return true;
+	}
+	else 
+	{
+		return false;
+	}
+}
+
+double Point::getWOldValue(int clusterID)
+{
+	double wOldVal = -1.0;
+	if ((clusterID >= 0) && (clusterID < wOld.size())) 
+	{
+		wOldVal = wOld[clusterID];
+	}
+	return wOldVal;
 }
 
 void Point::printMembershipCoefficients()
 {
-	for (size_t i = 0; i < w_old.size(); ++i)
+	for (size_t i = 0; i < wOld.size(); ++i)
 	{
-		if (i != (w_old.size() - 1))
-			std::cout << w_old[i]  << ", ";
-		else
-			std::cout << w_old[i];
+		if (i != (wOld.size() - 1)) 
+		{
+			std::cout << wOld[i]  << ", ";
+		}
+		else 
+		{
+			std::cout << wOld[i];
+		}
 	}
 	//std::cout << "," << std::accumulate(w_old.begin(), w_old.end(), 0.0);
 	std::cout << std::endl;
