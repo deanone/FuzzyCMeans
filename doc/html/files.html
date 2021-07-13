@@ -9,6 +9,14 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+  $(document).ready(initResizable);
+/* @license-end */</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -20,7 +28,7 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="fuzzy_c_means.png"/></td>
+  <td id="projectlogo"><img alt="Logo" src="Screenshot from 2021-07-13 13-03-49.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Fuzzy C-means in native C++
    &#160;<span id="projectnumber">v1.0</span>
@@ -49,6 +57,22 @@ $(function() {
 /* @license-end */</script>
 <div id="main-nav"></div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('files.html','');});
+/* @license-end */
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -69,28 +93,44 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="textblock">Here is a list of all files with brief descriptions:</div><div class="directory">
-<table class="directory">
-<tr id="row_0_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="_cluster_8cpp_source.html"><span class="icondoc"></span></a><a class="el" href="_cluster_8cpp.html" target="_self">Cluster.cpp</a></td><td class="desc"></td></tr>
-<tr id="row_1_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="_cluster_8h_source.html"><span class="icondoc"></span></a><a class="el" href="_cluster_8h.html" target="_self">Cluster.h</a></td><td class="desc"></td></tr>
-<tr id="row_2_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="_data_types_8h_source.html"><span class="icondoc"></span></a><a class="el" href="_data_types_8h.html" target="_self">DataTypes.h</a></td><td class="desc"></td></tr>
-<tr id="row_3_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="_fuzzy_c_means_8cpp_source.html"><span class="icondoc"></span></a><a class="el" href="_fuzzy_c_means_8cpp.html" target="_self">FuzzyCMeans.cpp</a></td><td class="desc"></td></tr>
-<tr id="row_4_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="_fuzzy_c_means_8h_source.html"><span class="icondoc"></span></a><a class="el" href="_fuzzy_c_means_8h.html" target="_self">FuzzyCMeans.h</a></td><td class="desc"></td></tr>
-<tr id="row_5_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="_generic_func_8cpp_source.html"><span class="icondoc"></span></a><a class="el" href="_generic_func_8cpp.html" target="_self">GenericFunc.cpp</a></td><td class="desc"></td></tr>
-<tr id="row_6_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="_generic_func_8h_source.html"><span class="icondoc"></span></a><a class="el" href="_generic_func_8h.html" target="_self">GenericFunc.h</a></td><td class="desc"></td></tr>
-<tr id="row_7_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="main_8cpp_source.html"><span class="icondoc"></span></a><a class="el" href="main_8cpp.html" target="_self">main.cpp</a></td><td class="desc"></td></tr>
-<tr id="row_8_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="_math_func_8h_source.html"><span class="icondoc"></span></a><a class="el" href="_math_func_8h.html" target="_self">MathFunc.h</a></td><td class="desc"></td></tr>
-<tr id="row_9_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="_point_8cpp_source.html"><span class="icondoc"></span></a><a class="el" href="_point_8cpp.html" target="_self">Point.cpp</a></td><td class="desc"></td></tr>
-<tr id="row_10_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="_point_8h_source.html"><span class="icondoc"></span></a><a class="el" href="_point_8h.html" target="_self">Point.h</a></td><td class="desc"></td></tr>
-<tr id="row_11_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="_properties_parser_8cpp_source.html"><span class="icondoc"></span></a><a class="el" href="_properties_parser_8cpp.html" target="_self">PropertiesParser.cpp</a></td><td class="desc"></td></tr>
-<tr id="row_12_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="_properties_parser_8h_source.html"><span class="icondoc"></span></a><a class="el" href="_properties_parser_8h.html" target="_self">PropertiesParser.h</a></td><td class="desc"></td></tr>
+<div class="levels">[detail level <span onclick="javascript:toggleLevel(1);">1</span><span onclick="javascript:toggleLevel(2);">2</span><span onclick="javascript:toggleLevel(3);">3</span><span onclick="javascript:toggleLevel(4);">4</span>]</div><table class="directory">
+<tr id="row_0_" class="even"><td class="entry"><span style="width:0px;display:inline-block;">&#160;</span><span id="arr_0_" class="arrow" onclick="toggleFolder('0_')">&#9660;</span><span id="img_0_" class="iconfopen" onclick="toggleFolder('0_')">&#160;</span><a class="el" href="dir_b1f25b8b84ff6043bba1825b1c94dc29.html" target="_self">D:\VisualStudio2015Projects\FuzzyCMeans\FuzzyCMeans\doc</a></td><td class="desc"></td></tr>
+<tr id="row_0_0_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span id="arr_0_0_" class="arrow" onclick="toggleFolder('0_0_')">&#9660;</span><span id="img_0_0_" class="iconfopen" onclick="toggleFolder('0_0_')">&#160;</span><a class="el" href="dir_588c012487e5f2c4f2b4f49660fb7166.html" target="_self">html</a></td><td class="desc"></td></tr>
+<tr id="row_0_0_0_" class="even"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><span id="arr_0_0_0_" class="arrow" onclick="toggleFolder('0_0_0_')">&#9660;</span><span id="img_0_0_0_" class="iconfopen" onclick="toggleFolder('0_0_0_')">&#160;</span><a class="el" href="dir_7b14df3677fc817590c8f09e389a57f7.html" target="_self">search</a></td><td class="desc"></td></tr>
+<tr id="row_0_0_0_0_"><td class="entry"><span style="width:64px;display:inline-block;">&#160;</span><a href="search_8js_source.html"><span class="icondoc"></span></a><a class="el" href="search_8js.html" target="_self">search.js</a></td><td class="desc"></td></tr>
+<tr id="row_0_0_0_1_" class="even"><td class="entry"><span style="width:64px;display:inline-block;">&#160;</span><a href="searchdata_8js_source.html"><span class="icondoc"></span></a><a class="el" href="searchdata_8js.html" target="_self">searchdata.js</a></td><td class="desc"></td></tr>
+<tr id="row_0_0_1_"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><a href="dynsections_8js_source.html"><span class="icondoc"></span></a><a class="el" href="dynsections_8js.html" target="_self">dynsections.js</a></td><td class="desc"></td></tr>
+<tr id="row_0_0_2_" class="even"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><a href="jquery_8js_source.html"><span class="icondoc"></span></a><a class="el" href="jquery_8js.html" target="_self">jquery.js</a></td><td class="desc"></td></tr>
+<tr id="row_0_0_3_"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><a href="menu_8js_source.html"><span class="icondoc"></span></a><a class="el" href="menu_8js.html" target="_self">menu.js</a></td><td class="desc"></td></tr>
+<tr id="row_0_0_4_" class="even"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><a href="menudata_8js_source.html"><span class="icondoc"></span></a><a class="el" href="menudata_8js.html" target="_self">menudata.js</a></td><td class="desc"></td></tr>
+<tr id="row_0_0_5_"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><a href="navtree_8js_source.html"><span class="icondoc"></span></a><a class="el" href="navtree_8js.html" target="_self">navtree.js</a></td><td class="desc"></td></tr>
+<tr id="row_0_0_6_" class="even"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><a href="navtreedata_8js_source.html"><span class="icondoc"></span></a><a class="el" href="navtreedata_8js.html" target="_self">navtreedata.js</a></td><td class="desc"></td></tr>
+<tr id="row_0_0_7_"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><a href="navtreeindex0_8js_source.html"><span class="icondoc"></span></a><a class="el" href="navtreeindex0_8js.html" target="_self">navtreeindex0.js</a></td><td class="desc"></td></tr>
+<tr id="row_0_0_8_" class="even"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><a href="resize_8js_source.html"><span class="icondoc"></span></a><a class="el" href="resize_8js.html" target="_self">resize.js</a></td><td class="desc"></td></tr>
+<tr id="row_1_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="_cluster_8cpp_source.html"><span class="icondoc"></span></a><a class="el" href="_cluster_8cpp.html" target="_self">Cluster.cpp</a></td><td class="desc"></td></tr>
+<tr id="row_2_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="_cluster_8h_source.html"><span class="icondoc"></span></a><a class="el" href="_cluster_8h.html" target="_self">Cluster.h</a></td><td class="desc"></td></tr>
+<tr id="row_3_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="_data_types_8h_source.html"><span class="icondoc"></span></a><a class="el" href="_data_types_8h.html" target="_self">DataTypes.h</a></td><td class="desc"></td></tr>
+<tr id="row_4_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="_fuzzy_c_means_8cpp_source.html"><span class="icondoc"></span></a><a class="el" href="_fuzzy_c_means_8cpp.html" target="_self">FuzzyCMeans.cpp</a></td><td class="desc"></td></tr>
+<tr id="row_5_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="_fuzzy_c_means_8h_source.html"><span class="icondoc"></span></a><a class="el" href="_fuzzy_c_means_8h.html" target="_self">FuzzyCMeans.h</a></td><td class="desc"></td></tr>
+<tr id="row_6_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="_generic_func_8cpp_source.html"><span class="icondoc"></span></a><a class="el" href="_generic_func_8cpp.html" target="_self">GenericFunc.cpp</a></td><td class="desc"></td></tr>
+<tr id="row_7_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="_generic_func_8h_source.html"><span class="icondoc"></span></a><a class="el" href="_generic_func_8h.html" target="_self">GenericFunc.h</a></td><td class="desc"></td></tr>
+<tr id="row_8_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="main_8cpp_source.html"><span class="icondoc"></span></a><a class="el" href="main_8cpp.html" target="_self">main.cpp</a></td><td class="desc"></td></tr>
+<tr id="row_9_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="_math_func_8h_source.html"><span class="icondoc"></span></a><a class="el" href="_math_func_8h.html" target="_self">MathFunc.h</a></td><td class="desc"></td></tr>
+<tr id="row_10_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="_point_8cpp_source.html"><span class="icondoc"></span></a><a class="el" href="_point_8cpp.html" target="_self">Point.cpp</a></td><td class="desc"></td></tr>
+<tr id="row_11_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="_point_8h_source.html"><span class="icondoc"></span></a><a class="el" href="_point_8h.html" target="_self">Point.h</a></td><td class="desc"></td></tr>
+<tr id="row_12_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="_properties_parser_8cpp_source.html"><span class="icondoc"></span></a><a class="el" href="_properties_parser_8cpp.html" target="_self">PropertiesParser.cpp</a></td><td class="desc"></td></tr>
+<tr id="row_13_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a href="_properties_parser_8h_source.html"><span class="icondoc"></span></a><a class="el" href="_properties_parser_8h.html" target="_self">PropertiesParser.h</a></td><td class="desc"></td></tr>
 </table>
 </div><!-- directory -->
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.14
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generated by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
+  </ul>
+</div>
 </body>
 </html>

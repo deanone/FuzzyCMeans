@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="dir_588c012487e5f2c4f2b4f49660fb7166" kind="dir">
+    <compoundname>D:\VisualStudio2015Projects\FuzzyCMeans\FuzzyCMeans\doc/html</compoundname>
+    <innerdir refid="dir_7b14df3677fc817590c8f09e389a57f7">D:\VisualStudio2015Projects\FuzzyCMeans\FuzzyCMeans\doc/html/search</innerdir>
+    <innerfile refid="dynsections_8js">dynsections.js</innerfile>
+    <innerfile refid="jquery_8js">jquery.js</innerfile>
+    <innerfile refid="menu_8js">menu.js</innerfile>
+    <innerfile refid="menudata_8js">menudata.js</innerfile>
+    <innerfile refid="navtree_8js">navtree.js</innerfile>
+    <innerfile refid="navtreedata_8js">navtreedata.js</innerfile>
+    <innerfile refid="navtreeindex0_8js">navtreeindex0.js</innerfile>
+    <innerfile refid="resize_8js">resize.js</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:\VisualStudio2015Projects\FuzzyCMeans\FuzzyCMeans\doc/html/"/>
+  </compounddef>
+</doxygen>

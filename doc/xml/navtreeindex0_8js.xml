@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="navtreeindex0_8js" kind="file" language="C++">
+    <compoundname>navtreeindex0.js</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">var<sp/>NAVTREEINDEX0<sp/>=</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal">&quot;index.html&quot;:[],</highlight></codeline>
+<codeline><highlight class="normal">&quot;pages.html&quot;:[]</highlight></codeline>
+<codeline><highlight class="normal">};</highlight></codeline>
+    </programlisting>
+    <location file="D:\VisualStudio2015Projects\FuzzyCMeans\FuzzyCMeans\doc/html/navtreeindex0.js"/>
+  </compounddef>
+</doxygen>

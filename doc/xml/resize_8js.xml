@@ -1,0 +1,149 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="resize_8js" kind="file" language="C++">
+    <compoundname>resize.js</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">/*</highlight></codeline>
+<codeline><highlight class="normal"><sp/>@licstart<sp/><sp/>The<sp/>following<sp/>is<sp/>the<sp/>entire<sp/>license<sp/>notice<sp/>for<sp/>the</highlight></codeline>
+<codeline><highlight class="normal"><sp/>JavaScript<sp/>code<sp/>in<sp/>this<sp/>file.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/>Copyright<sp/>(C)<sp/>1997-2017<sp/>by<sp/>Dimitri<sp/>van<sp/>Heesch</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/>This<sp/>program<sp/>is<sp/>free<sp/>software;<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or<sp/>modify</highlight></codeline>
+<codeline><highlight class="normal"><sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>as<sp/>published<sp/>by</highlight></codeline>
+<codeline><highlight class="normal"><sp/>the<sp/>Free<sp/>Software<sp/>Foundation;<sp/>either<sp/>version<sp/>2<sp/>of<sp/>the<sp/>License,<sp/>or</highlight></codeline>
+<codeline><highlight class="normal"><sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/>This<sp/>program<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight></codeline>
+<codeline><highlight class="normal"><sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight></codeline>
+<codeline><highlight class="normal"><sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the</highlight></codeline>
+<codeline><highlight class="normal"><sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>along</highlight></codeline>
+<codeline><highlight class="normal"><sp/>with<sp/>this<sp/>program;<sp/>if<sp/>not,<sp/>write<sp/>to<sp/>the<sp/>Free<sp/>Software<sp/>Foundation,<sp/>Inc.,</highlight></codeline>
+<codeline><highlight class="normal"><sp/>51<sp/>Franklin<sp/>Street,<sp/>Fifth<sp/>Floor,<sp/>Boston,<sp/>MA<sp/>02110-1301<sp/>USA.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/>@licend<sp/><sp/>The<sp/>above<sp/>is<sp/>the<sp/>entire<sp/>license<sp/>notice</highlight></codeline>
+<codeline><highlight class="normal"><sp/>for<sp/>the<sp/>JavaScript<sp/>code<sp/>in<sp/>this<sp/>file</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*/</highlight></codeline>
+<codeline><highlight class="normal">function<sp/>initResizable()</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>var<sp/>cookie_namespace<sp/>=<sp/>&apos;doxygen&apos;;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>var<sp/>sidenav,navtree,content,header,collapsed,collapsedWidth=0,barWidth=6,desktop_vp=768,titleHeight;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/>function<sp/>readCookie(cookie)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>var<sp/>myCookie<sp/>=<sp/>cookie_namespace+&quot;_&quot;+cookie+&quot;=&quot;;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>if<sp/>(document.cookie)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>var<sp/>index<sp/>=<sp/>document.cookie.indexOf(myCookie);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>if<sp/>(index<sp/>!=<sp/>-1)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>var<sp/>valStart<sp/>=<sp/>index<sp/>+<sp/>myCookie.length;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>var<sp/>valEnd<sp/>=<sp/>document.cookie.indexOf(&quot;;&quot;,<sp/>valStart);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>if<sp/>(valEnd<sp/>==<sp/>-1)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>valEnd<sp/>=<sp/>document.cookie.length;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>var<sp/>val<sp/>=<sp/>document.cookie.substring(valStart,<sp/>valEnd);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>return<sp/>val;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>return<sp/>0;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/>function<sp/>writeCookie(cookie,<sp/>val,<sp/>expiration)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>if<sp/>(val==undefined)<sp/>return;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>if<sp/>(expiration<sp/>==<sp/>null)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>var<sp/>date<sp/>=<sp/>new<sp/>Date();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>date.setTime(date.getTime()+(10*365*24*60*60*1000));<sp/>//<sp/>default<sp/>expiration<sp/>is<sp/>one<sp/>week</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>expiration<sp/>=<sp/>date.toGMTString();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>document.cookie<sp/>=<sp/>cookie_namespace<sp/>+<sp/>&quot;_&quot;<sp/>+<sp/>cookie<sp/>+<sp/>&quot;=&quot;<sp/>+<sp/>val<sp/>+<sp/>&quot;;<sp/>expires=&quot;<sp/>+<sp/>expiration+&quot;;<sp/>path=/&quot;;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/>function<sp/>resizeWidth()</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>var<sp/>windowWidth<sp/>=<sp/>$(window).width()<sp/>+<sp/>&quot;px&quot;;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>var<sp/>sidenavWidth<sp/>=<sp/>$(sidenav).outerWidth();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>content.css({marginLeft:parseInt(sidenavWidth)+&quot;px&quot;});</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>writeCookie(&apos;width&apos;,sidenavWidth-barWidth,<sp/>null);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/>function<sp/>restoreWidth(navWidth)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>var<sp/>windowWidth<sp/>=<sp/>$(window).width()<sp/>+<sp/>&quot;px&quot;;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>content.css({marginLeft:parseInt(navWidth)+barWidth+&quot;px&quot;});</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>sidenav.css({width:navWidth<sp/>+<sp/>&quot;px&quot;});</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/>function<sp/>resizeHeight()</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>var<sp/>headerHeight<sp/>=<sp/>header.outerHeight();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>var<sp/>footerHeight<sp/>=<sp/>footer.outerHeight();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>var<sp/>windowHeight<sp/>=<sp/>$(window).height()<sp/>-<sp/>headerHeight<sp/>-<sp/>footerHeight;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>content.css({height:windowHeight<sp/>+<sp/>&quot;px&quot;});</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>navtree.css({height:windowHeight<sp/>+<sp/>&quot;px&quot;});</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>sidenav.css({height:windowHeight<sp/>+<sp/>&quot;px&quot;});</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>var<sp/>width=$(window).width();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>if<sp/>(width!=collapsedWidth)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>if<sp/>(width&lt;desktop_vp<sp/>&amp;&amp;<sp/>collapsedWidth&gt;=desktop_vp)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>if<sp/>(!collapsed)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>collapseExpand();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/>else<sp/>if<sp/>(width&gt;desktop_vp<sp/>&amp;&amp;<sp/>collapsedWidth&lt;desktop_vp)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>if<sp/>(collapsed)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>collapseExpand();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>collapsedWidth=width;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/>function<sp/>collapseExpand()</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>if<sp/>(sidenav.width()&gt;0)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>restoreWidth(0);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>collapsed=true;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>else<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>var<sp/>width<sp/>=<sp/>readCookie(&apos;width&apos;);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>if<sp/>(width&gt;200<sp/>&amp;&amp;<sp/>width&lt;$(window).width())<sp/>{<sp/>restoreWidth(width);<sp/>}<sp/>else<sp/>{<sp/>restoreWidth(200);<sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>collapsed=false;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/>header<sp/><sp/>=<sp/>$(&quot;#top&quot;);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>sidenav<sp/>=<sp/>$(&quot;#side-nav&quot;);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>content<sp/>=<sp/>$(&quot;#doc-content&quot;);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>navtree<sp/>=<sp/>$(&quot;#nav-tree&quot;);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>footer<sp/><sp/>=<sp/>$(&quot;#nav-path&quot;);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>$(&quot;.side-nav-resizable&quot;).resizable({resize:<sp/>function(e,<sp/>ui)<sp/>{<sp/>resizeWidth();<sp/>}<sp/>});</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>$(sidenav).resizable({<sp/>minWidth:<sp/>0<sp/>});</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>$(window).resize(function()<sp/>{<sp/>resizeHeight();<sp/>});</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>var<sp/>device<sp/>=<sp/>navigator.userAgent.toLowerCase();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>var<sp/>touch_device<sp/>=<sp/>device.match(/(iphone|ipod|ipad|android)/);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>if<sp/>(touch_device)<sp/>{<sp/>/*<sp/>wider<sp/>split<sp/>bar<sp/>for<sp/>touch<sp/>only<sp/>devices<sp/>*/</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>$(sidenav).css({<sp/>paddingRight:&apos;20px&apos;<sp/>});</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>$(&apos;.ui-resizable-e&apos;).css({<sp/>width:&apos;20px&apos;<sp/>});</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>$(&apos;#nav-sync&apos;).css({<sp/>right:&apos;34px&apos;<sp/>});</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>barWidth=20;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>var<sp/>width<sp/>=<sp/>readCookie(&apos;width&apos;);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>if<sp/>(width)<sp/>{<sp/>restoreWidth(width);<sp/>}<sp/>else<sp/>{<sp/>resizeWidth();<sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>resizeHeight();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>var<sp/>url<sp/>=<sp/>location.href;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>var<sp/>i=url.indexOf(&quot;#&quot;);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>if<sp/>(i&gt;=0)<sp/>window.location.hash=url.substr(i);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>var<sp/>_preventDefault<sp/>=<sp/>function(evt)<sp/>{<sp/>evt.preventDefault();<sp/>};</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>$(&quot;#splitbar&quot;).bind(&quot;dragstart&quot;,<sp/>_preventDefault).bind(&quot;selectstart&quot;,<sp/>_preventDefault);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>$(&quot;.ui-resizable-handle&quot;).dblclick(collapseExpand);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>$(window).load(resizeHeight);</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal">/*<sp/>@license-end<sp/>*/</highlight></codeline>
+    </programlisting>
+    <location file="D:\VisualStudio2015Projects\FuzzyCMeans\FuzzyCMeans\doc/html/resize.js"/>
+  </compounddef>
+</doxygen>

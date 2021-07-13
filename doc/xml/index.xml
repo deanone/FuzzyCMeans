@@ -83,6 +83,26 @@
   </compound>
   <compound refid="_cluster_8h" kind="file"><name>Cluster.h</name>
   </compound>
+  <compound refid="dynsections_8js" kind="file"><name>dynsections.js</name>
+  </compound>
+  <compound refid="jquery_8js" kind="file"><name>jquery.js</name>
+  </compound>
+  <compound refid="menu_8js" kind="file"><name>menu.js</name>
+  </compound>
+  <compound refid="menudata_8js" kind="file"><name>menudata.js</name>
+  </compound>
+  <compound refid="navtree_8js" kind="file"><name>navtree.js</name>
+  </compound>
+  <compound refid="navtreedata_8js" kind="file"><name>navtreedata.js</name>
+  </compound>
+  <compound refid="navtreeindex0_8js" kind="file"><name>navtreeindex0.js</name>
+  </compound>
+  <compound refid="resize_8js" kind="file"><name>resize.js</name>
+  </compound>
+  <compound refid="search_8js" kind="file"><name>search.js</name>
+  </compound>
+  <compound refid="searchdata_8js" kind="file"><name>searchdata.js</name>
+  </compound>
   <compound refid="_data_types_8h" kind="file"><name>DataTypes.h</name>
     <member refid="_data_types_8h_1a64be07a13efb96ba9d376c4cbc6f501e" kind="typedef"><name>FloatVector</name></member>
     <member refid="_data_types_8h_1a90fed7f97f1803c7719d26e6f21b4de6" kind="typedef"><name>FloatVector2D</name></member>
@@ -122,5 +142,11 @@
   <compound refid="_r_e_a_d_m_e_8md" kind="file"><name>README.md</name>
   </compound>
   <compound refid="md__r_e_a_d_m_e" kind="page"><name>md_README</name>
+  </compound>
+  <compound refid="dir_b1f25b8b84ff6043bba1825b1c94dc29" kind="dir"><name>D:\VisualStudio2015Projects\FuzzyCMeans\FuzzyCMeans\doc</name>
+  </compound>
+  <compound refid="dir_588c012487e5f2c4f2b4f49660fb7166" kind="dir"><name>D:\VisualStudio2015Projects\FuzzyCMeans\FuzzyCMeans\doc/html</name>
+  </compound>
+  <compound refid="dir_7b14df3677fc817590c8f09e389a57f7" kind="dir"><name>D:\VisualStudio2015Projects\FuzzyCMeans\FuzzyCMeans\doc/html/search</name>
   </compound>
 </doxygenindex>

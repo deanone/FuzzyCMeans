@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="dir_7b14df3677fc817590c8f09e389a57f7" kind="dir">
+    <compoundname>D:\VisualStudio2015Projects\FuzzyCMeans\FuzzyCMeans\doc/html/search</compoundname>
+    <innerfile refid="search_8js">search.js</innerfile>
+    <innerfile refid="searchdata_8js">searchdata.js</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:\VisualStudio2015Projects\FuzzyCMeans\FuzzyCMeans\doc/html/search/"/>
+  </compounddef>
+</doxygen>
