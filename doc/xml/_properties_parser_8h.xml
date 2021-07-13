@@ -1,0 +1,80 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="_properties_parser_8h" kind="file" language="C++">
+    <compoundname>PropertiesParser.h</compoundname>
+    <includes local="no">string</includes>
+    <includes local="no">map</includes>
+    <includedby refid="_fuzzy_c_means_8cpp" local="yes">FuzzyCMeans.cpp</includedby>
+    <includedby refid="_properties_parser_8cpp" local="yes">PropertiesParser.cpp</includedby>
+    <incdepgraph>
+      <node id="232">
+        <label>string</label>
+      </node>
+      <node id="233">
+        <label>map</label>
+      </node>
+      <node id="231">
+        <label>PropertiesParser.h</label>
+        <link refid="_properties_parser_8h"/>
+        <childnode refid="232" relation="include">
+        </childnode>
+        <childnode refid="233" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="234">
+        <label>PropertiesParser.h</label>
+        <link refid="_properties_parser_8h"/>
+        <childnode refid="235" relation="include">
+        </childnode>
+        <childnode refid="236" relation="include">
+        </childnode>
+      </node>
+      <node id="236">
+        <label>PropertiesParser.cpp</label>
+        <link refid="_properties_parser_8cpp"/>
+      </node>
+      <node id="235">
+        <label>FuzzyCMeans.cpp</label>
+        <link refid="_fuzzy_c_means_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_properties_parser" prot="public">PropertiesParser</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="7"><highlight class="preprocessor">#ifndef<sp/>PROPERTIES_PARSER_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PROPERTIES_PARSER_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;map&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13" refid="class_properties_parser" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_properties_parser" kindref="compound">PropertiesParser</ref></highlight></codeline>
+<codeline lineno="14"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>std::map&lt;std::string,<sp/>std::string&gt;<sp/>properties_map;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_properties_parser_1a9fe7a2c812424ebf8db6c3c5afc50f65" kindref="member">PropertiesParser</ref>(std::string<sp/>properties_filename);</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_properties_parser_1a78329eb9c674e1cf5b085d466709a4b6" kindref="member">~PropertiesParser</ref>();</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_properties_parser_1a03f177b8082dad1abd2faf60db7a7a6a" kindref="member">addPropertiesFile</ref>(std::string<sp/>properties_filename);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_properties_parser_1a8011fb7f2f3f24c59d3c33d56be55033" kindref="member">propertyExists</ref>(std::string<sp/>property_name);</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="class_properties_parser_1af52ae62c22c070ab8f286cb29897dc17" kindref="member">getPropertyAsString</ref>(std::string<sp/>property_name);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_properties_parser_1ad4fb34e07c2d93e3cf4daca6f1ed9b14" kindref="member">getPropertyAsInt</ref>(std::string<sp/>property_name);</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_properties_parser_1a4d08af4f4c305273a64c281272011497" kindref="member">getPropertyAsBool</ref>(std::string<sp/>property_name);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_properties_parser_1acfdb8d26fd4d078aa37ae938adf67379" kindref="member">getPropertyAsFloat</ref>(std::string<sp/>property_name);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_properties_parser_1ab7a84135214c45cd91a9bb5377eaff5a" kindref="member">getPropertyAsDouble</ref>(std::string<sp/>property_name);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="class_properties_parser_1a29d380b8b5dfdf4e3872e02b33bbc765" kindref="member">getPropertyAsStringOrDefaultTo</ref>(std::string<sp/>property_name,<sp/>std::string<sp/>default_property_value);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_properties_parser_1adadd7db8ea323a727804905d59f59d6d" kindref="member">getPropertyAsIntOrDefaultTo</ref>(std::string<sp/>property_name,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>default_property_value);</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_properties_parser_1a8e5c2fd64020dd3a580457ca321179ec" kindref="member">getPropertyAsBoolOrDefaultTo</ref>(std::string<sp/>property_name,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>default_property_value);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_properties_parser_1a064cd4ecb149c7aa710d2c016a6d3371" kindref="member">getPropertyAsFloatOrDefaultTo</ref>(std::string<sp/>property_name,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>default_property_value);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_properties_parser_1a12598ce9403dd9e51f2a1206db9a27a9" kindref="member">getPropertyAsDoubleOrDefaultTo</ref>(std::string<sp/>property_name,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>default_property_value);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/><sp/>//<sp/><sp/>!PROPERTIES_PARSER_H</highlight></codeline>
+    </programlisting>
+    <location file="PropertiesParser.h"/>
+  </compounddef>
+</doxygen>

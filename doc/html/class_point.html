@@ -5,18 +5,10 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>FuzzyCMeans: Point Class Reference</title>
+<title>Fuzzy C-means in native C++: Point Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-  $(document).ready(initResizable);
-/* @license-end */</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -28,9 +20,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="fuzzy_c_means.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">FuzzyCMeans
+   <div id="projectname">Fuzzy C-means in native C++
+   &#160;<span id="projectnumber">v1.0</span>
    </div>
+   <div id="projectbrief">A native C++ implementation of the fuzzy C-means clustering machine learning algorithm (original author: Athanasios Salamanis)</div>
   </td>
  </tr>
  </tbody>
@@ -53,23 +48,6 @@ $(function() {
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-$(document).ready(function(){initNavTree('class_point.html','');});
-/* @license-end */
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -84,6 +62,7 @@ $(document).ready(function(){initNavTree('class_point.html','');});
 </iframe>
 </div>
 
+</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
@@ -92,51 +71,48 @@ $(document).ready(function(){initNavTree('class_point.html','');});
 <div class="title">Point Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="_point_8h_source.html">Point.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ad92f2337b839a94ce97dcdb439b4325a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_point.html#ad92f2337b839a94ce97dcdb439b4325a">Point</a> ()</td></tr>
 <tr class="separator:ad92f2337b839a94ce97dcdb439b4325a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a26d66e5795f1dc9366b14e7c86a38a80"><td class="memItemLeft" align="right" valign="top"><a id="a26d66e5795f1dc9366b14e7c86a38a80"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Point</b> (const int id, const int k)</td></tr>
-<tr class="separator:a26d66e5795f1dc9366b14e7c86a38a80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af39ee027d8fda9c4134b041b5505c448"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_point.html#af39ee027d8fda9c4134b041b5505c448">Point</a> (int ID, int k)</td></tr>
+<tr class="separator:af39ee027d8fda9c4134b041b5505c448"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a395fa04b4ec126b66fc053f829a30cc1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_point.html#a395fa04b4ec126b66fc053f829a30cc1">~Point</a> ()</td></tr>
 <tr class="separator:a395fa04b4ec126b66fc053f829a30cc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae0c05a7c16aadbb5e9932e77b24ca921"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_point.html#ae0c05a7c16aadbb5e9932e77b24ca921">setID</a> (const int id)</td></tr>
-<tr class="separator:ae0c05a7c16aadbb5e9932e77b24ca921"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a70f96664692429af8c591eac51e65faa"><td class="memItemLeft" align="right" valign="top"><a id="a70f96664692429af8c591eac51e65faa"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>getID</b> () const</td></tr>
+<tr class="memitem:a987968f2da26bbcf0c70dfd632f1d940"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_point.html#a987968f2da26bbcf0c70dfd632f1d940">setID</a> (int ID)</td></tr>
+<tr class="separator:a987968f2da26bbcf0c70dfd632f1d940"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70f96664692429af8c591eac51e65faa"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_point.html#a70f96664692429af8c591eac51e65faa">getID</a> () const</td></tr>
 <tr class="separator:a70f96664692429af8c591eac51e65faa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a922f5f0685f0bbf2e9e19ff3397fc82e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_point.html#a922f5f0685f0bbf2e9e19ff3397fc82e">addValue</a> (const double value)</td></tr>
-<tr class="separator:a922f5f0685f0bbf2e9e19ff3397fc82e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae748cbf0b68a726dfdfe9f8b8b6301db"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_point.html#ae748cbf0b68a726dfdfe9f8b8b6301db">getValue</a> (const size_t index)</td></tr>
-<tr class="separator:ae748cbf0b68a726dfdfe9f8b8b6301db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc21fb4804add5777f2a1774b024fea7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_point.html#adc21fb4804add5777f2a1774b024fea7">addValue</a> (double val)</td></tr>
+<tr class="separator:adc21fb4804add5777f2a1774b024fea7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab06f5ae012fbc6b8e8f3e1912ba70f2b"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_point.html#ab06f5ae012fbc6b8e8f3e1912ba70f2b">getValue</a> (size_t index)</td></tr>
+<tr class="separator:ab06f5ae012fbc6b8e8f3e1912ba70f2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab5bb69974276cdb13bc74c8585c919a1"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_point.html#ab5bb69974276cdb13bc74c8585c919a1">getValuesSize</a> ()</td></tr>
 <tr class="separator:ab5bb69974276cdb13bc74c8585c919a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0b2a9878f3eb1b0d091aa7e9b1502258"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_point.html#a0b2a9878f3eb1b0d091aa7e9b1502258">changeValue</a> (const size_t index, const double new_value)</td></tr>
-<tr class="separator:a0b2a9878f3eb1b0d091aa7e9b1502258"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a253abfb0fe245ffcdbddf1cb8bb1c968"><td class="memItemLeft" align="right" valign="top"><a id="a253abfb0fe245ffcdbddf1cb8bb1c968"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>updateWNew</b> (std::vector&lt; double &gt; &amp;w_new)</td></tr>
-<tr class="separator:a253abfb0fe245ffcdbddf1cb8bb1c968"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a41bd61b26b3fc774f5a968bfcdb46722"><td class="memItemLeft" align="right" valign="top"><a id="a41bd61b26b3fc774f5a968bfcdb46722"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>updateW</b> ()</td></tr>
+<tr class="memitem:a75c57b9ab0bf6063d64ee00df9d1d33e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_point.html#a75c57b9ab0bf6063d64ee00df9d1d33e">changeValue</a> (size_t index, double valNew)</td></tr>
+<tr class="separator:a75c57b9ab0bf6063d64ee00df9d1d33e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae4006cf6be7125433071808f5a796b4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_data_types_8h.html#a82f6bc76e1c7a0f51bf3e95ad5d3c590">DoubleVector</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_point.html#aae4006cf6be7125433071808f5a796b4">getValues</a> ()</td></tr>
+<tr class="separator:aae4006cf6be7125433071808f5a796b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aecc17a725d2723f562c09609cc5192a9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_point.html#aecc17a725d2723f562c09609cc5192a9">updateWNew</a> (<a class="el" href="_data_types_8h.html#a82f6bc76e1c7a0f51bf3e95ad5d3c590">DoubleVector</a> &amp;wNew)</td></tr>
+<tr class="separator:aecc17a725d2723f562c09609cc5192a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41bd61b26b3fc774f5a968bfcdb46722"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_point.html#a41bd61b26b3fc774f5a968bfcdb46722">updateW</a> ()</td></tr>
 <tr class="separator:a41bd61b26b3fc774f5a968bfcdb46722"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a72092e02093421a550277bcf33e5930e"><td class="memItemLeft" align="right" valign="top"><a id="a72092e02093421a550277bcf33e5930e"></a>
-std::vector&lt; double &gt; *&#160;</td><td class="memItemRight" valign="bottom"><b>getValues</b> ()</td></tr>
-<tr class="separator:a72092e02093421a550277bcf33e5930e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac61066bda6062de888f81d6f1be673af"><td class="memItemLeft" align="right" valign="top"><a id="ac61066bda6062de888f81d6f1be673af"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>getWOldValue</b> (const int cluster_id)</td></tr>
-<tr class="separator:ac61066bda6062de888f81d6f1be673af"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aef55db1c7bc1532a739adb36ec88f736"><td class="memItemLeft" align="right" valign="top"><a id="aef55db1c7bc1532a739adb36ec88f736"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>compareW</b> (const double eps)</td></tr>
-<tr class="separator:aef55db1c7bc1532a739adb36ec88f736"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7bbdf413a6d2ea9a6bb83c455cfbe564"><td class="memItemLeft" align="right" valign="top"><a id="a7bbdf413a6d2ea9a6bb83c455cfbe564"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>printMembershipCoefficients</b> ()</td></tr>
+<tr class="memitem:a1e14b9e19d5c83eba654269563147904"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_point.html#a1e14b9e19d5c83eba654269563147904">compareW</a> (double eps)</td></tr>
+<tr class="separator:a1e14b9e19d5c83eba654269563147904"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a451834fdf26046e5df82d138be239023"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_point.html#a451834fdf26046e5df82d138be239023">getWOldValue</a> (int clusterID)</td></tr>
+<tr class="separator:a451834fdf26046e5df82d138be239023"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7bbdf413a6d2ea9a6bb83c455cfbe564"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_point.html#a7bbdf413a6d2ea9a6bb83c455cfbe564">printMembershipCoefficients</a> ()</td></tr>
 <tr class="separator:a7bbdf413a6d2ea9a6bb83c455cfbe564"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock">
+<p class="definition">Definition at line <a class="el" href="_point_8h_source.html#l00006">6</a> of file <a class="el" href="_point_8h_source.html">Point.h</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ad92f2337b839a94ce97dcdb439b4325a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad92f2337b839a94ce97dcdb439b4325a">&#9670;&nbsp;</a></span>Point()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ad92f2337b839a94ce97dcdb439b4325a">&#9670;&nbsp;</a></span>Point() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -149,7 +125,46 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>printMembershipCoeffi
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Constructor. </p>
+<p>Default constructor. </p>
+
+<p class="definition">Definition at line <a class="el" href="_point_8cpp_source.html#l00007">7</a> of file <a class="el" href="_point_8cpp_source.html">Point.cpp</a>.</p>
+
+</div>
+</div>
+<a id="af39ee027d8fda9c4134b041b5505c448"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af39ee027d8fda9c4134b041b5505c448">&#9670;&nbsp;</a></span>Point() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Point::Point </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>ID</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>k</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Constructor. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ID</td><td>the ID of the <a class="el" href="class_point.html">Point</a>. </td></tr>
+    <tr><td class="paramname">k</td><td>the number of clusters. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="_point_8cpp_source.html#l00011">11</a> of file <a class="el" href="_point_8cpp_source.html">Point.cpp</a>.</p>
 
 </div>
 </div>
@@ -169,11 +184,13 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>printMembershipCoeffi
 </div><div class="memdoc">
 <p>Destructor. </p>
 
+<p class="definition">Definition at line <a class="el" href="_point_8cpp_source.html#l00022">22</a> of file <a class="el" href="_point_8cpp_source.html">Point.cpp</a>.</p>
+
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a922f5f0685f0bbf2e9e19ff3397fc82e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a922f5f0685f0bbf2e9e19ff3397fc82e">&#9670;&nbsp;</a></span>addValue()</h2>
+<a id="adc21fb4804add5777f2a1774b024fea7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc21fb4804add5777f2a1774b024fea7">&#9670;&nbsp;</a></span>addValue()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -181,23 +198,25 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>printMembershipCoeffi
         <tr>
           <td class="memname">void Point::addValue </td>
           <td>(</td>
-          <td class="paramtype">const double&#160;</td>
-          <td class="paramname"><em>value</em></td><td>)</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>val</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Add value to the values vector of the point. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Adds a value to the vector of values of the <a class="el" href="class_point.html">Point</a>. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname"></td><td></td></tr>
+    <tr><td class="paramname">val</td><td>the value to be added. </td></tr>
   </table>
   </dd>
 </dl>
 
+<p class="definition">Definition at line <a class="el" href="_point_8cpp_source.html#l00048">48</a> of file <a class="el" href="_point_8cpp_source.html">Point.cpp</a>.</p>
+
 </div>
 </div>
-<a id="a0b2a9878f3eb1b0d091aa7e9b1502258"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0b2a9878f3eb1b0d091aa7e9b1502258">&#9670;&nbsp;</a></span>changeValue()</h2>
+<a id="a75c57b9ab0bf6063d64ee00df9d1d33e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a75c57b9ab0bf6063d64ee00df9d1d33e">&#9670;&nbsp;</a></span>changeValue()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -205,14 +224,14 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>printMembershipCoeffi
         <tr>
           <td class="memname">void Point::changeValue </td>
           <td>(</td>
-          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><em>index</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const double&#160;</td>
-          <td class="paramname"><em>newValue</em>&#160;</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>valNew</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -221,17 +240,66 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>printMembershipCoeffi
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Change a value of the values vector of the point, at a specific index. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Changes a specific value of the vector of values of the <a class="el" href="class_point.html">Point</a>. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname"></td><td></td></tr>
+    <tr><td class="paramname">index</td><td>the index of the specific value </td></tr>
+    <tr><td class="paramname">valNew</td><td>the new value. </td></tr>
   </table>
   </dd>
 </dl>
 
+<p class="definition">Definition at line <a class="el" href="_point_8cpp_source.html#l00070">70</a> of file <a class="el" href="_point_8cpp_source.html">Point.cpp</a>.</p>
+
 </div>
 </div>
-<a id="ae748cbf0b68a726dfdfe9f8b8b6301db"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae748cbf0b68a726dfdfe9f8b8b6301db">&#9670;&nbsp;</a></span>getValue()</h2>
+<a id="a1e14b9e19d5c83eba654269563147904"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e14b9e19d5c83eba654269563147904">&#9670;&nbsp;</a></span>compareW()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Point::compareW </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>eps</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Compares wOld and wNew of the <a class="el" href="class_point.html">Point</a> based on their Euclidean distance. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">eps</td><td>the distance threshold under which wOld and wNew are considered equal. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="_point_8cpp_source.html#l00100">100</a> of file <a class="el" href="_point_8cpp_source.html">Point.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a70f96664692429af8c591eac51e65faa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a70f96664692429af8c591eac51e65faa">&#9670;&nbsp;</a></span>getID()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Point::getID </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns the ID of the <a class="el" href="class_point.html">Point</a>. </p><dl class="section return"><dt>Returns</dt><dd>the ID of the <a class="el" href="class_point.html">Point</a>. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="_point_8cpp_source.html#l00043">43</a> of file <a class="el" href="_point_8cpp_source.html">Point.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ab06f5ae012fbc6b8e8f3e1912ba70f2b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab06f5ae012fbc6b8e8f3e1912ba70f2b">&#9670;&nbsp;</a></span>getValue()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -239,18 +307,41 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>printMembershipCoeffi
         <tr>
           <td class="memname">double Point::getValue </td>
           <td>(</td>
-          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><em>index</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Get a value from the values vector of the point, for a specific index. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Returns a specific value from the vector of values of the <a class="el" href="class_point.html">Point</a>. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname"></td><td></td></tr>
+    <tr><td class="paramname">index</td><td>the index of the specific value. </td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>the specific value. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="_point_8cpp_source.html#l00053">53</a> of file <a class="el" href="_point_8cpp_source.html">Point.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aae4006cf6be7125433071808f5a796b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae4006cf6be7125433071808f5a796b4">&#9670;&nbsp;</a></span>getValues()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_data_types_8h.html#a82f6bc76e1c7a0f51bf3e95ad5d3c590">DoubleVector</a> * Point::getValues </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns the vector of values of the <a class="el" href="class_point.html">Point</a>. </p><dl class="section return"><dt>Returns</dt><dd>the vector of values of the <a class="el" href="class_point.html">Point</a>. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="_point_8cpp_source.html#l00078">78</a> of file <a class="el" href="_point_8cpp_source.html">Point.cpp</a>.</p>
 
 </div>
 </div>
@@ -268,12 +359,61 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>printMembershipCoeffi
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Get the size of the values vector of the point. </p><dl class="section return"><dt>Returns</dt><dd></dd></dl>
+<p>Returns the size of the vector of values of the <a class="el" href="class_point.html">Point</a>. </p><dl class="section return"><dt>Returns</dt><dd>the size of the vector of values of the <a class="el" href="class_point.html">Point</a>. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="_point_8cpp_source.html#l00065">65</a> of file <a class="el" href="_point_8cpp_source.html">Point.cpp</a>.</p>
 
 </div>
 </div>
-<a id="ae0c05a7c16aadbb5e9932e77b24ca921"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae0c05a7c16aadbb5e9932e77b24ca921">&#9670;&nbsp;</a></span>setID()</h2>
+<a id="a451834fdf26046e5df82d138be239023"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a451834fdf26046e5df82d138be239023">&#9670;&nbsp;</a></span>getWOldValue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Point::getWOldValue </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>clusterID</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns a specific value of wOld. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">clusterID</td><td>the index for which the value of wOld is requested. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the value of wOld. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="_point_8cpp_source.html#l00113">113</a> of file <a class="el" href="_point_8cpp_source.html">Point.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a7bbdf413a6d2ea9a6bb83c455cfbe564"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7bbdf413a6d2ea9a6bb83c455cfbe564">&#9670;&nbsp;</a></span>printMembershipCoefficients()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Point::printMembershipCoefficients </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Prints to the standard output the membership coefficients of the <a class="el" href="class_point.html">Point</a>. </p>
+
+<p class="definition">Definition at line <a class="el" href="_point_8cpp_source.html#l00123">123</a> of file <a class="el" href="_point_8cpp_source.html">Point.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a987968f2da26bbcf0c70dfd632f1d940"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a987968f2da26bbcf0c70dfd632f1d940">&#9670;&nbsp;</a></span>setID()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -281,30 +421,79 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>printMembershipCoeffi
         <tr>
           <td class="memname">void Point::setID </td>
           <td>(</td>
-          <td class="paramtype">const int&#160;</td>
-          <td class="paramname"><em>id</em></td><td>)</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>ID</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Sets the ID of the point. </p>
+<p>Sets the ID of the <a class="el" href="class_point.html">Point</a>. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ID</td><td>the ID of the <a class="el" href="class_point.html">Point</a>. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="_point_8cpp_source.html#l00038">38</a> of file <a class="el" href="_point_8cpp_source.html">Point.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a41bd61b26b3fc774f5a968bfcdb46722"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a41bd61b26b3fc774f5a968bfcdb46722">&#9670;&nbsp;</a></span>updateW()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Point::updateW </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Updates both wOld and wNew of the <a class="el" href="class_point.html">Point</a>. </p>
+
+<p class="definition">Definition at line <a class="el" href="_point_8cpp_source.html#l00091">91</a> of file <a class="el" href="_point_8cpp_source.html">Point.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aecc17a725d2723f562c09609cc5192a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aecc17a725d2723f562c09609cc5192a9">&#9670;&nbsp;</a></span>updateWNew()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Point::updateWNew </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_data_types_8h.html#a82f6bc76e1c7a0f51bf3e95ad5d3c590">DoubleVector</a> &amp;&#160;</td>
+          <td class="paramname"><em>wNew</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Updates wNew of the <a class="el" href="class_point.html">Point</a>. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">wNew</td><td>the new wNew of the <a class="el" href="class_point.html">Point</a>. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="_point_8cpp_source.html#l00083">83</a> of file <a class="el" href="_point_8cpp_source.html">Point.cpp</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="_point_8h_source.html">Point.h</a></li>
-<li>Point.cpp</li>
+<li><a class="el" href="_point_8cpp_source.html">Point.cpp</a></li>
 </ul>
 </div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><a class="el" href="class_point.html">Point</a></li>
-    <li class="footer">Generated by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.14
+</small></address>
 </body>
 </html>

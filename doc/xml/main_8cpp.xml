@@ -1,0 +1,172 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="main_8cpp" kind="file" language="C++">
+    <compoundname>main.cpp</compoundname>
+    <includes refid="_fuzzy_c_means_8h" local="yes">FuzzyCMeans.h</includes>
+    <includes refid="_generic_func_8h" local="yes">GenericFunc.h</includes>
+    <includes local="no">string</includes>
+    <includes local="no">iostream</includes>
+    <incdepgraph>
+      <node id="170">
+        <label>functional</label>
+      </node>
+      <node id="155">
+        <label>DataTypes.h</label>
+        <link refid="_data_types_8h"/>
+        <childnode refid="156" relation="include">
+        </childnode>
+        <childnode refid="157" relation="include">
+        </childnode>
+        <childnode refid="158" relation="include">
+        </childnode>
+        <childnode refid="159" relation="include">
+        </childnode>
+        <childnode refid="160" relation="include">
+        </childnode>
+        <childnode refid="161" relation="include">
+        </childnode>
+        <childnode refid="162" relation="include">
+        </childnode>
+        <childnode refid="163" relation="include">
+        </childnode>
+        <childnode refid="164" relation="include">
+        </childnode>
+        <childnode refid="165" relation="include">
+        </childnode>
+        <childnode refid="166" relation="include">
+        </childnode>
+        <childnode refid="167" relation="include">
+        </childnode>
+        <childnode refid="168" relation="include">
+        </childnode>
+        <childnode refid="169" relation="include">
+        </childnode>
+        <childnode refid="170" relation="include">
+        </childnode>
+      </node>
+      <node id="172">
+        <label>Cluster.h</label>
+        <link refid="_cluster_8h"/>
+        <childnode refid="155" relation="include">
+        </childnode>
+        <childnode refid="171" relation="include">
+        </childnode>
+      </node>
+      <node id="171">
+        <label>Point.h</label>
+        <link refid="_point_8h"/>
+        <childnode refid="155" relation="include">
+        </childnode>
+      </node>
+      <node id="162">
+        <label>cmath</label>
+      </node>
+      <node id="168">
+        <label>numeric</label>
+      </node>
+      <node id="173">
+        <label>GenericFunc.h</label>
+        <link refid="_generic_func_8h"/>
+        <childnode refid="155" relation="include">
+        </childnode>
+      </node>
+      <node id="159">
+        <label>string</label>
+      </node>
+      <node id="166">
+        <label>map</label>
+      </node>
+      <node id="154">
+        <label>FuzzyCMeans.h</label>
+        <link refid="_fuzzy_c_means_8h"/>
+        <childnode refid="155" relation="include">
+        </childnode>
+        <childnode refid="171" relation="include">
+        </childnode>
+        <childnode refid="172" relation="include">
+        </childnode>
+      </node>
+      <node id="157">
+        <label>fstream</label>
+      </node>
+      <node id="161">
+        <label>ctime</label>
+      </node>
+      <node id="164">
+        <label>unistd.h</label>
+      </node>
+      <node id="165">
+        <label>vector</label>
+      </node>
+      <node id="153">
+        <label>main.cpp</label>
+        <link refid="main_8cpp"/>
+        <childnode refid="154" relation="include">
+        </childnode>
+        <childnode refid="173" relation="include">
+        </childnode>
+        <childnode refid="159" relation="include">
+        </childnode>
+        <childnode refid="156" relation="include">
+        </childnode>
+      </node>
+      <node id="158">
+        <label>sstream</label>
+      </node>
+      <node id="160">
+        <label>cstdlib</label>
+      </node>
+      <node id="156">
+        <label>iostream</label>
+      </node>
+      <node id="163">
+        <label>climits</label>
+      </node>
+      <node id="169">
+        <label>complex</label>
+      </node>
+      <node id="167">
+        <label>algorithm</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="main_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int main</definition>
+        <argsstring>()</argsstring>
+        <name>main</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="main.cpp" line="7" column="1" bodyfile="main.cpp" bodystart="7" bodyend="17"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_fuzzy_c_means_8h" kindref="compound">FuzzyCMeans.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_generic_func_8h" kindref="compound">GenericFunc.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7" refid="main_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="main_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" kindref="member">main</ref>()</highlight></codeline>
+<codeline lineno="8"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/>dataFilename<sp/>=<sp/><ref refid="namespacegf_1a00f9f0ea9a0804a71cf70c6b1eb158cf" kindref="member">gf::getExecutablePathAndMatchItWithFilename</ref>(</highlight><highlight class="stringliteral">&quot;data.csv&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/>paramsFilename<sp/>=<sp/><ref refid="namespacegf_1a00f9f0ea9a0804a71cf70c6b1eb158cf" kindref="member">gf::getExecutablePathAndMatchItWithFilename</ref>(</highlight><highlight class="stringliteral">&quot;fcm.properties&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_fuzzy_c_means" kindref="compound">FuzzyCMeans</ref><sp/>fcm(dataFilename,<sp/>paramsFilename);</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/>fcm.<ref refid="class_fuzzy_c_means_1a79db259f351e533d5c9d011b41935152" kindref="member">runFuzzyCMeans</ref>();</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/>fcm.<ref refid="class_fuzzy_c_means_1adaf587cc5ae0613f373860079d9b9447" kindref="member">printCentroids</ref>();</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>fcm.<ref refid="class_fuzzy_c_means_1abe9686594626cb7867da45fadd8a44ce" kindref="member">printPartitionMatrix</ref>();</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>std::cin.get();</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="main.cpp"/>
+  </compounddef>
+</doxygen>

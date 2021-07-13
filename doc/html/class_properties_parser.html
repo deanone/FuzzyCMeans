@@ -5,18 +5,10 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>FuzzyCMeans: PropertiesParser Class Reference</title>
+<title>Fuzzy C-means in native C++: PropertiesParser Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-  $(document).ready(initResizable);
-/* @license-end */</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -28,9 +20,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="fuzzy_c_means.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">FuzzyCMeans
+   <div id="projectname">Fuzzy C-means in native C++
+   &#160;<span id="projectnumber">v1.0</span>
    </div>
+   <div id="projectbrief">A native C++ implementation of the fuzzy C-means clustering machine learning algorithm (original author: Athanasios Salamanis)</div>
   </td>
  </tr>
  </tbody>
@@ -53,23 +48,6 @@ $(function() {
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-$(document).ready(function(){initNavTree('class_properties_parser.html','');});
-/* @license-end */
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -84,6 +62,7 @@ $(document).ready(function(){initNavTree('class_properties_parser.html','');});
 </iframe>
 </div>
 
+</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
@@ -127,7 +106,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a12598ce9403dd9e51f2a1206db9a27a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p><a class="el" href="_properties_parser_8h_source.html">PropertiesParser.h</a> : interface of the <a class="el" href="class_properties_parser.html">PropertiesParser</a> class. Using this class one can read a properties file which contains values in the following form: [propertyName] = [propertyValue] </p>
+<div class="textblock"><p><a class="el" href="_properties_parser_8h.html">PropertiesParser.h</a> : interface of the <a class="el" href="class_properties_parser.html">PropertiesParser</a> class. Using this class one can read a properties file which contains values in the following form: [propertyName] = [propertyValue] </p>
+
+<p class="definition">Definition at line <a class="el" href="_properties_parser_8h_source.html#l00013">13</a> of file <a class="el" href="_properties_parser_8h_source.html">PropertiesParser.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a9fe7a2c812424ebf8db6c3c5afc50f65"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9fe7a2c812424ebf8db6c3c5afc50f65">&#9670;&nbsp;</a></span>PropertiesParser()</h2>
@@ -144,7 +125,7 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>PropertiesParser.cpp: implementation of the <a class="el" href="class_properties_parser.html">PropertiesParser</a> class.</p>
+<p><a class="el" href="_properties_parser_8cpp.html">PropertiesParser.cpp</a>: implementation of the <a class="el" href="class_properties_parser.html">PropertiesParser</a> class.</p>
 <p>Constructor. Initializes the parser parsing the properties file and reading all properties in the <code>properties_map</code>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -152,6 +133,8 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+<p class="definition">Definition at line <a class="el" href="_properties_parser_8cpp_source.html#l00015">15</a> of file <a class="el" href="_properties_parser_8cpp_source.html">PropertiesParser.cpp</a>.</p>
 
 </div>
 </div>
@@ -170,6 +153,8 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Destructor. Destroys the map object properties_map of the class and frees the corresponding memory. </p>
+
+<p class="definition">Definition at line <a class="el" href="_properties_parser_8cpp_source.html#l00023">23</a> of file <a class="el" href="_properties_parser_8cpp_source.html">PropertiesParser.cpp</a>.</p>
 
 </div>
 </div>
@@ -198,6 +183,8 @@ Public Member Functions</h2></td></tr>
 </dl>
 <p>line is not a comment line </p>
 
+<p class="definition">Definition at line <a class="el" href="_properties_parser_8cpp_source.html#l00034">34</a> of file <a class="el" href="_properties_parser_8cpp_source.html">PropertiesParser.cpp</a>.</p>
+
 </div>
 </div>
 <a id="a4d08af4f4c305273a64c281272011497"></a>
@@ -223,6 +210,8 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>a boolean value for the property. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="_properties_parser_8cpp_source.html#l00103">103</a> of file <a class="el" href="_properties_parser_8cpp_source.html">PropertiesParser.cpp</a>.</p>
 
 </div>
 </div>
@@ -261,6 +250,8 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>a boolean value for the property. </dd></dl>
 
+<p class="definition">Definition at line <a class="el" href="_properties_parser_8cpp_source.html#l00172">172</a> of file <a class="el" href="_properties_parser_8cpp_source.html">PropertiesParser.cpp</a>.</p>
+
 </div>
 </div>
 <a id="ab7a84135214c45cd91a9bb5377eaff5a"></a>
@@ -286,6 +277,8 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>a double value for the property. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="_properties_parser_8cpp_source.html#l00130">130</a> of file <a class="el" href="_properties_parser_8cpp_source.html">PropertiesParser.cpp</a>.</p>
 
 </div>
 </div>
@@ -324,6 +317,8 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>a double value for the property. </dd></dl>
 
+<p class="definition">Definition at line <a class="el" href="_properties_parser_8cpp_source.html#l00198">198</a> of file <a class="el" href="_properties_parser_8cpp_source.html">PropertiesParser.cpp</a>.</p>
+
 </div>
 </div>
 <a id="acfdb8d26fd4d078aa37ae938adf67379"></a>
@@ -349,6 +344,8 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>a float value for the property. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="_properties_parser_8cpp_source.html#l00116">116</a> of file <a class="el" href="_properties_parser_8cpp_source.html">PropertiesParser.cpp</a>.</p>
 
 </div>
 </div>
@@ -387,6 +384,8 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>a float value for the property. </dd></dl>
 
+<p class="definition">Definition at line <a class="el" href="_properties_parser_8cpp_source.html#l00185">185</a> of file <a class="el" href="_properties_parser_8cpp_source.html">PropertiesParser.cpp</a>.</p>
+
 </div>
 </div>
 <a id="ad4fb34e07c2d93e3cf4daca6f1ed9b14"></a>
@@ -412,6 +411,8 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>an integer value for the property. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="_properties_parser_8cpp_source.html#l00089">89</a> of file <a class="el" href="_properties_parser_8cpp_source.html">PropertiesParser.cpp</a>.</p>
 
 </div>
 </div>
@@ -450,6 +451,8 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>an integer value for the property. </dd></dl>
 
+<p class="definition">Definition at line <a class="el" href="_properties_parser_8cpp_source.html#l00159">159</a> of file <a class="el" href="_properties_parser_8cpp_source.html">PropertiesParser.cpp</a>.</p>
+
 </div>
 </div>
 <a id="af52ae62c22c070ab8f286cb29897dc17"></a>
@@ -475,6 +478,8 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>a string value for the property. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="_properties_parser_8cpp_source.html#l00078">78</a> of file <a class="el" href="_properties_parser_8cpp_source.html">PropertiesParser.cpp</a>.</p>
 
 </div>
 </div>
@@ -513,6 +518,8 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>a string value for the property. </dd></dl>
 
+<p class="definition">Definition at line <a class="el" href="_properties_parser_8cpp_source.html#l00146">146</a> of file <a class="el" href="_properties_parser_8cpp_source.html">PropertiesParser.cpp</a>.</p>
+
 </div>
 </div>
 <a id="a8011fb7f2f3f24c59d3c33d56be55033"></a>
@@ -539,22 +546,20 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><code>true</code> if property exists, <code>false</code> otherwise. </dd></dl>
 
+<p class="definition">Definition at line <a class="el" href="_properties_parser_8cpp_source.html#l00067">67</a> of file <a class="el" href="_properties_parser_8cpp_source.html">PropertiesParser.cpp</a>.</p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="_properties_parser_8h_source.html">PropertiesParser.h</a></li>
-<li>PropertiesParser.cpp</li>
+<li><a class="el" href="_properties_parser_8cpp_source.html">PropertiesParser.cpp</a></li>
 </ul>
 </div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><a class="el" href="class_properties_parser.html">PropertiesParser</a></li>
-    <li class="footer">Generated by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.14
+</small></address>
 </body>
 </html>

@@ -1,0 +1,185 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="_fuzzy_c_means_8h" kind="file" language="C++">
+    <compoundname>FuzzyCMeans.h</compoundname>
+    <includes refid="_data_types_8h" local="yes">DataTypes.h</includes>
+    <includes refid="_point_8h" local="yes">Point.h</includes>
+    <includes refid="_cluster_8h" local="yes">Cluster.h</includes>
+    <includedby refid="_fuzzy_c_means_8cpp" local="yes">FuzzyCMeans.cpp</includedby>
+    <includedby refid="main_8cpp" local="yes">main.cpp</includedby>
+    <incdepgraph>
+      <node id="108">
+        <label>functional</label>
+      </node>
+      <node id="93">
+        <label>DataTypes.h</label>
+        <link refid="_data_types_8h"/>
+        <childnode refid="94" relation="include">
+        </childnode>
+        <childnode refid="95" relation="include">
+        </childnode>
+        <childnode refid="96" relation="include">
+        </childnode>
+        <childnode refid="97" relation="include">
+        </childnode>
+        <childnode refid="98" relation="include">
+        </childnode>
+        <childnode refid="99" relation="include">
+        </childnode>
+        <childnode refid="100" relation="include">
+        </childnode>
+        <childnode refid="101" relation="include">
+        </childnode>
+        <childnode refid="102" relation="include">
+        </childnode>
+        <childnode refid="103" relation="include">
+        </childnode>
+        <childnode refid="104" relation="include">
+        </childnode>
+        <childnode refid="105" relation="include">
+        </childnode>
+        <childnode refid="106" relation="include">
+        </childnode>
+        <childnode refid="107" relation="include">
+        </childnode>
+        <childnode refid="108" relation="include">
+        </childnode>
+      </node>
+      <node id="110">
+        <label>Cluster.h</label>
+        <link refid="_cluster_8h"/>
+        <childnode refid="93" relation="include">
+        </childnode>
+        <childnode refid="109" relation="include">
+        </childnode>
+      </node>
+      <node id="109">
+        <label>Point.h</label>
+        <link refid="_point_8h"/>
+        <childnode refid="93" relation="include">
+        </childnode>
+      </node>
+      <node id="100">
+        <label>cmath</label>
+      </node>
+      <node id="106">
+        <label>numeric</label>
+      </node>
+      <node id="97">
+        <label>string</label>
+      </node>
+      <node id="104">
+        <label>map</label>
+      </node>
+      <node id="92">
+        <label>FuzzyCMeans.h</label>
+        <link refid="_fuzzy_c_means_8h"/>
+        <childnode refid="93" relation="include">
+        </childnode>
+        <childnode refid="109" relation="include">
+        </childnode>
+        <childnode refid="110" relation="include">
+        </childnode>
+      </node>
+      <node id="95">
+        <label>fstream</label>
+      </node>
+      <node id="99">
+        <label>ctime</label>
+      </node>
+      <node id="102">
+        <label>unistd.h</label>
+      </node>
+      <node id="103">
+        <label>vector</label>
+      </node>
+      <node id="96">
+        <label>sstream</label>
+      </node>
+      <node id="98">
+        <label>cstdlib</label>
+      </node>
+      <node id="94">
+        <label>iostream</label>
+      </node>
+      <node id="101">
+        <label>climits</label>
+      </node>
+      <node id="107">
+        <label>complex</label>
+      </node>
+      <node id="105">
+        <label>algorithm</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="111">
+        <label>FuzzyCMeans.h</label>
+        <link refid="_fuzzy_c_means_8h"/>
+        <childnode refid="112" relation="include">
+        </childnode>
+        <childnode refid="113" relation="include">
+        </childnode>
+      </node>
+      <node id="113">
+        <label>main.cpp</label>
+        <link refid="main_8cpp"/>
+      </node>
+      <node id="112">
+        <label>FuzzyCMeans.cpp</label>
+        <link refid="_fuzzy_c_means_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_fuzzy_c_means" prot="public">FuzzyCMeans</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>FUZZYCMEANS_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FUZZYCMEANS_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_data_types_8h" kindref="compound">DataTypes.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_point_8h" kindref="compound">Point.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_cluster_8h" kindref="compound">Cluster.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8" refid="class_fuzzy_c_means" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_fuzzy_c_means" kindref="compound">FuzzyCMeans</ref></highlight></codeline>
+<codeline lineno="9"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>dimension;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>k;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>maxNumOfIterations;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>m;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>eps;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="22" refid="class_fuzzy_c_means_1ab75d3a803819d861585ff2d0fea218fa" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;Point&gt;<sp/><ref refid="class_fuzzy_c_means_1ab75d3a803819d861585ff2d0fea218fa" kindref="member">points</ref>;</highlight></codeline>
+<codeline lineno="24" refid="class_fuzzy_c_means_1a3d3b7598064323842312bdc7845540cd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;Cluster&gt;<sp/><ref refid="class_fuzzy_c_means_1a3d3b7598064323842312bdc7845540cd" kindref="member">clusters</ref>;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_fuzzy_c_means_1adafa89c36e0ba527d59114193afa1a95" kindref="member">FuzzyCMeans</ref>(std::string<sp/>dataFilename,<sp/>std::string<sp/>paramsFilename);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_fuzzy_c_means_1adafa89c36e0ba527d59114193afa1a95" kindref="member">FuzzyCMeans</ref>(std::string<sp/>dataFilename,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>dimension_,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>k_,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>maxNumOfIterations_,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>m_,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>eps_);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_fuzzy_c_means_1ae3175d6a98d93d476c37da164252f7de" kindref="member">~FuzzyCMeans</ref>();</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_fuzzy_c_means_1ab3b80b7e5ab918bfd801e1df9a370390" kindref="member">computeClusters</ref>();</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_fuzzy_c_means_1a3a9758bfef32ece7efa7c17a65f55371" kindref="member">computeNewMembershipCoefficients</ref>();</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_fuzzy_c_means_1a80c4f0bfed3da5b0e0f910085d826727" kindref="member">updateMembershipCoefficients</ref>();</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_fuzzy_c_means_1acd89ddb387a57ddc8838ed29c9ec31bd" kindref="member">isOver</ref>();</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_fuzzy_c_means_1a79db259f351e533d5c9d011b41935152" kindref="member">runFuzzyCMeans</ref>();</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_fuzzy_c_means_1abe9686594626cb7867da45fadd8a44ce" kindref="member">printPartitionMatrix</ref>();</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_fuzzy_c_means_1adaf587cc5ae0613f373860079d9b9447" kindref="member">printCentroids</ref>();</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_fuzzy_c_means_1a286c6b1a551e5c77422f40d3aacba856" kindref="member">computeObjectiveFunction</ref>();</highlight></codeline>
+<codeline lineno="86"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/><sp/>//<sp/><sp/>FUZZYCMEANS_H</highlight></codeline>
+    </programlisting>
+    <location file="FuzzyCMeans.h"/>
+  </compounddef>
+</doxygen>

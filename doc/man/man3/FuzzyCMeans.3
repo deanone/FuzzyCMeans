@@ -1,0 +1,147 @@
+.TH "FuzzyCMeans" 3 "Tue Jul 13 2021" "Version v1.0" "Fuzzy C-means in native C++" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+FuzzyCMeans
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <FuzzyCMeans\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBFuzzyCMeans\fP (std::string dataFilename, std::string paramsFilename)"
+.br
+.ti -1c
+.RI "\fBFuzzyCMeans\fP (std::string dataFilename, int dimension_, int k_, int maxNumOfIterations_, int m_, double eps_)"
+.br
+.ti -1c
+.RI "\fB~FuzzyCMeans\fP ()"
+.br
+.ti -1c
+.RI "void \fBcomputeClusters\fP ()"
+.br
+.ti -1c
+.RI "void \fBcomputeNewMembershipCoefficients\fP ()"
+.br
+.ti -1c
+.RI "void \fBupdateMembershipCoefficients\fP ()"
+.br
+.ti -1c
+.RI "bool \fBisOver\fP ()"
+.br
+.ti -1c
+.RI "void \fBrunFuzzyCMeans\fP ()"
+.br
+.ti -1c
+.RI "void \fBprintPartitionMatrix\fP ()"
+.br
+.ti -1c
+.RI "void \fBprintCentroids\fP ()"
+.br
+.ti -1c
+.RI "double \fBcomputeObjectiveFunction\fP ()"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "std::vector< \fBPoint\fP > \fBpoints\fP"
+.br
+.ti -1c
+.RI "std::vector< \fBCluster\fP > \fBclusters\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line 8 of file FuzzyCMeans\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "FuzzyCMeans::FuzzyCMeans (std::string dataFilename, std::string paramsFilename)"
+Constructor 1\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIdataFilename\fP the name of the file in which the data to be clustered are stored\&. 
+.br
+\fIparamsFilename\fP the name of the configuration file\&. 
+.RE
+.PP
+
+.PP
+Definition at line 11 of file FuzzyCMeans\&.cpp\&.
+.SS "FuzzyCMeans::FuzzyCMeans (std::string dataFilename, int dimension_, int k_, int maxNumOfIterations_, int m_, double eps_)"
+Constructor 2\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIdataFilename\fP the name of the file in which the data to be clustered are stored\&. 
+.br
+\fIparamsFilename\fP the name of the configuration file\&. 
+.RE
+.PP
+
+.PP
+Definition at line 57 of file FuzzyCMeans\&.cpp\&.
+.SS "FuzzyCMeans::~FuzzyCMeans ()"
+Destructor\&. 
+.PP
+Definition at line 96 of file FuzzyCMeans\&.cpp\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "void FuzzyCMeans::computeClusters ()"
+It computes the clusters in every iteration of the algorithm\&. 
+.PP
+Definition at line 108 of file FuzzyCMeans\&.cpp\&.
+.SS "void FuzzyCMeans::computeNewMembershipCoefficients ()"
+It computes the membership coefficients of points to clusters in every iteration of the algorithm\&. 
+.PP
+Definition at line 129 of file FuzzyCMeans\&.cpp\&.
+.SS "double FuzzyCMeans::computeObjectiveFunction ()"
+It computes the value of the objective function that controls the convergence of the algorithm\&. 
+.PP
+Definition at line 225 of file FuzzyCMeans\&.cpp\&.
+.SS "bool FuzzyCMeans::isOver ()"
+It checks if the algorithm converged\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+true if the algorithm converged, false otherwise\&. 
+.RE
+.PP
+
+.PP
+Definition at line 166 of file FuzzyCMeans\&.cpp\&.
+.SS "void FuzzyCMeans::printCentroids ()"
+It prints the centroids to the standard output\&. 
+.PP
+Definition at line 215 of file FuzzyCMeans\&.cpp\&.
+.SS "void FuzzyCMeans::printPartitionMatrix ()"
+It prints the partition matrix to the standard output\&. 
+.PP
+Definition at line 205 of file FuzzyCMeans\&.cpp\&.
+.SS "void FuzzyCMeans::runFuzzyCMeans ()"
+It runs the Fuzzy c-means routine\&. 
+.PP
+Definition at line 180 of file FuzzyCMeans\&.cpp\&.
+.SS "void FuzzyCMeans::updateMembershipCoefficients ()"
+It updates the membership coefficients of points to clusters in every iteration of the algorithm\&. 
+.PP
+Definition at line 158 of file FuzzyCMeans\&.cpp\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "std::vector<\fBCluster\fP> FuzzyCMeans::clusters"
+the clusters to be constructed 
+.PP
+Definition at line 24 of file FuzzyCMeans\&.h\&.
+.SS "std::vector<\fBPoint\fP> FuzzyCMeans::points"
+the data to be clustered 
+.PP
+Definition at line 22 of file FuzzyCMeans\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Fuzzy C-means in native C++ from the source code\&.

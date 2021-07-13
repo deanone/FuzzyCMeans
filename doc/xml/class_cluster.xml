@@ -1,0 +1,195 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="class_cluster" kind="class" language="C++" prot="public">
+    <compoundname>Cluster</compoundname>
+    <includes refid="_cluster_8h" local="no">Cluster.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_cluster_1a4afc7b3399570b17157ac1a9b592a17f" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Cluster::ID</definition>
+        <argsstring></argsstring>
+        <name>ID</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Cluster.h" line="9" column="1" bodyfile="Cluster.h" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_cluster_1a8d0287687a64e865c19383c5a704a1d5" prot="public" static="no" mutable="no">
+        <type><ref refid="_data_types_8h_1a82f6bc76e1c7a0f51bf3e95ad5d3c590" kindref="member">DoubleVector</ref></type>
+        <definition>DoubleVector Cluster::centroid</definition>
+        <argsstring></argsstring>
+        <name>centroid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Cluster.h" line="11" column="1" bodyfile="Cluster.h" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_cluster_1a9089dbe281f8114647b5f80c67c5f26a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Cluster::Cluster</definition>
+        <argsstring>(DoubleVector &amp;centroid, int ID)</argsstring>
+        <name>Cluster</name>
+        <param>
+          <type><ref refid="_data_types_8h_1a82f6bc76e1c7a0f51bf3e95ad5d3c590" kindref="member">DoubleVector</ref> &amp;</type>
+          <declname>centroid</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>ID</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructor. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>centroid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the centroid of the <ref refid="class_cluster" kindref="compound">Cluster</ref>. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ID</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the ID of the cluster. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Cluster.h" line="19" column="1" bodyfile="Cluster.cpp" bodystart="5" bodyend="12"/>
+      </memberdef>
+      <memberdef kind="function" id="class_cluster_1a4bddfc88ac859610acab15dd12851b58" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Cluster::~Cluster</definition>
+        <argsstring>()</argsstring>
+        <name>~Cluster</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Destructor. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Cluster.h" line="24" column="1" bodyfile="Cluster.cpp" bodystart="14" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="function" id="class_cluster_1a6b6cf07bd9eb4ed49231265e33ea335a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Cluster::setID</definition>
+        <argsstring>(int ID)</argsstring>
+        <name>setID</name>
+        <param>
+          <type>int</type>
+          <declname>ID</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the ID of the <ref refid="class_cluster" kindref="compound">Cluster</ref>. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ID</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the ID of the <ref refid="class_cluster" kindref="compound">Cluster</ref>. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Cluster.h" line="30" column="1" bodyfile="Cluster.cpp" bodystart="22" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="class_cluster_1a7e3843eaa486b9dd28de25a7c9f4e1f9" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Cluster::getID</definition>
+        <argsstring>() const</argsstring>
+        <name>getID</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns the ID of the <ref refid="class_cluster" kindref="compound">Cluster</ref>. <simplesect kind="return"><para>the ID of the <ref refid="class_cluster" kindref="compound">Cluster</ref>. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Cluster.h" line="36" column="1" bodyfile="Cluster.cpp" bodystart="27" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="class_cluster_1a253de897eacb0f3f3545e1b85a6638d5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Cluster::setCentroid</definition>
+        <argsstring>(DoubleVector &amp;centroid)</argsstring>
+        <name>setCentroid</name>
+        <param>
+          <type><ref refid="_data_types_8h_1a82f6bc76e1c7a0f51bf3e95ad5d3c590" kindref="member">DoubleVector</ref> &amp;</type>
+          <declname>centroid</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the centroid of the <ref refid="class_cluster" kindref="compound">Cluster</ref>. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>centroid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the centroid of the <ref refid="class_cluster" kindref="compound">Cluster</ref>. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Cluster.h" line="42" column="1" bodyfile="Cluster.cpp" bodystart="32" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="class_cluster_1a58fcdc4cd0a31be1f39e3c53cb769695" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_data_types_8h_1a82f6bc76e1c7a0f51bf3e95ad5d3c590" kindref="member">DoubleVector</ref> *</type>
+        <definition>DoubleVector * Cluster::getCentroid</definition>
+        <argsstring>()</argsstring>
+        <name>getCentroid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns the centroid of the <ref refid="class_cluster" kindref="compound">Cluster</ref>. <simplesect kind="return"><para>the centroid of the <ref refid="class_cluster" kindref="compound">Cluster</ref>. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Cluster.h" line="48" column="1" bodyfile="Cluster.cpp" bodystart="40" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="class_cluster_1aab54f4f732ea8e4219c863f459552fa6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Cluster::printCentroid</definition>
+        <argsstring>()</argsstring>
+        <name>printCentroid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Prints to the standard output the centroid of the <ref refid="class_cluster" kindref="compound">Cluster</ref>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Cluster.h" line="53" column="1" bodyfile="Cluster.cpp" bodystart="45" bodyend="59"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Cluster.h" line="8" column="1" bodyfile="Cluster.h" bodystart="7" bodyend="54"/>
+    <listofallmembers>
+      <member refid="class_cluster_1a8d0287687a64e865c19383c5a704a1d5" prot="public" virt="non-virtual"><scope>Cluster</scope><name>centroid</name></member>
+      <member refid="class_cluster_1a9089dbe281f8114647b5f80c67c5f26a" prot="public" virt="non-virtual"><scope>Cluster</scope><name>Cluster</name></member>
+      <member refid="class_cluster_1a58fcdc4cd0a31be1f39e3c53cb769695" prot="public" virt="non-virtual"><scope>Cluster</scope><name>getCentroid</name></member>
+      <member refid="class_cluster_1a7e3843eaa486b9dd28de25a7c9f4e1f9" prot="public" virt="non-virtual"><scope>Cluster</scope><name>getID</name></member>
+      <member refid="class_cluster_1a4afc7b3399570b17157ac1a9b592a17f" prot="private" virt="non-virtual"><scope>Cluster</scope><name>ID</name></member>
+      <member refid="class_cluster_1aab54f4f732ea8e4219c863f459552fa6" prot="public" virt="non-virtual"><scope>Cluster</scope><name>printCentroid</name></member>
+      <member refid="class_cluster_1a253de897eacb0f3f3545e1b85a6638d5" prot="public" virt="non-virtual"><scope>Cluster</scope><name>setCentroid</name></member>
+      <member refid="class_cluster_1a6b6cf07bd9eb4ed49231265e33ea335a" prot="public" virt="non-virtual"><scope>Cluster</scope><name>setID</name></member>
+      <member refid="class_cluster_1a4bddfc88ac859610acab15dd12851b58" prot="public" virt="non-virtual"><scope>Cluster</scope><name>~Cluster</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

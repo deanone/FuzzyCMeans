@@ -1,0 +1,124 @@
+.TH "Cluster" 3 "Tue Jul 13 2021" "Version v1.0" "Fuzzy C-means in native C++" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Cluster
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Cluster\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBCluster\fP (\fBDoubleVector\fP &\fBcentroid\fP, int ID)"
+.br
+.ti -1c
+.RI "\fB~Cluster\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetID\fP (int ID)"
+.br
+.ti -1c
+.RI "int \fBgetID\fP () const"
+.br
+.ti -1c
+.RI "void \fBsetCentroid\fP (\fBDoubleVector\fP &\fBcentroid\fP)"
+.br
+.ti -1c
+.RI "\fBDoubleVector\fP * \fBgetCentroid\fP ()"
+.br
+.ti -1c
+.RI "void \fBprintCentroid\fP ()"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBDoubleVector\fP \fBcentroid\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line 7 of file Cluster\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Cluster::Cluster (\fBDoubleVector\fP & centroid, int ID)"
+Constructor\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIcentroid\fP the centroid of the \fBCluster\fP\&. 
+.br
+\fIID\fP the ID of the cluster\&. 
+.RE
+.PP
+
+.PP
+Definition at line 5 of file Cluster\&.cpp\&.
+.SS "Cluster::~Cluster ()"
+Destructor\&. 
+.PP
+Definition at line 14 of file Cluster\&.cpp\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "\fBDoubleVector\fP * Cluster::getCentroid ()"
+Returns the centroid of the \fBCluster\fP\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+the centroid of the \fBCluster\fP\&. 
+.RE
+.PP
+
+.PP
+Definition at line 40 of file Cluster\&.cpp\&.
+.SS "int Cluster::getID () const"
+Returns the ID of the \fBCluster\fP\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+the ID of the \fBCluster\fP\&. 
+.RE
+.PP
+
+.PP
+Definition at line 27 of file Cluster\&.cpp\&.
+.SS "void Cluster::printCentroid ()"
+Prints to the standard output the centroid of the \fBCluster\fP\&. 
+.PP
+Definition at line 45 of file Cluster\&.cpp\&.
+.SS "void Cluster::setCentroid (\fBDoubleVector\fP & centroid)"
+Sets the centroid of the \fBCluster\fP\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIcentroid\fP the centroid of the \fBCluster\fP\&. 
+.RE
+.PP
+
+.PP
+Definition at line 32 of file Cluster\&.cpp\&.
+.SS "void Cluster::setID (int ID)"
+Sets the ID of the \fBCluster\fP\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIID\fP the ID of the \fBCluster\fP\&. 
+.RE
+.PP
+
+.PP
+Definition at line 22 of file Cluster\&.cpp\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "\fBDoubleVector\fP Cluster::centroid"
+
+.PP
+Definition at line 11 of file Cluster\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Fuzzy C-means in native C++ from the source code\&.

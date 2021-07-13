@@ -1,0 +1,221 @@
+.TH "Point" 3 "Tue Jul 13 2021" "Version v1.0" "Fuzzy C-means in native C++" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Point
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Point\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBPoint\fP ()"
+.br
+.ti -1c
+.RI "\fBPoint\fP (int ID, int k)"
+.br
+.ti -1c
+.RI "\fB~Point\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetID\fP (int ID)"
+.br
+.ti -1c
+.RI "int \fBgetID\fP () const"
+.br
+.ti -1c
+.RI "void \fBaddValue\fP (double val)"
+.br
+.ti -1c
+.RI "double \fBgetValue\fP (size_t index)"
+.br
+.ti -1c
+.RI "size_t \fBgetValuesSize\fP ()"
+.br
+.ti -1c
+.RI "void \fBchangeValue\fP (size_t index, double valNew)"
+.br
+.ti -1c
+.RI "\fBDoubleVector\fP * \fBgetValues\fP ()"
+.br
+.ti -1c
+.RI "void \fBupdateWNew\fP (\fBDoubleVector\fP &wNew)"
+.br
+.ti -1c
+.RI "void \fBupdateW\fP ()"
+.br
+.ti -1c
+.RI "bool \fBcompareW\fP (double eps)"
+.br
+.ti -1c
+.RI "double \fBgetWOldValue\fP (int clusterID)"
+.br
+.ti -1c
+.RI "void \fBprintMembershipCoefficients\fP ()"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line 6 of file Point\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Point::Point ()"
+Default constructor\&. 
+.PP
+Definition at line 7 of file Point\&.cpp\&.
+.SS "Point::Point (int ID, int k)"
+Constructor\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIID\fP the ID of the \fBPoint\fP\&. 
+.br
+\fIk\fP the number of clusters\&. 
+.RE
+.PP
+
+.PP
+Definition at line 11 of file Point\&.cpp\&.
+.SS "Point::~Point ()"
+Destructor\&. 
+.PP
+Definition at line 22 of file Point\&.cpp\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "void Point::addValue (double val)"
+Adds a value to the vector of values of the \fBPoint\fP\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIval\fP the value to be added\&. 
+.RE
+.PP
+
+.PP
+Definition at line 48 of file Point\&.cpp\&.
+.SS "void Point::changeValue (size_t index, double valNew)"
+Changes a specific value of the vector of values of the \fBPoint\fP\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIindex\fP the index of the specific value 
+.br
+\fIvalNew\fP the new value\&. 
+.RE
+.PP
+
+.PP
+Definition at line 70 of file Point\&.cpp\&.
+.SS "bool Point::compareW (double eps)"
+Compares wOld and wNew of the \fBPoint\fP based on their Euclidean distance\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIeps\fP the distance threshold under which wOld and wNew are considered equal\&. 
+.RE
+.PP
+
+.PP
+Definition at line 100 of file Point\&.cpp\&.
+.SS "int Point::getID () const"
+Returns the ID of the \fBPoint\fP\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+the ID of the \fBPoint\fP\&. 
+.RE
+.PP
+
+.PP
+Definition at line 43 of file Point\&.cpp\&.
+.SS "double Point::getValue (size_t index)"
+Returns a specific value from the vector of values of the \fBPoint\fP\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIindex\fP the index of the specific value\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+the specific value\&. 
+.RE
+.PP
+
+.PP
+Definition at line 53 of file Point\&.cpp\&.
+.SS "\fBDoubleVector\fP * Point::getValues ()"
+Returns the vector of values of the \fBPoint\fP\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+the vector of values of the \fBPoint\fP\&. 
+.RE
+.PP
+
+.PP
+Definition at line 78 of file Point\&.cpp\&.
+.SS "size_t Point::getValuesSize ()"
+Returns the size of the vector of values of the \fBPoint\fP\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+the size of the vector of values of the \fBPoint\fP\&. 
+.RE
+.PP
+
+.PP
+Definition at line 65 of file Point\&.cpp\&.
+.SS "double Point::getWOldValue (int clusterID)"
+Returns a specific value of wOld\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIclusterID\fP the index for which the value of wOld is requested\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+the value of wOld\&. 
+.RE
+.PP
+
+.PP
+Definition at line 113 of file Point\&.cpp\&.
+.SS "void Point::printMembershipCoefficients ()"
+Prints to the standard output the membership coefficients of the \fBPoint\fP\&. 
+.PP
+Definition at line 123 of file Point\&.cpp\&.
+.SS "void Point::setID (int ID)"
+Sets the ID of the \fBPoint\fP\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIID\fP the ID of the \fBPoint\fP\&. 
+.RE
+.PP
+
+.PP
+Definition at line 38 of file Point\&.cpp\&.
+.SS "void Point::updateW ()"
+Updates both wOld and wNew of the \fBPoint\fP\&. 
+.PP
+Definition at line 91 of file Point\&.cpp\&.
+.SS "void Point::updateWNew (\fBDoubleVector\fP & wNew)"
+Updates wNew of the \fBPoint\fP\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIwNew\fP the new wNew of the \fBPoint\fP\&. 
+.RE
+.PP
+
+.PP
+Definition at line 83 of file Point\&.cpp\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Fuzzy C-means in native C++ from the source code\&.

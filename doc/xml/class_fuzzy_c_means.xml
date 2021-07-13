@@ -1,0 +1,335 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="class_fuzzy_c_means" kind="class" language="C++" prot="public">
+    <compoundname>FuzzyCMeans</compoundname>
+    <includes refid="_fuzzy_c_means_8h" local="no">FuzzyCMeans.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_fuzzy_c_means_1a06abf091ff11decd3d53a0355c9887d0" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int FuzzyCMeans::dimension</definition>
+        <argsstring></argsstring>
+        <name>dimension</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>the dimension of the input data (i.e., number of features) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="FuzzyCMeans.h" line="11" column="1" bodyfile="FuzzyCMeans.h" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_fuzzy_c_means_1a8708ad964261f26de0adb93f2587e443" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int FuzzyCMeans::k</definition>
+        <argsstring></argsstring>
+        <name>k</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>the number of clusters </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="FuzzyCMeans.h" line="13" column="1" bodyfile="FuzzyCMeans.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_fuzzy_c_means_1ae626e0acf49d9c3328d0c1efe7246833" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int FuzzyCMeans::maxNumOfIterations</definition>
+        <argsstring></argsstring>
+        <name>maxNumOfIterations</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>the maximum number of iterations for the algorithm to converge </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="FuzzyCMeans.h" line="15" column="1" bodyfile="FuzzyCMeans.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_fuzzy_c_means_1a7dd4f38fdec08905d6191299694871b9" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int FuzzyCMeans::m</definition>
+        <argsstring></argsstring>
+        <name>m</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>fuzzifier </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="FuzzyCMeans.h" line="17" column="1" bodyfile="FuzzyCMeans.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_fuzzy_c_means_1ac2fb556279032a17d2a1c46a1c933cc3" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double FuzzyCMeans::eps</definition>
+        <argsstring></argsstring>
+        <name>eps</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>the threshold controlling the convergence of the algorithm </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="FuzzyCMeans.h" line="19" column="1" bodyfile="FuzzyCMeans.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_fuzzy_c_means_1ab75d3a803819d861585ff2d0fea218fa" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="class_point" kindref="compound">Point</ref> &gt;</type>
+        <definition>std::vector&lt;Point&gt; FuzzyCMeans::points</definition>
+        <argsstring></argsstring>
+        <name>points</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>the data to be clustered </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="FuzzyCMeans.h" line="22" column="1" bodyfile="FuzzyCMeans.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_fuzzy_c_means_1a3d3b7598064323842312bdc7845540cd" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="class_cluster" kindref="compound">Cluster</ref> &gt;</type>
+        <definition>std::vector&lt;Cluster&gt; FuzzyCMeans::clusters</definition>
+        <argsstring></argsstring>
+        <name>clusters</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>the clusters to be constructed </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="FuzzyCMeans.h" line="24" column="1" bodyfile="FuzzyCMeans.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_fuzzy_c_means_1adafa89c36e0ba527d59114193afa1a95" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>FuzzyCMeans::FuzzyCMeans</definition>
+        <argsstring>(std::string dataFilename, std::string paramsFilename)</argsstring>
+        <name>FuzzyCMeans</name>
+        <param>
+          <type>std::string</type>
+          <declname>dataFilename</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>paramsFilename</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructor 1. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dataFilename</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the name of the file in which the data to be clustered are stored. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>paramsFilename</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the name of the configuration file. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="FuzzyCMeans.h" line="32" column="1" bodyfile="FuzzyCMeans.cpp" bodystart="11" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="class_fuzzy_c_means_1a8b5bc87675a4a267b781581a927859c7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>FuzzyCMeans::FuzzyCMeans</definition>
+        <argsstring>(std::string dataFilename, int dimension_, int k_, int maxNumOfIterations_, int m_, double eps_)</argsstring>
+        <name>FuzzyCMeans</name>
+        <param>
+          <type>std::string</type>
+          <declname>dataFilename</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>dimension_</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>k_</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>maxNumOfIterations_</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>m_</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>eps_</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructor 2. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dataFilename</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the name of the file in which the data to be clustered are stored. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>paramsFilename</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the name of the configuration file. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="FuzzyCMeans.h" line="39" column="1" bodyfile="FuzzyCMeans.cpp" bodystart="57" bodyend="94"/>
+      </memberdef>
+      <memberdef kind="function" id="class_fuzzy_c_means_1ae3175d6a98d93d476c37da164252f7de" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>FuzzyCMeans::~FuzzyCMeans</definition>
+        <argsstring>()</argsstring>
+        <name>~FuzzyCMeans</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Destructor. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="FuzzyCMeans.h" line="44" column="1" bodyfile="FuzzyCMeans.cpp" bodystart="96" bodyend="106"/>
+      </memberdef>
+      <memberdef kind="function" id="class_fuzzy_c_means_1ab3b80b7e5ab918bfd801e1df9a370390" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FuzzyCMeans::computeClusters</definition>
+        <argsstring>()</argsstring>
+        <name>computeClusters</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>It computes the clusters in every iteration of the algorithm. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="FuzzyCMeans.h" line="49" column="1" bodyfile="FuzzyCMeans.cpp" bodystart="108" bodyend="127"/>
+      </memberdef>
+      <memberdef kind="function" id="class_fuzzy_c_means_1a3a9758bfef32ece7efa7c17a65f55371" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FuzzyCMeans::computeNewMembershipCoefficients</definition>
+        <argsstring>()</argsstring>
+        <name>computeNewMembershipCoefficients</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>It computes the membership coefficients of points to clusters in every iteration of the algorithm. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="FuzzyCMeans.h" line="54" column="1" bodyfile="FuzzyCMeans.cpp" bodystart="129" bodyend="156"/>
+      </memberdef>
+      <memberdef kind="function" id="class_fuzzy_c_means_1a80c4f0bfed3da5b0e0f910085d826727" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FuzzyCMeans::updateMembershipCoefficients</definition>
+        <argsstring>()</argsstring>
+        <name>updateMembershipCoefficients</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>It updates the membership coefficients of points to clusters in every iteration of the algorithm. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="FuzzyCMeans.h" line="59" column="1" bodyfile="FuzzyCMeans.cpp" bodystart="158" bodyend="164"/>
+      </memberdef>
+      <memberdef kind="function" id="class_fuzzy_c_means_1acd89ddb387a57ddc8838ed29c9ec31bd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool FuzzyCMeans::isOver</definition>
+        <argsstring>()</argsstring>
+        <name>isOver</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>It checks if the algorithm converged. <simplesect kind="return"><para>true if the algorithm converged, false otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="FuzzyCMeans.h" line="65" column="1" bodyfile="FuzzyCMeans.cpp" bodystart="166" bodyend="178"/>
+      </memberdef>
+      <memberdef kind="function" id="class_fuzzy_c_means_1a79db259f351e533d5c9d011b41935152" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FuzzyCMeans::runFuzzyCMeans</definition>
+        <argsstring>()</argsstring>
+        <name>runFuzzyCMeans</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>It runs the Fuzzy c-means routine. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="FuzzyCMeans.h" line="70" column="1" bodyfile="FuzzyCMeans.cpp" bodystart="180" bodyend="203"/>
+      </memberdef>
+      <memberdef kind="function" id="class_fuzzy_c_means_1abe9686594626cb7867da45fadd8a44ce" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FuzzyCMeans::printPartitionMatrix</definition>
+        <argsstring>()</argsstring>
+        <name>printPartitionMatrix</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>It prints the partition matrix to the standard output. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="FuzzyCMeans.h" line="75" column="1" bodyfile="FuzzyCMeans.cpp" bodystart="205" bodyend="213"/>
+      </memberdef>
+      <memberdef kind="function" id="class_fuzzy_c_means_1adaf587cc5ae0613f373860079d9b9447" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FuzzyCMeans::printCentroids</definition>
+        <argsstring>()</argsstring>
+        <name>printCentroids</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>It prints the centroids to the standard output. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="FuzzyCMeans.h" line="80" column="1" bodyfile="FuzzyCMeans.cpp" bodystart="215" bodyend="223"/>
+      </memberdef>
+      <memberdef kind="function" id="class_fuzzy_c_means_1a286c6b1a551e5c77422f40d3aacba856" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double FuzzyCMeans::computeObjectiveFunction</definition>
+        <argsstring>()</argsstring>
+        <name>computeObjectiveFunction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>It computes the value of the objective function that controls the convergence of the algorithm. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="FuzzyCMeans.h" line="85" column="1" bodyfile="FuzzyCMeans.cpp" bodystart="225" bodyend="238"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="FuzzyCMeans.h" line="9" column="1" bodyfile="FuzzyCMeans.h" bodystart="8" bodyend="86"/>
+    <listofallmembers>
+      <member refid="class_fuzzy_c_means_1a3d3b7598064323842312bdc7845540cd" prot="public" virt="non-virtual"><scope>FuzzyCMeans</scope><name>clusters</name></member>
+      <member refid="class_fuzzy_c_means_1ab3b80b7e5ab918bfd801e1df9a370390" prot="public" virt="non-virtual"><scope>FuzzyCMeans</scope><name>computeClusters</name></member>
+      <member refid="class_fuzzy_c_means_1a3a9758bfef32ece7efa7c17a65f55371" prot="public" virt="non-virtual"><scope>FuzzyCMeans</scope><name>computeNewMembershipCoefficients</name></member>
+      <member refid="class_fuzzy_c_means_1a286c6b1a551e5c77422f40d3aacba856" prot="public" virt="non-virtual"><scope>FuzzyCMeans</scope><name>computeObjectiveFunction</name></member>
+      <member refid="class_fuzzy_c_means_1a06abf091ff11decd3d53a0355c9887d0" prot="private" virt="non-virtual"><scope>FuzzyCMeans</scope><name>dimension</name></member>
+      <member refid="class_fuzzy_c_means_1ac2fb556279032a17d2a1c46a1c933cc3" prot="private" virt="non-virtual"><scope>FuzzyCMeans</scope><name>eps</name></member>
+      <member refid="class_fuzzy_c_means_1adafa89c36e0ba527d59114193afa1a95" prot="public" virt="non-virtual"><scope>FuzzyCMeans</scope><name>FuzzyCMeans</name></member>
+      <member refid="class_fuzzy_c_means_1a8b5bc87675a4a267b781581a927859c7" prot="public" virt="non-virtual"><scope>FuzzyCMeans</scope><name>FuzzyCMeans</name></member>
+      <member refid="class_fuzzy_c_means_1acd89ddb387a57ddc8838ed29c9ec31bd" prot="public" virt="non-virtual"><scope>FuzzyCMeans</scope><name>isOver</name></member>
+      <member refid="class_fuzzy_c_means_1a8708ad964261f26de0adb93f2587e443" prot="private" virt="non-virtual"><scope>FuzzyCMeans</scope><name>k</name></member>
+      <member refid="class_fuzzy_c_means_1a7dd4f38fdec08905d6191299694871b9" prot="private" virt="non-virtual"><scope>FuzzyCMeans</scope><name>m</name></member>
+      <member refid="class_fuzzy_c_means_1ae626e0acf49d9c3328d0c1efe7246833" prot="private" virt="non-virtual"><scope>FuzzyCMeans</scope><name>maxNumOfIterations</name></member>
+      <member refid="class_fuzzy_c_means_1ab75d3a803819d861585ff2d0fea218fa" prot="public" virt="non-virtual"><scope>FuzzyCMeans</scope><name>points</name></member>
+      <member refid="class_fuzzy_c_means_1adaf587cc5ae0613f373860079d9b9447" prot="public" virt="non-virtual"><scope>FuzzyCMeans</scope><name>printCentroids</name></member>
+      <member refid="class_fuzzy_c_means_1abe9686594626cb7867da45fadd8a44ce" prot="public" virt="non-virtual"><scope>FuzzyCMeans</scope><name>printPartitionMatrix</name></member>
+      <member refid="class_fuzzy_c_means_1a79db259f351e533d5c9d011b41935152" prot="public" virt="non-virtual"><scope>FuzzyCMeans</scope><name>runFuzzyCMeans</name></member>
+      <member refid="class_fuzzy_c_means_1a80c4f0bfed3da5b0e0f910085d826727" prot="public" virt="non-virtual"><scope>FuzzyCMeans</scope><name>updateMembershipCoefficients</name></member>
+      <member refid="class_fuzzy_c_means_1ae3175d6a98d93d476c37da164252f7de" prot="public" virt="non-virtual"><scope>FuzzyCMeans</scope><name>~FuzzyCMeans</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

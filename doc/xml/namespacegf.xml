@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="namespacegf" kind="namespace" language="C++">
+    <compoundname>gf</compoundname>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacegf_1ac0f4b1cee2681a53cb7c513c7f9a3b6f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string gf::getExecutablePath</definition>
+        <argsstring>()</argsstring>
+        <name>getExecutablePath</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns the absolute path of the executable&apos;s directory. <simplesect kind="return"><para>the absolute path of the executable&apos;s directory. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GenericFunc.h" line="12" column="1" bodyfile="GenericFunc.cpp" bodystart="3" bodyend="8"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacegf_1a00f9f0ea9a0804a71cf70c6b1eb158cf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string gf::getExecutablePathAndMatchItWithFilename</definition>
+        <argsstring>(std::string filename)</argsstring>
+        <name>getExecutablePathAndMatchItWithFilename</name>
+        <param>
+          <type>std::string</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns the absolute path a file located in the executable&apos;s directory. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fileName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the name of the file (e.g., file.txt) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the absolute path of the file </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GenericFunc.h" line="19" column="1" bodyfile="GenericFunc.cpp" bodystart="10" bodyend="18"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="GenericFunc.h" line="7" column="1"/>
+  </compounddef>
+</doxygen>

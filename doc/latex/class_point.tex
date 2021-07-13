@@ -1,115 +1,267 @@
-\hypertarget{class_point}{}\section{Point Class Reference}
+\section{Point Class Reference}
 \label{class_point}\index{Point@{Point}}
+
+
+{\ttfamily \#include $<$Point.\+h$>$}
+
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{class_point_ad92f2337b839a94ce97dcdb439b4325a}{Point}} ()
+\textbf{ Point} ()
 \item 
-\mbox{\Hypertarget{class_point_a26d66e5795f1dc9366b14e7c86a38a80}\label{class_point_a26d66e5795f1dc9366b14e7c86a38a80}} 
-{\bfseries Point} (const int id, const int k)
+\textbf{ Point} (int ID, int k)
 \item 
-\mbox{\hyperlink{class_point_a395fa04b4ec126b66fc053f829a30cc1}{$\sim$\+Point}} ()
+\textbf{ $\sim$\+Point} ()
 \item 
-void \mbox{\hyperlink{class_point_ae0c05a7c16aadbb5e9932e77b24ca921}{set\+ID}} (const int id)
+void \textbf{ set\+ID} (int ID)
 \item 
-\mbox{\Hypertarget{class_point_a70f96664692429af8c591eac51e65faa}\label{class_point_a70f96664692429af8c591eac51e65faa}} 
-int {\bfseries get\+ID} () const
+int \textbf{ get\+ID} () const
 \item 
-void \mbox{\hyperlink{class_point_a922f5f0685f0bbf2e9e19ff3397fc82e}{add\+Value}} (const double value)
+void \textbf{ add\+Value} (double val)
 \item 
-double \mbox{\hyperlink{class_point_ae748cbf0b68a726dfdfe9f8b8b6301db}{get\+Value}} (const size\+\_\+t index)
+double \textbf{ get\+Value} (size\+\_\+t index)
 \item 
-size\+\_\+t \mbox{\hyperlink{class_point_ab5bb69974276cdb13bc74c8585c919a1}{get\+Values\+Size}} ()
+size\+\_\+t \textbf{ get\+Values\+Size} ()
 \item 
-void \mbox{\hyperlink{class_point_a0b2a9878f3eb1b0d091aa7e9b1502258}{change\+Value}} (const size\+\_\+t index, const double new\+\_\+value)
+void \textbf{ change\+Value} (size\+\_\+t index, double val\+New)
 \item 
-\mbox{\Hypertarget{class_point_a253abfb0fe245ffcdbddf1cb8bb1c968}\label{class_point_a253abfb0fe245ffcdbddf1cb8bb1c968}} 
-void {\bfseries update\+W\+New} (std\+::vector$<$ double $>$ \&w\+\_\+new)
+\textbf{ Double\+Vector} $\ast$ \textbf{ get\+Values} ()
 \item 
-\mbox{\Hypertarget{class_point_a41bd61b26b3fc774f5a968bfcdb46722}\label{class_point_a41bd61b26b3fc774f5a968bfcdb46722}} 
-void {\bfseries updateW} ()
+void \textbf{ update\+W\+New} (\textbf{ Double\+Vector} \&w\+New)
 \item 
-\mbox{\Hypertarget{class_point_a72092e02093421a550277bcf33e5930e}\label{class_point_a72092e02093421a550277bcf33e5930e}} 
-std\+::vector$<$ double $>$ $\ast$ {\bfseries get\+Values} ()
+void \textbf{ updateW} ()
 \item 
-\mbox{\Hypertarget{class_point_ac61066bda6062de888f81d6f1be673af}\label{class_point_ac61066bda6062de888f81d6f1be673af}} 
-double {\bfseries get\+W\+Old\+Value} (const int cluster\+\_\+id)
+bool \textbf{ compareW} (double eps)
 \item 
-\mbox{\Hypertarget{class_point_aef55db1c7bc1532a739adb36ec88f736}\label{class_point_aef55db1c7bc1532a739adb36ec88f736}} 
-bool {\bfseries compareW} (const double eps)
+double \textbf{ get\+W\+Old\+Value} (int cluster\+ID)
 \item 
-\mbox{\Hypertarget{class_point_a7bbdf413a6d2ea9a6bb83c455cfbe564}\label{class_point_a7bbdf413a6d2ea9a6bb83c455cfbe564}} 
-void {\bfseries print\+Membership\+Coefficients} ()
+void \textbf{ print\+Membership\+Coefficients} ()
 \end{DoxyCompactItemize}
 
 
+\subsection{Detailed Description}
+
+
+Definition at line 6 of file Point.\+h.
+
+
+
 \subsection{Constructor \& Destructor Documentation}
-\mbox{\Hypertarget{class_point_ad92f2337b839a94ce97dcdb439b4325a}\label{class_point_ad92f2337b839a94ce97dcdb439b4325a}} 
+\mbox{\label{class_point_ad92f2337b839a94ce97dcdb439b4325a}} 
 \index{Point@{Point}!Point@{Point}}
 \index{Point@{Point}!Point@{Point}}
-\subsubsection{\texorpdfstring{Point()}{Point()}}
+\subsubsection{Point()\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily Point\+::\+Point (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-Constructor. \mbox{\Hypertarget{class_point_a395fa04b4ec126b66fc053f829a30cc1}\label{class_point_a395fa04b4ec126b66fc053f829a30cc1}} 
+Default constructor. 
+
+Definition at line 7 of file Point.\+cpp.
+
+\mbox{\label{class_point_af39ee027d8fda9c4134b041b5505c448}} 
+\index{Point@{Point}!Point@{Point}}
+\index{Point@{Point}!Point@{Point}}
+\subsubsection{Point()\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Point\+::\+Point (\begin{DoxyParamCaption}\item[{int}]{ID,  }\item[{int}]{k }\end{DoxyParamCaption})}
+
+Constructor. 
+\begin{DoxyParams}{Parameters}
+{\em ID} & the ID of the \doxyref{Point}{p.}{class_point}. \\
+\hline
+{\em k} & the number of clusters. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 11 of file Point.\+cpp.
+
+\mbox{\label{class_point_a395fa04b4ec126b66fc053f829a30cc1}} 
 \index{Point@{Point}!````~Point@{$\sim$\+Point}}
 \index{````~Point@{$\sim$\+Point}!Point@{Point}}
-\subsubsection{\texorpdfstring{$\sim$\+Point()}{~Point()}}
+\subsubsection{$\sim$\+Point()}
 {\footnotesize\ttfamily Point\+::$\sim$\+Point (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 Destructor. 
 
+Definition at line 22 of file Point.\+cpp.
+
+
+
 \subsection{Member Function Documentation}
-\mbox{\Hypertarget{class_point_a922f5f0685f0bbf2e9e19ff3397fc82e}\label{class_point_a922f5f0685f0bbf2e9e19ff3397fc82e}} 
+\mbox{\label{class_point_adc21fb4804add5777f2a1774b024fea7}} 
 \index{Point@{Point}!add\+Value@{add\+Value}}
 \index{add\+Value@{add\+Value}!Point@{Point}}
-\subsubsection{\texorpdfstring{add\+Value()}{addValue()}}
-{\footnotesize\ttfamily void Point\+::add\+Value (\begin{DoxyParamCaption}\item[{const double}]{value }\end{DoxyParamCaption})}
+\subsubsection{add\+Value()}
+{\footnotesize\ttfamily void Point\+::add\+Value (\begin{DoxyParamCaption}\item[{double}]{val }\end{DoxyParamCaption})}
 
-Add value to the values vector of the point. 
+Adds a value to the vector of values of the \doxyref{Point}{p.}{class_point}. 
 \begin{DoxyParams}{Parameters}
-{\em } & \\
+{\em val} & the value to be added. \\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{class_point_a0b2a9878f3eb1b0d091aa7e9b1502258}\label{class_point_a0b2a9878f3eb1b0d091aa7e9b1502258}} 
+
+
+Definition at line 48 of file Point.\+cpp.
+
+\mbox{\label{class_point_a75c57b9ab0bf6063d64ee00df9d1d33e}} 
 \index{Point@{Point}!change\+Value@{change\+Value}}
 \index{change\+Value@{change\+Value}!Point@{Point}}
-\subsubsection{\texorpdfstring{change\+Value()}{changeValue()}}
-{\footnotesize\ttfamily void Point\+::change\+Value (\begin{DoxyParamCaption}\item[{const size\+\_\+t}]{index,  }\item[{const double}]{new\+Value }\end{DoxyParamCaption})}
+\subsubsection{change\+Value()}
+{\footnotesize\ttfamily void Point\+::change\+Value (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{index,  }\item[{double}]{val\+New }\end{DoxyParamCaption})}
 
-Change a value of the values vector of the point, at a specific index. 
+Changes a specific value of the vector of values of the \doxyref{Point}{p.}{class_point}. 
 \begin{DoxyParams}{Parameters}
-{\em } & \\
+{\em index} & the index of the specific value \\
+\hline
+{\em val\+New} & the new value. \\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{class_point_ae748cbf0b68a726dfdfe9f8b8b6301db}\label{class_point_ae748cbf0b68a726dfdfe9f8b8b6301db}} 
+
+
+Definition at line 70 of file Point.\+cpp.
+
+\mbox{\label{class_point_a1e14b9e19d5c83eba654269563147904}} 
+\index{Point@{Point}!compareW@{compareW}}
+\index{compareW@{compareW}!Point@{Point}}
+\subsubsection{compare\+W()}
+{\footnotesize\ttfamily bool Point\+::compareW (\begin{DoxyParamCaption}\item[{double}]{eps }\end{DoxyParamCaption})}
+
+Compares w\+Old and w\+New of the \doxyref{Point}{p.}{class_point} based on their Euclidean distance. 
+\begin{DoxyParams}{Parameters}
+{\em eps} & the distance threshold under which w\+Old and w\+New are considered equal. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 100 of file Point.\+cpp.
+
+\mbox{\label{class_point_a70f96664692429af8c591eac51e65faa}} 
+\index{Point@{Point}!get\+ID@{get\+ID}}
+\index{get\+ID@{get\+ID}!Point@{Point}}
+\subsubsection{get\+I\+D()}
+{\footnotesize\ttfamily int Point\+::get\+ID (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns the ID of the \doxyref{Point}{p.}{class_point}. \begin{DoxyReturn}{Returns}
+the ID of the \doxyref{Point}{p.}{class_point}. 
+\end{DoxyReturn}
+
+
+Definition at line 43 of file Point.\+cpp.
+
+\mbox{\label{class_point_ab06f5ae012fbc6b8e8f3e1912ba70f2b}} 
 \index{Point@{Point}!get\+Value@{get\+Value}}
 \index{get\+Value@{get\+Value}!Point@{Point}}
-\subsubsection{\texorpdfstring{get\+Value()}{getValue()}}
-{\footnotesize\ttfamily double Point\+::get\+Value (\begin{DoxyParamCaption}\item[{const size\+\_\+t}]{index }\end{DoxyParamCaption})}
+\subsubsection{get\+Value()}
+{\footnotesize\ttfamily double Point\+::get\+Value (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{index }\end{DoxyParamCaption})}
 
-Get a value from the values vector of the point, for a specific index. 
+Returns a specific value from the vector of values of the \doxyref{Point}{p.}{class_point}. 
 \begin{DoxyParams}{Parameters}
-{\em } & \\
+{\em index} & the index of the specific value. \\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{class_point_ab5bb69974276cdb13bc74c8585c919a1}\label{class_point_ab5bb69974276cdb13bc74c8585c919a1}} 
+\begin{DoxyReturn}{Returns}
+the specific value. 
+\end{DoxyReturn}
+
+
+Definition at line 53 of file Point.\+cpp.
+
+\mbox{\label{class_point_aae4006cf6be7125433071808f5a796b4}} 
+\index{Point@{Point}!get\+Values@{get\+Values}}
+\index{get\+Values@{get\+Values}!Point@{Point}}
+\subsubsection{get\+Values()}
+{\footnotesize\ttfamily \textbf{ Double\+Vector} $\ast$ Point\+::get\+Values (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the vector of values of the \doxyref{Point}{p.}{class_point}. \begin{DoxyReturn}{Returns}
+the vector of values of the \doxyref{Point}{p.}{class_point}. 
+\end{DoxyReturn}
+
+
+Definition at line 78 of file Point.\+cpp.
+
+\mbox{\label{class_point_ab5bb69974276cdb13bc74c8585c919a1}} 
 \index{Point@{Point}!get\+Values\+Size@{get\+Values\+Size}}
 \index{get\+Values\+Size@{get\+Values\+Size}!Point@{Point}}
-\subsubsection{\texorpdfstring{get\+Values\+Size()}{getValuesSize()}}
+\subsubsection{get\+Values\+Size()}
 {\footnotesize\ttfamily size\+\_\+t Point\+::get\+Values\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-Get the size of the values vector of the point. \begin{DoxyReturn}{Returns}
-
+Returns the size of the vector of values of the \doxyref{Point}{p.}{class_point}. \begin{DoxyReturn}{Returns}
+the size of the vector of values of the \doxyref{Point}{p.}{class_point}. 
 \end{DoxyReturn}
-\mbox{\Hypertarget{class_point_ae0c05a7c16aadbb5e9932e77b24ca921}\label{class_point_ae0c05a7c16aadbb5e9932e77b24ca921}} 
+
+
+Definition at line 65 of file Point.\+cpp.
+
+\mbox{\label{class_point_a451834fdf26046e5df82d138be239023}} 
+\index{Point@{Point}!get\+W\+Old\+Value@{get\+W\+Old\+Value}}
+\index{get\+W\+Old\+Value@{get\+W\+Old\+Value}!Point@{Point}}
+\subsubsection{get\+W\+Old\+Value()}
+{\footnotesize\ttfamily double Point\+::get\+W\+Old\+Value (\begin{DoxyParamCaption}\item[{int}]{cluster\+ID }\end{DoxyParamCaption})}
+
+Returns a specific value of w\+Old. 
+\begin{DoxyParams}{Parameters}
+{\em cluster\+ID} & the index for which the value of w\+Old is requested. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the value of w\+Old. 
+\end{DoxyReturn}
+
+
+Definition at line 113 of file Point.\+cpp.
+
+\mbox{\label{class_point_a7bbdf413a6d2ea9a6bb83c455cfbe564}} 
+\index{Point@{Point}!print\+Membership\+Coefficients@{print\+Membership\+Coefficients}}
+\index{print\+Membership\+Coefficients@{print\+Membership\+Coefficients}!Point@{Point}}
+\subsubsection{print\+Membership\+Coefficients()}
+{\footnotesize\ttfamily void Point\+::print\+Membership\+Coefficients (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Prints to the standard output the membership coefficients of the \doxyref{Point}{p.}{class_point}. 
+
+Definition at line 123 of file Point.\+cpp.
+
+\mbox{\label{class_point_a987968f2da26bbcf0c70dfd632f1d940}} 
 \index{Point@{Point}!set\+ID@{set\+ID}}
 \index{set\+ID@{set\+ID}!Point@{Point}}
-\subsubsection{\texorpdfstring{set\+I\+D()}{setID()}}
-{\footnotesize\ttfamily void Point\+::set\+ID (\begin{DoxyParamCaption}\item[{const int}]{id }\end{DoxyParamCaption})}
+\subsubsection{set\+I\+D()}
+{\footnotesize\ttfamily void Point\+::set\+ID (\begin{DoxyParamCaption}\item[{int}]{ID }\end{DoxyParamCaption})}
 
-Sets the ID of the point. 
+Sets the ID of the \doxyref{Point}{p.}{class_point}. 
+\begin{DoxyParams}{Parameters}
+{\em ID} & the ID of the \doxyref{Point}{p.}{class_point}. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 38 of file Point.\+cpp.
+
+\mbox{\label{class_point_a41bd61b26b3fc774f5a968bfcdb46722}} 
+\index{Point@{Point}!updateW@{updateW}}
+\index{updateW@{updateW}!Point@{Point}}
+\subsubsection{update\+W()}
+{\footnotesize\ttfamily void Point\+::updateW (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Updates both w\+Old and w\+New of the \doxyref{Point}{p.}{class_point}. 
+
+Definition at line 91 of file Point.\+cpp.
+
+\mbox{\label{class_point_aecc17a725d2723f562c09609cc5192a9}} 
+\index{Point@{Point}!update\+W\+New@{update\+W\+New}}
+\index{update\+W\+New@{update\+W\+New}!Point@{Point}}
+\subsubsection{update\+W\+New()}
+{\footnotesize\ttfamily void Point\+::update\+W\+New (\begin{DoxyParamCaption}\item[{\textbf{ Double\+Vector} \&}]{w\+New }\end{DoxyParamCaption})}
+
+Updates w\+New of the \doxyref{Point}{p.}{class_point}. 
+\begin{DoxyParams}{Parameters}
+{\em w\+New} & the new w\+New of the \doxyref{Point}{p.}{class_point}. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 83 of file Point.\+cpp.
+
+
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-Point.\+h\item 
-Point.\+cpp\end{DoxyCompactItemize}
+\textbf{ Point.\+h}\item 
+\textbf{ Point.\+cpp}\end{DoxyCompactItemize}

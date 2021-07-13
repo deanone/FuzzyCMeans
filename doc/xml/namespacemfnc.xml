@@ -1,0 +1,117 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="namespacemfnc" kind="namespace" language="C++">
+    <compoundname>mfnc</compoundname>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacemfnc_1a1df6ec0d60567242f173c458ed6fbdb0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>std::vector&lt; T &gt;</type>
+        <definition>std::vector&lt;T&gt; mfnc::multiplyVectorByConstant</definition>
+        <argsstring>(const std::vector&lt; T &gt; &amp;v, const T &amp;c)</argsstring>
+        <name>multiplyVectorByConstant</name>
+        <param>
+          <type>const std::vector&lt; T &gt; &amp;</type>
+          <declname>v</declname>
+        </param>
+        <param>
+          <type>const T &amp;</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MathFunc.h" line="13" column="1" bodyfile="MathFunc.h" bodystart="13" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacemfnc_1a6445251f22e7f48b6ff9aa316064f7ce" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>std::vector&lt; T &gt;</type>
+        <definition>std::vector&lt;T&gt; mfnc::addVectors</definition>
+        <argsstring>(const std::vector&lt; T &gt; &amp;v_1, const std::vector&lt; T &gt; &amp;v_2)</argsstring>
+        <name>addVectors</name>
+        <param>
+          <type>const std::vector&lt; T &gt; &amp;</type>
+          <declname>v_1</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; T &gt; &amp;</type>
+          <declname>v_2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MathFunc.h" line="24" column="1" bodyfile="MathFunc.h" bodystart="24" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacemfnc_1ab1abcc226326a393ab1e4c3b1f88993e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void mfnc::addToVector</definition>
+        <argsstring>(std::vector&lt; T &gt; &amp;v, const std::vector&lt; T &gt; &amp;other_v)</argsstring>
+        <name>addToVector</name>
+        <param>
+          <type>std::vector&lt; T &gt; &amp;</type>
+          <declname>v</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; T &gt; &amp;</type>
+          <declname>other_v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MathFunc.h" line="36" column="1" bodyfile="MathFunc.h" bodystart="36" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacemfnc_1a028c499f49e096bd33ed083c81045b53" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>double</type>
+        <definition>double mfnc::computeEuclideanDistance</definition>
+        <argsstring>(const std::vector&lt; T &gt; &amp;v_1, const std::vector&lt; T &gt; &amp;v_2)</argsstring>
+        <name>computeEuclideanDistance</name>
+        <param>
+          <type>const std::vector&lt; T &gt; &amp;</type>
+          <declname>v_1</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; T &gt; &amp;</type>
+          <declname>v_2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MathFunc.h" line="45" column="1" bodyfile="MathFunc.h" bodystart="45" bodyend="57"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="MathFunc.h" line="11" column="1"/>
+  </compounddef>
+</doxygen>

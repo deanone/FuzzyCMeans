@@ -1,95 +1,153 @@
-\hypertarget{class_cluster}{}\section{Cluster Class Reference}
+\section{Cluster Class Reference}
 \label{class_cluster}\index{Cluster@{Cluster}}
+
+
+{\ttfamily \#include $<$Cluster.\+h$>$}
+
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{class_cluster_a4ec85a16fc61148cfbde85525844c30a}{Cluster}} (std\+::vector$<$ double $>$ \&centroid, int id\+\_\+)
+\textbf{ Cluster} (\textbf{ Double\+Vector} \&\textbf{ centroid}, int ID)
 \item 
-\mbox{\hyperlink{class_cluster_a4bddfc88ac859610acab15dd12851b58}{$\sim$\+Cluster}} ()
+\textbf{ $\sim$\+Cluster} ()
 \item 
-void \mbox{\hyperlink{class_cluster_a0b0965324db24dc6dae04873ecef7156}{set\+ID}} (const int id)
+void \textbf{ set\+ID} (int ID)
 \item 
-int \mbox{\hyperlink{class_cluster_a7e3843eaa486b9dd28de25a7c9f4e1f9}{get\+ID}} () const
+int \textbf{ get\+ID} () const
 \item 
-void \mbox{\hyperlink{class_cluster_aec28970f0f25004db0e591032ad79d60}{set\+Centroid}} (std\+::vector$<$ double $>$ \&centroid)
+void \textbf{ set\+Centroid} (\textbf{ Double\+Vector} \&\textbf{ centroid})
 \item 
-std\+::vector$<$ double $>$ $\ast$ \mbox{\hyperlink{class_cluster_a6f53e148f46f17c27309d18645e60d5b}{get\+Centroid}} ()
+\textbf{ Double\+Vector} $\ast$ \textbf{ get\+Centroid} ()
 \item 
-\mbox{\Hypertarget{class_cluster_aab54f4f732ea8e4219c863f459552fa6}\label{class_cluster_aab54f4f732ea8e4219c863f459552fa6}} 
-void {\bfseries print\+Centroid} ()
+void \textbf{ print\+Centroid} ()
 \end{DoxyCompactItemize}
 \subsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{class_cluster_a3c4f2ec424a29be86a6e79be1d3fab52}\label{class_cluster_a3c4f2ec424a29be86a6e79be1d3fab52}} 
-std\+::vector$<$ double $>$ {\bfseries centroid}
+\textbf{ Double\+Vector} \textbf{ centroid}
 \end{DoxyCompactItemize}
 
 
+\subsection{Detailed Description}
+
+
+Definition at line 7 of file Cluster.\+h.
+
+
+
 \subsection{Constructor \& Destructor Documentation}
-\mbox{\Hypertarget{class_cluster_a4ec85a16fc61148cfbde85525844c30a}\label{class_cluster_a4ec85a16fc61148cfbde85525844c30a}} 
+\mbox{\label{class_cluster_a9089dbe281f8114647b5f80c67c5f26a}} 
 \index{Cluster@{Cluster}!Cluster@{Cluster}}
 \index{Cluster@{Cluster}!Cluster@{Cluster}}
-\subsubsection{\texorpdfstring{Cluster()}{Cluster()}}
-{\footnotesize\ttfamily Cluster\+::\+Cluster (\begin{DoxyParamCaption}\item[{std\+::vector$<$ double $>$ \&}]{centroid,  }\item[{int}]{id\+\_\+ }\end{DoxyParamCaption})}
+\subsubsection{Cluster()}
+{\footnotesize\ttfamily Cluster\+::\+Cluster (\begin{DoxyParamCaption}\item[{\textbf{ Double\+Vector} \&}]{centroid,  }\item[{int}]{ID }\end{DoxyParamCaption})}
 
 Constructor. 
 \begin{DoxyParams}{Parameters}
-{\em } & \\
+{\em centroid} & the centroid of the \doxyref{Cluster}{p.}{class_cluster}. \\
+\hline
+{\em ID} & the ID of the cluster. \\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{class_cluster_a4bddfc88ac859610acab15dd12851b58}\label{class_cluster_a4bddfc88ac859610acab15dd12851b58}} 
+
+
+Definition at line 5 of file Cluster.\+cpp.
+
+\mbox{\label{class_cluster_a4bddfc88ac859610acab15dd12851b58}} 
 \index{Cluster@{Cluster}!````~Cluster@{$\sim$\+Cluster}}
 \index{````~Cluster@{$\sim$\+Cluster}!Cluster@{Cluster}}
-\subsubsection{\texorpdfstring{$\sim$\+Cluster()}{~Cluster()}}
+\subsubsection{$\sim$\+Cluster()}
 {\footnotesize\ttfamily Cluster\+::$\sim$\+Cluster (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 Destructor. 
 
+Definition at line 14 of file Cluster.\+cpp.
+
+
+
 \subsection{Member Function Documentation}
-\mbox{\Hypertarget{class_cluster_a6f53e148f46f17c27309d18645e60d5b}\label{class_cluster_a6f53e148f46f17c27309d18645e60d5b}} 
+\mbox{\label{class_cluster_a58fcdc4cd0a31be1f39e3c53cb769695}} 
 \index{Cluster@{Cluster}!get\+Centroid@{get\+Centroid}}
 \index{get\+Centroid@{get\+Centroid}!Cluster@{Cluster}}
-\subsubsection{\texorpdfstring{get\+Centroid()}{getCentroid()}}
-{\footnotesize\ttfamily std\+::vector$<$ double $>$ $\ast$ Cluster\+::get\+Centroid (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+\subsubsection{get\+Centroid()}
+{\footnotesize\ttfamily \textbf{ Double\+Vector} $\ast$ Cluster\+::get\+Centroid (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-Returns centroid of the cluster. \begin{DoxyReturn}{Returns}
-
+Returns the centroid of the \doxyref{Cluster}{p.}{class_cluster}. \begin{DoxyReturn}{Returns}
+the centroid of the \doxyref{Cluster}{p.}{class_cluster}. 
 \end{DoxyReturn}
-\mbox{\Hypertarget{class_cluster_a7e3843eaa486b9dd28de25a7c9f4e1f9}\label{class_cluster_a7e3843eaa486b9dd28de25a7c9f4e1f9}} 
+
+
+Definition at line 40 of file Cluster.\+cpp.
+
+\mbox{\label{class_cluster_a7e3843eaa486b9dd28de25a7c9f4e1f9}} 
 \index{Cluster@{Cluster}!get\+ID@{get\+ID}}
 \index{get\+ID@{get\+ID}!Cluster@{Cluster}}
-\subsubsection{\texorpdfstring{get\+I\+D()}{getID()}}
+\subsubsection{get\+I\+D()}
 {\footnotesize\ttfamily int Cluster\+::get\+ID (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
-Returns the ID of the cluster. \begin{DoxyReturn}{Returns}
-
+Returns the ID of the \doxyref{Cluster}{p.}{class_cluster}. \begin{DoxyReturn}{Returns}
+the ID of the \doxyref{Cluster}{p.}{class_cluster}. 
 \end{DoxyReturn}
-\mbox{\Hypertarget{class_cluster_aec28970f0f25004db0e591032ad79d60}\label{class_cluster_aec28970f0f25004db0e591032ad79d60}} 
+
+
+Definition at line 27 of file Cluster.\+cpp.
+
+\mbox{\label{class_cluster_aab54f4f732ea8e4219c863f459552fa6}} 
+\index{Cluster@{Cluster}!print\+Centroid@{print\+Centroid}}
+\index{print\+Centroid@{print\+Centroid}!Cluster@{Cluster}}
+\subsubsection{print\+Centroid()}
+{\footnotesize\ttfamily void Cluster\+::print\+Centroid (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Prints to the standard output the centroid of the \doxyref{Cluster}{p.}{class_cluster}. 
+
+Definition at line 45 of file Cluster.\+cpp.
+
+\mbox{\label{class_cluster_a253de897eacb0f3f3545e1b85a6638d5}} 
 \index{Cluster@{Cluster}!set\+Centroid@{set\+Centroid}}
 \index{set\+Centroid@{set\+Centroid}!Cluster@{Cluster}}
-\subsubsection{\texorpdfstring{set\+Centroid()}{setCentroid()}}
-{\footnotesize\ttfamily void Cluster\+::set\+Centroid (\begin{DoxyParamCaption}\item[{std\+::vector$<$ double $>$ \&}]{centroid }\end{DoxyParamCaption})}
+\subsubsection{set\+Centroid()}
+{\footnotesize\ttfamily void Cluster\+::set\+Centroid (\begin{DoxyParamCaption}\item[{\textbf{ Double\+Vector} \&}]{centroid }\end{DoxyParamCaption})}
 
-Sets the centroid of the cluster. 
+Sets the centroid of the \doxyref{Cluster}{p.}{class_cluster}. 
 \begin{DoxyParams}{Parameters}
-{\em } & \\
+{\em centroid} & the centroid of the \doxyref{Cluster}{p.}{class_cluster}. \\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{class_cluster_a0b0965324db24dc6dae04873ecef7156}\label{class_cluster_a0b0965324db24dc6dae04873ecef7156}} 
+
+
+Definition at line 32 of file Cluster.\+cpp.
+
+\mbox{\label{class_cluster_a6b6cf07bd9eb4ed49231265e33ea335a}} 
 \index{Cluster@{Cluster}!set\+ID@{set\+ID}}
 \index{set\+ID@{set\+ID}!Cluster@{Cluster}}
-\subsubsection{\texorpdfstring{set\+I\+D()}{setID()}}
-{\footnotesize\ttfamily void Cluster\+::set\+ID (\begin{DoxyParamCaption}\item[{const int}]{id }\end{DoxyParamCaption})}
+\subsubsection{set\+I\+D()}
+{\footnotesize\ttfamily void Cluster\+::set\+ID (\begin{DoxyParamCaption}\item[{int}]{ID }\end{DoxyParamCaption})}
 
-Sets the ID of the cluster. 
+Sets the ID of the \doxyref{Cluster}{p.}{class_cluster}. 
 \begin{DoxyParams}{Parameters}
-{\em } & \\
+{\em ID} & the ID of the \doxyref{Cluster}{p.}{class_cluster}. \\
 \hline
 \end{DoxyParams}
+
+
+Definition at line 22 of file Cluster.\+cpp.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\label{class_cluster_a8d0287687a64e865c19383c5a704a1d5}} 
+\index{Cluster@{Cluster}!centroid@{centroid}}
+\index{centroid@{centroid}!Cluster@{Cluster}}
+\subsubsection{centroid}
+{\footnotesize\ttfamily \textbf{ Double\+Vector} Cluster\+::centroid}
+
+
+
+Definition at line 11 of file Cluster.\+h.
+
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-Cluster.\+h\item 
-Cluster.\+cpp\end{DoxyCompactItemize}
+\textbf{ Cluster.\+h}\item 
+\textbf{ Cluster.\+cpp}\end{DoxyCompactItemize}

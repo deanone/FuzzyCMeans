@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="md__r_e_a_d_m_e" kind="page">
+    <compoundname>md_README</compoundname>
+    <title>README</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>This repo contains an implementation of the fuzzy C-means clustering machine learning algorithm:</para><para><ulink url="https://en.wikipedia.org/wiki/Fuzzy_clustering">https://en.wikipedia.org/wiki/Fuzzy_clustering</ulink></para><para>as a native C++ application.</para><para>The documentation of the project is in the /doc directory. </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

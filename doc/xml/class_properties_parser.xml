@@ -1,0 +1,450 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="class_properties_parser" kind="class" language="C++" prot="public">
+    <compoundname>PropertiesParser</compoundname>
+    <includes refid="_properties_parser_8h" local="no">PropertiesParser.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_properties_parser_1a8c6094ef50cadbba17ef04b019abcbf9" prot="private" static="no" mutable="no">
+        <type>std::map&lt; std::string, std::string &gt;</type>
+        <definition>std::map&lt;std::string, std::string&gt; PropertiesParser::properties_map</definition>
+        <argsstring></argsstring>
+        <name>properties_map</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PropertiesParser.h" line="15" column="1" bodyfile="PropertiesParser.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_properties_parser_1a9fe7a2c812424ebf8db6c3c5afc50f65" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>PropertiesParser::PropertiesParser</definition>
+        <argsstring>(std::string properties_filename)</argsstring>
+        <name>PropertiesParser</name>
+        <param>
+          <type>std::string</type>
+          <declname>properties_filename</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="_properties_parser_8cpp" kindref="compound">PropertiesParser.cpp</ref>: implementation of the <ref refid="class_properties_parser" kindref="compound">PropertiesParser</ref> class.</para><para>Constructor. Initializes the parser parsing the properties file and reading all properties in the <computeroutput>properties_map</computeroutput>.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>propertiesFilename</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the filename of the properties file. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PropertiesParser.h" line="17" column="1" bodyfile="PropertiesParser.cpp" bodystart="15" bodyend="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_properties_parser_1a78329eb9c674e1cf5b085d466709a4b6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>PropertiesParser::~PropertiesParser</definition>
+        <argsstring>()</argsstring>
+        <name>~PropertiesParser</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Destructor. Destroys the map object properties_map of the class and frees the corresponding memory. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PropertiesParser.h" line="18" column="1" bodyfile="PropertiesParser.cpp" bodystart="23" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="class_properties_parser_1a03f177b8082dad1abd2faf60db7a7a6a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PropertiesParser::addPropertiesFile</definition>
+        <argsstring>(std::string properties_filename)</argsstring>
+        <name>addPropertiesFile</name>
+        <param>
+          <type>std::string</type>
+          <declname>properties_filename</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Parses a properties file and reads all properties in the <computeroutput>properties_map</computeroutput>. It may be used consecutively to parse multiple properties files.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>propertiesFilename</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the filename of the properties file. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+<para>line is not a comment line </para>        </inbodydescription>
+        <location file="PropertiesParser.h" line="19" column="1" bodyfile="PropertiesParser.cpp" bodystart="34" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="function" id="class_properties_parser_1a8011fb7f2f3f24c59d3c33d56be55033" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool PropertiesParser::propertyExists</definition>
+        <argsstring>(std::string property_name)</argsstring>
+        <name>propertyExists</name>
+        <param>
+          <type>std::string</type>
+          <declname>property_name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Checks if a property exists.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>property_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the name of the property to be checked. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><computeroutput>true</computeroutput> if property exists, <computeroutput>false</computeroutput> otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PropertiesParser.h" line="20" column="1" bodyfile="PropertiesParser.cpp" bodystart="67" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="class_properties_parser_1af52ae62c22c070ab8f286cb29897dc17" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string PropertiesParser::getPropertyAsString</definition>
+        <argsstring>(std::string property_name)</argsstring>
+        <name>getPropertyAsString</name>
+        <param>
+          <type>std::string</type>
+          <declname>property_name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns the string value of a property.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>property_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the name of the property of which the value is returned. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>a string value for the property. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PropertiesParser.h" line="21" column="1" bodyfile="PropertiesParser.cpp" bodystart="78" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="function" id="class_properties_parser_1ad4fb34e07c2d93e3cf4daca6f1ed9b14" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int PropertiesParser::getPropertyAsInt</definition>
+        <argsstring>(std::string property_name)</argsstring>
+        <name>getPropertyAsInt</name>
+        <param>
+          <type>std::string</type>
+          <declname>property_name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns the integer value of a property.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>property_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the name of the property of which the value is returned. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>an integer value for the property. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PropertiesParser.h" line="22" column="1" bodyfile="PropertiesParser.cpp" bodystart="89" bodyend="95"/>
+      </memberdef>
+      <memberdef kind="function" id="class_properties_parser_1a4d08af4f4c305273a64c281272011497" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool PropertiesParser::getPropertyAsBool</definition>
+        <argsstring>(std::string property_name)</argsstring>
+        <name>getPropertyAsBool</name>
+        <param>
+          <type>std::string</type>
+          <declname>property_name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns the boolean value of a property.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>property_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the name of the property of which the value is returned. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>a boolean value for the property. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PropertiesParser.h" line="23" column="1" bodyfile="PropertiesParser.cpp" bodystart="103" bodyend="108"/>
+      </memberdef>
+      <memberdef kind="function" id="class_properties_parser_1acfdb8d26fd4d078aa37ae938adf67379" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float PropertiesParser::getPropertyAsFloat</definition>
+        <argsstring>(std::string property_name)</argsstring>
+        <name>getPropertyAsFloat</name>
+        <param>
+          <type>std::string</type>
+          <declname>property_name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns the float value of a property.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>property_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the name of the property of which the value is returned. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>a float value for the property. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PropertiesParser.h" line="24" column="1" bodyfile="PropertiesParser.cpp" bodystart="116" bodyend="122"/>
+      </memberdef>
+      <memberdef kind="function" id="class_properties_parser_1ab7a84135214c45cd91a9bb5377eaff5a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double PropertiesParser::getPropertyAsDouble</definition>
+        <argsstring>(std::string property_name)</argsstring>
+        <name>getPropertyAsDouble</name>
+        <param>
+          <type>std::string</type>
+          <declname>property_name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns the double value of a property.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>property_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the name of the property of which the value is returned. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>a double value for the property. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PropertiesParser.h" line="25" column="1" bodyfile="PropertiesParser.cpp" bodystart="130" bodyend="136"/>
+      </memberdef>
+      <memberdef kind="function" id="class_properties_parser_1a29d380b8b5dfdf4e3872e02b33bbc765" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string PropertiesParser::getPropertyAsStringOrDefaultTo</definition>
+        <argsstring>(std::string property_name, std::string default_property_value)</argsstring>
+        <name>getPropertyAsStringOrDefaultTo</name>
+        <param>
+          <type>std::string</type>
+          <declname>property_name</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>default_property_value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns the string value of a property, if it exists, or a default value if the property does not exist.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>property_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the name of the property of which the value is returned. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>defaultproperty_value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the default property value. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>a string value for the property. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PropertiesParser.h" line="26" column="1" bodyfile="PropertiesParser.cpp" bodystart="146" bodyend="149"/>
+      </memberdef>
+      <memberdef kind="function" id="class_properties_parser_1adadd7db8ea323a727804905d59f59d6d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int PropertiesParser::getPropertyAsIntOrDefaultTo</definition>
+        <argsstring>(std::string property_name, int default_property_value)</argsstring>
+        <name>getPropertyAsIntOrDefaultTo</name>
+        <param>
+          <type>std::string</type>
+          <declname>property_name</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>default_property_value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns the integer value of a property, if it exists, or a default value if the property does not exist.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>property_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the name of the property of which the value is returned. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>defaultproperty_value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the default property value. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>an integer value for the property. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PropertiesParser.h" line="27" column="1" bodyfile="PropertiesParser.cpp" bodystart="159" bodyend="162"/>
+      </memberdef>
+      <memberdef kind="function" id="class_properties_parser_1a8e5c2fd64020dd3a580457ca321179ec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool PropertiesParser::getPropertyAsBoolOrDefaultTo</definition>
+        <argsstring>(std::string property_name, bool default_property_value)</argsstring>
+        <name>getPropertyAsBoolOrDefaultTo</name>
+        <param>
+          <type>std::string</type>
+          <declname>property_name</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>default_property_value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns the boolean value of a property, if it exists, or a default value if the property does not exist.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>property_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the name of the property of which the value is returned. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>defaultproperty_value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the default property value. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>a boolean value for the property. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PropertiesParser.h" line="28" column="1" bodyfile="PropertiesParser.cpp" bodystart="172" bodyend="175"/>
+      </memberdef>
+      <memberdef kind="function" id="class_properties_parser_1a064cd4ecb149c7aa710d2c016a6d3371" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float PropertiesParser::getPropertyAsFloatOrDefaultTo</definition>
+        <argsstring>(std::string property_name, float default_property_value)</argsstring>
+        <name>getPropertyAsFloatOrDefaultTo</name>
+        <param>
+          <type>std::string</type>
+          <declname>property_name</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>default_property_value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns the float value of a property, if it exists, or a default value if the property does not exist.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>property_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the name of the property of which the value is returned. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>defaultproperty_value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the default property value. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>a float value for the property. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PropertiesParser.h" line="29" column="1" bodyfile="PropertiesParser.cpp" bodystart="185" bodyend="188"/>
+      </memberdef>
+      <memberdef kind="function" id="class_properties_parser_1a12598ce9403dd9e51f2a1206db9a27a9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double PropertiesParser::getPropertyAsDoubleOrDefaultTo</definition>
+        <argsstring>(std::string property_name, double default_property_value)</argsstring>
+        <name>getPropertyAsDoubleOrDefaultTo</name>
+        <param>
+          <type>std::string</type>
+          <declname>property_name</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>default_property_value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns the double value of a property, if it exists, or a default value if the property does not exist.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>property_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the name of the property of which the value is returned. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>defaultproperty_value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the default property value. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>a double value for the property. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PropertiesParser.h" line="30" column="1" bodyfile="PropertiesParser.cpp" bodystart="198" bodyend="201"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><ref refid="_properties_parser_8h" kindref="compound">PropertiesParser.h</ref> : interface of the <ref refid="class_properties_parser" kindref="compound">PropertiesParser</ref> class. Using this class one can read a properties file which contains values in the following form: [propertyName] = [propertyValue] </para>    </detaileddescription>
+    <location file="PropertiesParser.h" line="14" column="1" bodyfile="PropertiesParser.h" bodystart="13" bodyend="31"/>
+    <listofallmembers>
+      <member refid="class_properties_parser_1a03f177b8082dad1abd2faf60db7a7a6a" prot="public" virt="non-virtual"><scope>PropertiesParser</scope><name>addPropertiesFile</name></member>
+      <member refid="class_properties_parser_1a4d08af4f4c305273a64c281272011497" prot="public" virt="non-virtual"><scope>PropertiesParser</scope><name>getPropertyAsBool</name></member>
+      <member refid="class_properties_parser_1a8e5c2fd64020dd3a580457ca321179ec" prot="public" virt="non-virtual"><scope>PropertiesParser</scope><name>getPropertyAsBoolOrDefaultTo</name></member>
+      <member refid="class_properties_parser_1ab7a84135214c45cd91a9bb5377eaff5a" prot="public" virt="non-virtual"><scope>PropertiesParser</scope><name>getPropertyAsDouble</name></member>
+      <member refid="class_properties_parser_1a12598ce9403dd9e51f2a1206db9a27a9" prot="public" virt="non-virtual"><scope>PropertiesParser</scope><name>getPropertyAsDoubleOrDefaultTo</name></member>
+      <member refid="class_properties_parser_1acfdb8d26fd4d078aa37ae938adf67379" prot="public" virt="non-virtual"><scope>PropertiesParser</scope><name>getPropertyAsFloat</name></member>
+      <member refid="class_properties_parser_1a064cd4ecb149c7aa710d2c016a6d3371" prot="public" virt="non-virtual"><scope>PropertiesParser</scope><name>getPropertyAsFloatOrDefaultTo</name></member>
+      <member refid="class_properties_parser_1ad4fb34e07c2d93e3cf4daca6f1ed9b14" prot="public" virt="non-virtual"><scope>PropertiesParser</scope><name>getPropertyAsInt</name></member>
+      <member refid="class_properties_parser_1adadd7db8ea323a727804905d59f59d6d" prot="public" virt="non-virtual"><scope>PropertiesParser</scope><name>getPropertyAsIntOrDefaultTo</name></member>
+      <member refid="class_properties_parser_1af52ae62c22c070ab8f286cb29897dc17" prot="public" virt="non-virtual"><scope>PropertiesParser</scope><name>getPropertyAsString</name></member>
+      <member refid="class_properties_parser_1a29d380b8b5dfdf4e3872e02b33bbc765" prot="public" virt="non-virtual"><scope>PropertiesParser</scope><name>getPropertyAsStringOrDefaultTo</name></member>
+      <member refid="class_properties_parser_1a8c6094ef50cadbba17ef04b019abcbf9" prot="private" virt="non-virtual"><scope>PropertiesParser</scope><name>properties_map</name></member>
+      <member refid="class_properties_parser_1a9fe7a2c812424ebf8db6c3c5afc50f65" prot="public" virt="non-virtual"><scope>PropertiesParser</scope><name>PropertiesParser</name></member>
+      <member refid="class_properties_parser_1a8011fb7f2f3f24c59d3c33d56be55033" prot="public" virt="non-virtual"><scope>PropertiesParser</scope><name>propertyExists</name></member>
+      <member refid="class_properties_parser_1a78329eb9c674e1cf5b085d466709a4b6" prot="public" virt="non-virtual"><scope>PropertiesParser</scope><name>~PropertiesParser</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

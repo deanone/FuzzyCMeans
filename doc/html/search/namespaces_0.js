@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['gnfnc',['gnfnc',['../namespacegnfnc.html',1,'']]]
+  ['gf',['gf',['../namespacegf.html',1,'']]]
 ];

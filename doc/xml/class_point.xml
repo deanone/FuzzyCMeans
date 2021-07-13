@@ -1,0 +1,407 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="class_point" kind="class" language="C++" prot="public">
+    <compoundname>Point</compoundname>
+    <includes refid="_point_8h" local="no">Point.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_point_1a1db9dc500c5972dfb3e5c2c58e8dea8e" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Point::ID</definition>
+        <argsstring></argsstring>
+        <name>ID</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Point.h" line="8" column="1" bodyfile="Point.h" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_point_1ab1d3b9a9d2ed9a413c43a5a8f9b3eb03" prot="private" static="no" mutable="no">
+        <type><ref refid="_data_types_8h_1a82f6bc76e1c7a0f51bf3e95ad5d3c590" kindref="member">DoubleVector</ref></type>
+        <definition>DoubleVector Point::values</definition>
+        <argsstring></argsstring>
+        <name>values</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Point.h" line="9" column="1" bodyfile="Point.h" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_point_1ad33f09bf82db8fd79f77ecbe4adc3aab" prot="private" static="no" mutable="no">
+        <type><ref refid="_data_types_8h_1a82f6bc76e1c7a0f51bf3e95ad5d3c590" kindref="member">DoubleVector</ref></type>
+        <definition>DoubleVector Point::wOld</definition>
+        <argsstring></argsstring>
+        <name>wOld</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>cluster membership coefficients </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Point.h" line="12" column="1" bodyfile="Point.h" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_point_1aaa819e4022638a35c159437a9ed998ee" prot="private" static="no" mutable="no">
+        <type><ref refid="_data_types_8h_1a82f6bc76e1c7a0f51bf3e95ad5d3c590" kindref="member">DoubleVector</ref></type>
+        <definition>DoubleVector Point::wNew</definition>
+        <argsstring></argsstring>
+        <name>wNew</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>cluster membership coefficients </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Point.h" line="15" column="1" bodyfile="Point.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_point_1ad92f2337b839a94ce97dcdb439b4325a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Point::Point</definition>
+        <argsstring>()</argsstring>
+        <name>Point</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Default constructor. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Point.h" line="22" column="1" bodyfile="Point.cpp" bodystart="7" bodyend="9"/>
+      </memberdef>
+      <memberdef kind="function" id="class_point_1af39ee027d8fda9c4134b041b5505c448" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Point::Point</definition>
+        <argsstring>(int ID, int k)</argsstring>
+        <name>Point</name>
+        <param>
+          <type>int</type>
+          <declname>ID</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>k</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructor. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ID</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the ID of the <ref refid="class_point" kindref="compound">Point</ref>. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>k</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the number of clusters. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Point.h" line="29" column="1" bodyfile="Point.cpp" bodystart="11" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="function" id="class_point_1a395fa04b4ec126b66fc053f829a30cc1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Point::~Point</definition>
+        <argsstring>()</argsstring>
+        <name>~Point</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Destructor. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Point.h" line="34" column="1" bodyfile="Point.cpp" bodystart="22" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="class_point_1a987968f2da26bbcf0c70dfd632f1d940" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Point::setID</definition>
+        <argsstring>(int ID)</argsstring>
+        <name>setID</name>
+        <param>
+          <type>int</type>
+          <declname>ID</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the ID of the <ref refid="class_point" kindref="compound">Point</ref>. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ID</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the ID of the <ref refid="class_point" kindref="compound">Point</ref>. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Point.h" line="40" column="1" bodyfile="Point.cpp" bodystart="38" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="class_point_1a70f96664692429af8c591eac51e65faa" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Point::getID</definition>
+        <argsstring>() const</argsstring>
+        <name>getID</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns the ID of the <ref refid="class_point" kindref="compound">Point</ref>. <simplesect kind="return"><para>the ID of the <ref refid="class_point" kindref="compound">Point</ref>. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Point.h" line="46" column="1" bodyfile="Point.cpp" bodystart="43" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="class_point_1adc21fb4804add5777f2a1774b024fea7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Point::addValue</definition>
+        <argsstring>(double val)</argsstring>
+        <name>addValue</name>
+        <param>
+          <type>double</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Adds a value to the vector of values of the <ref refid="class_point" kindref="compound">Point</ref>. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>val</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the value to be added. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Point.h" line="52" column="1" bodyfile="Point.cpp" bodystart="48" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="class_point_1ab06f5ae012fbc6b8e8f3e1912ba70f2b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Point::getValue</definition>
+        <argsstring>(size_t index)</argsstring>
+        <name>getValue</name>
+        <param>
+          <type>size_t</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns a specific value from the vector of values of the <ref refid="class_point" kindref="compound">Point</ref>. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the index of the specific value. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the specific value. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Point.h" line="59" column="1" bodyfile="Point.cpp" bodystart="53" bodyend="63"/>
+      </memberdef>
+      <memberdef kind="function" id="class_point_1ab5bb69974276cdb13bc74c8585c919a1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t Point::getValuesSize</definition>
+        <argsstring>()</argsstring>
+        <name>getValuesSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns the size of the vector of values of the <ref refid="class_point" kindref="compound">Point</ref>. <simplesect kind="return"><para>the size of the vector of values of the <ref refid="class_point" kindref="compound">Point</ref>. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Point.h" line="65" column="1" bodyfile="Point.cpp" bodystart="65" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="function" id="class_point_1a75c57b9ab0bf6063d64ee00df9d1d33e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Point::changeValue</definition>
+        <argsstring>(size_t index, double valNew)</argsstring>
+        <name>changeValue</name>
+        <param>
+          <type>size_t</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>valNew</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Changes a specific value of the vector of values of the <ref refid="class_point" kindref="compound">Point</ref>. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the index of the specific value </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>valNew</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the new value. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Point.h" line="72" column="1" bodyfile="Point.cpp" bodystart="70" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="class_point_1aae4006cf6be7125433071808f5a796b4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_data_types_8h_1a82f6bc76e1c7a0f51bf3e95ad5d3c590" kindref="member">DoubleVector</ref> *</type>
+        <definition>DoubleVector * Point::getValues</definition>
+        <argsstring>()</argsstring>
+        <name>getValues</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns the vector of values of the <ref refid="class_point" kindref="compound">Point</ref>. <simplesect kind="return"><para>the vector of values of the <ref refid="class_point" kindref="compound">Point</ref>. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Point.h" line="78" column="1" bodyfile="Point.cpp" bodystart="78" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="function" id="class_point_1aecc17a725d2723f562c09609cc5192a9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Point::updateWNew</definition>
+        <argsstring>(DoubleVector &amp;wNew)</argsstring>
+        <name>updateWNew</name>
+        <param>
+          <type><ref refid="_data_types_8h_1a82f6bc76e1c7a0f51bf3e95ad5d3c590" kindref="member">DoubleVector</ref> &amp;</type>
+          <declname>wNew</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Updates wNew of the <ref refid="class_point" kindref="compound">Point</ref>. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>wNew</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the new wNew of the <ref refid="class_point" kindref="compound">Point</ref>. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Point.h" line="85" column="1" bodyfile="Point.cpp" bodystart="83" bodyend="89"/>
+      </memberdef>
+      <memberdef kind="function" id="class_point_1a41bd61b26b3fc774f5a968bfcdb46722" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Point::updateW</definition>
+        <argsstring>()</argsstring>
+        <name>updateW</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Updates both wOld and wNew of the <ref refid="class_point" kindref="compound">Point</ref>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Point.h" line="90" column="1" bodyfile="Point.cpp" bodystart="91" bodyend="98"/>
+      </memberdef>
+      <memberdef kind="function" id="class_point_1a1e14b9e19d5c83eba654269563147904" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Point::compareW</definition>
+        <argsstring>(double eps)</argsstring>
+        <name>compareW</name>
+        <param>
+          <type>double</type>
+          <declname>eps</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Compares wOld and wNew of the <ref refid="class_point" kindref="compound">Point</ref> based on their Euclidean distance. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>eps</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the distance threshold under which wOld and wNew are considered equal. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Point.h" line="96" column="1" bodyfile="Point.cpp" bodystart="100" bodyend="111"/>
+      </memberdef>
+      <memberdef kind="function" id="class_point_1a451834fdf26046e5df82d138be239023" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Point::getWOldValue</definition>
+        <argsstring>(int clusterID)</argsstring>
+        <name>getWOldValue</name>
+        <param>
+          <type>int</type>
+          <declname>clusterID</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns a specific value of wOld. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>clusterID</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the index for which the value of wOld is requested. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the value of wOld. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Point.h" line="103" column="1" bodyfile="Point.cpp" bodystart="113" bodyend="121"/>
+      </memberdef>
+      <memberdef kind="function" id="class_point_1a7bbdf413a6d2ea9a6bb83c455cfbe564" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Point::printMembershipCoefficients</definition>
+        <argsstring>()</argsstring>
+        <name>printMembershipCoefficients</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Prints to the standard output the membership coefficients of the <ref refid="class_point" kindref="compound">Point</ref>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Point.h" line="108" column="1" bodyfile="Point.cpp" bodystart="123" bodyend="138"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Point.h" line="7" column="1" bodyfile="Point.h" bodystart="6" bodyend="109"/>
+    <listofallmembers>
+      <member refid="class_point_1adc21fb4804add5777f2a1774b024fea7" prot="public" virt="non-virtual"><scope>Point</scope><name>addValue</name></member>
+      <member refid="class_point_1a75c57b9ab0bf6063d64ee00df9d1d33e" prot="public" virt="non-virtual"><scope>Point</scope><name>changeValue</name></member>
+      <member refid="class_point_1a1e14b9e19d5c83eba654269563147904" prot="public" virt="non-virtual"><scope>Point</scope><name>compareW</name></member>
+      <member refid="class_point_1a70f96664692429af8c591eac51e65faa" prot="public" virt="non-virtual"><scope>Point</scope><name>getID</name></member>
+      <member refid="class_point_1ab06f5ae012fbc6b8e8f3e1912ba70f2b" prot="public" virt="non-virtual"><scope>Point</scope><name>getValue</name></member>
+      <member refid="class_point_1aae4006cf6be7125433071808f5a796b4" prot="public" virt="non-virtual"><scope>Point</scope><name>getValues</name></member>
+      <member refid="class_point_1ab5bb69974276cdb13bc74c8585c919a1" prot="public" virt="non-virtual"><scope>Point</scope><name>getValuesSize</name></member>
+      <member refid="class_point_1a451834fdf26046e5df82d138be239023" prot="public" virt="non-virtual"><scope>Point</scope><name>getWOldValue</name></member>
+      <member refid="class_point_1a1db9dc500c5972dfb3e5c2c58e8dea8e" prot="private" virt="non-virtual"><scope>Point</scope><name>ID</name></member>
+      <member refid="class_point_1ad92f2337b839a94ce97dcdb439b4325a" prot="public" virt="non-virtual"><scope>Point</scope><name>Point</name></member>
+      <member refid="class_point_1af39ee027d8fda9c4134b041b5505c448" prot="public" virt="non-virtual"><scope>Point</scope><name>Point</name></member>
+      <member refid="class_point_1a7bbdf413a6d2ea9a6bb83c455cfbe564" prot="public" virt="non-virtual"><scope>Point</scope><name>printMembershipCoefficients</name></member>
+      <member refid="class_point_1a987968f2da26bbcf0c70dfd632f1d940" prot="public" virt="non-virtual"><scope>Point</scope><name>setID</name></member>
+      <member refid="class_point_1a41bd61b26b3fc774f5a968bfcdb46722" prot="public" virt="non-virtual"><scope>Point</scope><name>updateW</name></member>
+      <member refid="class_point_1aecc17a725d2723f562c09609cc5192a9" prot="public" virt="non-virtual"><scope>Point</scope><name>updateWNew</name></member>
+      <member refid="class_point_1ab1d3b9a9d2ed9a413c43a5a8f9b3eb03" prot="private" virt="non-virtual"><scope>Point</scope><name>values</name></member>
+      <member refid="class_point_1aaa819e4022638a35c159437a9ed998ee" prot="private" virt="non-virtual"><scope>Point</scope><name>wNew</name></member>
+      <member refid="class_point_1ad33f09bf82db8fd79f77ecbe4adc3aab" prot="private" virt="non-virtual"><scope>Point</scope><name>wOld</name></member>
+      <member refid="class_point_1a395fa04b4ec126b66fc053f829a30cc1" prot="public" virt="non-virtual"><scope>Point</scope><name>~Point</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,135 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="_generic_func_8h" kind="file" language="C++">
+    <compoundname>GenericFunc.h</compoundname>
+    <includes refid="_data_types_8h" local="yes">DataTypes.h</includes>
+    <includedby refid="_generic_func_8cpp" local="yes">GenericFunc.cpp</includedby>
+    <includedby refid="main_8cpp" local="yes">main.cpp</includedby>
+    <incdepgraph>
+      <node id="149">
+        <label>functional</label>
+      </node>
+      <node id="134">
+        <label>DataTypes.h</label>
+        <link refid="_data_types_8h"/>
+        <childnode refid="135" relation="include">
+        </childnode>
+        <childnode refid="136" relation="include">
+        </childnode>
+        <childnode refid="137" relation="include">
+        </childnode>
+        <childnode refid="138" relation="include">
+        </childnode>
+        <childnode refid="139" relation="include">
+        </childnode>
+        <childnode refid="140" relation="include">
+        </childnode>
+        <childnode refid="141" relation="include">
+        </childnode>
+        <childnode refid="142" relation="include">
+        </childnode>
+        <childnode refid="143" relation="include">
+        </childnode>
+        <childnode refid="144" relation="include">
+        </childnode>
+        <childnode refid="145" relation="include">
+        </childnode>
+        <childnode refid="146" relation="include">
+        </childnode>
+        <childnode refid="147" relation="include">
+        </childnode>
+        <childnode refid="148" relation="include">
+        </childnode>
+        <childnode refid="149" relation="include">
+        </childnode>
+      </node>
+      <node id="141">
+        <label>cmath</label>
+      </node>
+      <node id="147">
+        <label>numeric</label>
+      </node>
+      <node id="133">
+        <label>GenericFunc.h</label>
+        <link refid="_generic_func_8h"/>
+        <childnode refid="134" relation="include">
+        </childnode>
+      </node>
+      <node id="138">
+        <label>string</label>
+      </node>
+      <node id="145">
+        <label>map</label>
+      </node>
+      <node id="136">
+        <label>fstream</label>
+      </node>
+      <node id="140">
+        <label>ctime</label>
+      </node>
+      <node id="143">
+        <label>unistd.h</label>
+      </node>
+      <node id="144">
+        <label>vector</label>
+      </node>
+      <node id="137">
+        <label>sstream</label>
+      </node>
+      <node id="139">
+        <label>cstdlib</label>
+      </node>
+      <node id="135">
+        <label>iostream</label>
+      </node>
+      <node id="142">
+        <label>climits</label>
+      </node>
+      <node id="148">
+        <label>complex</label>
+      </node>
+      <node id="146">
+        <label>algorithm</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="150">
+        <label>GenericFunc.h</label>
+        <link refid="_generic_func_8h"/>
+        <childnode refid="151" relation="include">
+        </childnode>
+        <childnode refid="152" relation="include">
+        </childnode>
+      </node>
+      <node id="152">
+        <label>main.cpp</label>
+        <link refid="main_8cpp"/>
+      </node>
+      <node id="151">
+        <label>GenericFunc.cpp</label>
+        <link refid="_generic_func_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innernamespace refid="namespacegf">gf</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>GF_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GF_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_data_types_8h" kindref="compound">DataTypes.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6" refid="namespacegf" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacegf" kindref="compound">gf</ref></highlight></codeline>
+<codeline lineno="7"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="namespacegf_1ac0f4b1cee2681a53cb7c513c7f9a3b6f" kindref="member">getExecutablePath</ref>();</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="namespacegf_1a00f9f0ea9a0804a71cf70c6b1eb158cf" kindref="member">getExecutablePathAndMatchItWithFilename</ref>(std::string<sp/>filename);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/><sp/>//<sp/><sp/>GF_H</highlight></codeline>
+    </programlisting>
+    <location file="GenericFunc.h"/>
+  </compounddef>
+</doxygen>

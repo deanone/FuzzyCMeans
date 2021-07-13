@@ -1,0 +1,283 @@
+.TH "PropertiesParser" 3 "Tue Jul 13 2021" "Version v1.0" "Fuzzy C-means in native C++" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+PropertiesParser
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <PropertiesParser\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBPropertiesParser\fP (std::string properties_filename)"
+.br
+.ti -1c
+.RI "\fB~PropertiesParser\fP ()"
+.br
+.ti -1c
+.RI "void \fBaddPropertiesFile\fP (std::string properties_filename)"
+.br
+.ti -1c
+.RI "bool \fBpropertyExists\fP (std::string property_name)"
+.br
+.ti -1c
+.RI "std::string \fBgetPropertyAsString\fP (std::string property_name)"
+.br
+.ti -1c
+.RI "int \fBgetPropertyAsInt\fP (std::string property_name)"
+.br
+.ti -1c
+.RI "bool \fBgetPropertyAsBool\fP (std::string property_name)"
+.br
+.ti -1c
+.RI "float \fBgetPropertyAsFloat\fP (std::string property_name)"
+.br
+.ti -1c
+.RI "double \fBgetPropertyAsDouble\fP (std::string property_name)"
+.br
+.ti -1c
+.RI "std::string \fBgetPropertyAsStringOrDefaultTo\fP (std::string property_name, std::string default_property_value)"
+.br
+.ti -1c
+.RI "int \fBgetPropertyAsIntOrDefaultTo\fP (std::string property_name, int default_property_value)"
+.br
+.ti -1c
+.RI "bool \fBgetPropertyAsBoolOrDefaultTo\fP (std::string property_name, bool default_property_value)"
+.br
+.ti -1c
+.RI "float \fBgetPropertyAsFloatOrDefaultTo\fP (std::string property_name, float default_property_value)"
+.br
+.ti -1c
+.RI "double \fBgetPropertyAsDoubleOrDefaultTo\fP (std::string property_name, double default_property_value)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+\fBPropertiesParser\&.h\fP : interface of the \fBPropertiesParser\fP class\&. Using this class one can read a properties file which contains values in the following form: [propertyName] = [propertyValue] 
+.PP
+Definition at line 13 of file PropertiesParser\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "PropertiesParser::PropertiesParser (std::string properties_filename)"
+\fBPropertiesParser\&.cpp\fP: implementation of the \fBPropertiesParser\fP class\&.
+.PP
+Constructor\&. Initializes the parser parsing the properties file and reading all properties in the \fCproperties_map\fP\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIpropertiesFilename\fP the filename of the properties file\&. 
+.RE
+.PP
+
+.PP
+Definition at line 15 of file PropertiesParser\&.cpp\&.
+.SS "PropertiesParser::~PropertiesParser ()"
+Destructor\&. Destroys the map object properties_map of the class and frees the corresponding memory\&. 
+.PP
+Definition at line 23 of file PropertiesParser\&.cpp\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "void PropertiesParser::addPropertiesFile (std::string properties_filename)"
+Parses a properties file and reads all properties in the \fCproperties_map\fP\&. It may be used consecutively to parse multiple properties files\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIpropertiesFilename\fP the filename of the properties file\&. 
+.RE
+.PP
+line is not a comment line 
+.PP
+Definition at line 34 of file PropertiesParser\&.cpp\&.
+.SS "bool PropertiesParser::getPropertyAsBool (std::string property_name)"
+Returns the boolean value of a property\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIproperty_name\fP the name of the property of which the value is returned\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+a boolean value for the property\&. 
+.RE
+.PP
+
+.PP
+Definition at line 103 of file PropertiesParser\&.cpp\&.
+.SS "bool PropertiesParser::getPropertyAsBoolOrDefaultTo (std::string property_name, bool default_property_value)"
+Returns the boolean value of a property, if it exists, or a default value if the property does not exist\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIproperty_name\fP the name of the property of which the value is returned\&. 
+.br
+\fIdefaultproperty_value\fP the default property value\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+a boolean value for the property\&. 
+.RE
+.PP
+
+.PP
+Definition at line 172 of file PropertiesParser\&.cpp\&.
+.SS "double PropertiesParser::getPropertyAsDouble (std::string property_name)"
+Returns the double value of a property\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIproperty_name\fP the name of the property of which the value is returned\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+a double value for the property\&. 
+.RE
+.PP
+
+.PP
+Definition at line 130 of file PropertiesParser\&.cpp\&.
+.SS "double PropertiesParser::getPropertyAsDoubleOrDefaultTo (std::string property_name, double default_property_value)"
+Returns the double value of a property, if it exists, or a default value if the property does not exist\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIproperty_name\fP the name of the property of which the value is returned\&. 
+.br
+\fIdefaultproperty_value\fP the default property value\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+a double value for the property\&. 
+.RE
+.PP
+
+.PP
+Definition at line 198 of file PropertiesParser\&.cpp\&.
+.SS "float PropertiesParser::getPropertyAsFloat (std::string property_name)"
+Returns the float value of a property\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIproperty_name\fP the name of the property of which the value is returned\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+a float value for the property\&. 
+.RE
+.PP
+
+.PP
+Definition at line 116 of file PropertiesParser\&.cpp\&.
+.SS "float PropertiesParser::getPropertyAsFloatOrDefaultTo (std::string property_name, float default_property_value)"
+Returns the float value of a property, if it exists, or a default value if the property does not exist\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIproperty_name\fP the name of the property of which the value is returned\&. 
+.br
+\fIdefaultproperty_value\fP the default property value\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+a float value for the property\&. 
+.RE
+.PP
+
+.PP
+Definition at line 185 of file PropertiesParser\&.cpp\&.
+.SS "int PropertiesParser::getPropertyAsInt (std::string property_name)"
+Returns the integer value of a property\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIproperty_name\fP the name of the property of which the value is returned\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+an integer value for the property\&. 
+.RE
+.PP
+
+.PP
+Definition at line 89 of file PropertiesParser\&.cpp\&.
+.SS "int PropertiesParser::getPropertyAsIntOrDefaultTo (std::string property_name, int default_property_value)"
+Returns the integer value of a property, if it exists, or a default value if the property does not exist\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIproperty_name\fP the name of the property of which the value is returned\&. 
+.br
+\fIdefaultproperty_value\fP the default property value\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+an integer value for the property\&. 
+.RE
+.PP
+
+.PP
+Definition at line 159 of file PropertiesParser\&.cpp\&.
+.SS "std::string PropertiesParser::getPropertyAsString (std::string property_name)"
+Returns the string value of a property\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIproperty_name\fP the name of the property of which the value is returned\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+a string value for the property\&. 
+.RE
+.PP
+
+.PP
+Definition at line 78 of file PropertiesParser\&.cpp\&.
+.SS "std::string PropertiesParser::getPropertyAsStringOrDefaultTo (std::string property_name, std::string default_property_value)"
+Returns the string value of a property, if it exists, or a default value if the property does not exist\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIproperty_name\fP the name of the property of which the value is returned\&. 
+.br
+\fIdefaultproperty_value\fP the default property value\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+a string value for the property\&. 
+.RE
+.PP
+
+.PP
+Definition at line 146 of file PropertiesParser\&.cpp\&.
+.SS "bool PropertiesParser::propertyExists (std::string property_name)"
+Checks if a property exists\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIproperty_name\fP the name of the property to be checked\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+\fCtrue\fP if property exists, \fCfalse\fP otherwise\&. 
+.RE
+.PP
+
+.PP
+Definition at line 67 of file PropertiesParser\&.cpp\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Fuzzy C-means in native C++ from the source code\&.

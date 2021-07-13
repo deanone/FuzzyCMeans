@@ -1,81 +1,207 @@
-\hypertarget{class_fuzzy_c_means}{}\section{Fuzzy\+C\+Means Class Reference}
+\section{Fuzzy\+C\+Means Class Reference}
 \label{class_fuzzy_c_means}\index{Fuzzy\+C\+Means@{Fuzzy\+C\+Means}}
+
+
+{\ttfamily \#include $<$Fuzzy\+C\+Means.\+h$>$}
+
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{class_fuzzy_c_means_a061d8ad3ae21e92a3a1e6b7d005ca3cf}{Fuzzy\+C\+Means}} (std\+::string dataset\+\_\+filename, std\+::string properties\+\_\+file\+Name)
+\textbf{ Fuzzy\+C\+Means} (std\+::string data\+Filename, std\+::string params\+Filename)
 \item 
-\mbox{\hyperlink{class_fuzzy_c_means_a24014c19f6ab66fdb228bd2fc9588ce1}{Fuzzy\+C\+Means}} (std\+::string dataset\+\_\+filename, int dimension\+\_\+, int k\+\_\+, int max\+\_\+num\+\_\+\+Of\+\_\+iterations\+\_\+, int m\+\_\+, double eps\+\_\+)
+\textbf{ Fuzzy\+C\+Means} (std\+::string data\+Filename, int dimension\+\_\+, int k\+\_\+, int max\+Num\+Of\+Iterations\+\_\+, int m\+\_\+, double eps\+\_\+)
 \item 
-\mbox{\hyperlink{class_fuzzy_c_means_ae3175d6a98d93d476c37da164252f7de}{$\sim$\+Fuzzy\+C\+Means}} ()
+\textbf{ $\sim$\+Fuzzy\+C\+Means} ()
 \item 
-\mbox{\Hypertarget{class_fuzzy_c_means_ab3b80b7e5ab918bfd801e1df9a370390}\label{class_fuzzy_c_means_ab3b80b7e5ab918bfd801e1df9a370390}} 
-void {\bfseries compute\+Clusters} ()
+void \textbf{ compute\+Clusters} ()
 \item 
-\mbox{\Hypertarget{class_fuzzy_c_means_a3a9758bfef32ece7efa7c17a65f55371}\label{class_fuzzy_c_means_a3a9758bfef32ece7efa7c17a65f55371}} 
-void {\bfseries compute\+New\+Membership\+Coefficients} ()
+void \textbf{ compute\+New\+Membership\+Coefficients} ()
 \item 
-\mbox{\Hypertarget{class_fuzzy_c_means_a80c4f0bfed3da5b0e0f910085d826727}\label{class_fuzzy_c_means_a80c4f0bfed3da5b0e0f910085d826727}} 
-void {\bfseries update\+Membership\+Coefficients} ()
+void \textbf{ update\+Membership\+Coefficients} ()
 \item 
-bool \mbox{\hyperlink{class_fuzzy_c_means_acd89ddb387a57ddc8838ed29c9ec31bd}{is\+Over}} ()
+bool \textbf{ is\+Over} ()
 \item 
-void \mbox{\hyperlink{class_fuzzy_c_means_a79db259f351e533d5c9d011b41935152}{run\+Fuzzy\+C\+Means}} ()
+void \textbf{ run\+Fuzzy\+C\+Means} ()
 \item 
-\mbox{\Hypertarget{class_fuzzy_c_means_abe9686594626cb7867da45fadd8a44ce}\label{class_fuzzy_c_means_abe9686594626cb7867da45fadd8a44ce}} 
-void {\bfseries print\+Partition\+Matrix} ()
+void \textbf{ print\+Partition\+Matrix} ()
 \item 
-\mbox{\Hypertarget{class_fuzzy_c_means_adaf587cc5ae0613f373860079d9b9447}\label{class_fuzzy_c_means_adaf587cc5ae0613f373860079d9b9447}} 
-void {\bfseries print\+Centroids} ()
+void \textbf{ print\+Centroids} ()
+\item 
+double \textbf{ compute\+Objective\+Function} ()
 \end{DoxyCompactItemize}
 \subsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{class_fuzzy_c_means_ab75d3a803819d861585ff2d0fea218fa}\label{class_fuzzy_c_means_ab75d3a803819d861585ff2d0fea218fa}} 
-std\+::vector$<$ \mbox{\hyperlink{class_point}{Point}} $>$ {\bfseries points}
+std\+::vector$<$ \textbf{ Point} $>$ \textbf{ points}
 \item 
-\mbox{\Hypertarget{class_fuzzy_c_means_a3d3b7598064323842312bdc7845540cd}\label{class_fuzzy_c_means_a3d3b7598064323842312bdc7845540cd}} 
-std\+::vector$<$ \mbox{\hyperlink{class_cluster}{Cluster}} $>$ {\bfseries clusters}
+std\+::vector$<$ \textbf{ Cluster} $>$ \textbf{ clusters}
 \end{DoxyCompactItemize}
 
 
+\subsection{Detailed Description}
+
+
+Definition at line 8 of file Fuzzy\+C\+Means.\+h.
+
+
+
 \subsection{Constructor \& Destructor Documentation}
-\mbox{\Hypertarget{class_fuzzy_c_means_a061d8ad3ae21e92a3a1e6b7d005ca3cf}\label{class_fuzzy_c_means_a061d8ad3ae21e92a3a1e6b7d005ca3cf}} 
+\mbox{\label{class_fuzzy_c_means_adafa89c36e0ba527d59114193afa1a95}} 
 \index{Fuzzy\+C\+Means@{Fuzzy\+C\+Means}!Fuzzy\+C\+Means@{Fuzzy\+C\+Means}}
 \index{Fuzzy\+C\+Means@{Fuzzy\+C\+Means}!Fuzzy\+C\+Means@{Fuzzy\+C\+Means}}
-\subsubsection{\texorpdfstring{Fuzzy\+C\+Means()}{FuzzyCMeans()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily Fuzzy\+C\+Means\+::\+Fuzzy\+C\+Means (\begin{DoxyParamCaption}\item[{std\+::string}]{dataset\+\_\+filename,  }\item[{std\+::string}]{properties\+\_\+file\+Name }\end{DoxyParamCaption})}
+\subsubsection{Fuzzy\+C\+Means()\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Fuzzy\+C\+Means\+::\+Fuzzy\+C\+Means (\begin{DoxyParamCaption}\item[{std\+::string}]{data\+Filename,  }\item[{std\+::string}]{params\+Filename }\end{DoxyParamCaption})}
 
-Constructor. \mbox{\Hypertarget{class_fuzzy_c_means_a24014c19f6ab66fdb228bd2fc9588ce1}\label{class_fuzzy_c_means_a24014c19f6ab66fdb228bd2fc9588ce1}} 
-\index{Fuzzy\+C\+Means@{Fuzzy\+C\+Means}!Fuzzy\+C\+Means@{Fuzzy\+C\+Means}}
-\index{Fuzzy\+C\+Means@{Fuzzy\+C\+Means}!Fuzzy\+C\+Means@{Fuzzy\+C\+Means}}
-\subsubsection{\texorpdfstring{Fuzzy\+C\+Means()}{FuzzyCMeans()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily Fuzzy\+C\+Means\+::\+Fuzzy\+C\+Means (\begin{DoxyParamCaption}\item[{std\+::string}]{dataset\+\_\+filename,  }\item[{int}]{dimension\+\_\+,  }\item[{int}]{k\+\_\+,  }\item[{int}]{max\+\_\+num\+\_\+of\+\_\+iterations\+\_\+,  }\item[{int}]{m\+\_\+,  }\item[{double}]{eps\+\_\+ }\end{DoxyParamCaption})}
+Constructor 1. 
+\begin{DoxyParams}{Parameters}
+{\em data\+Filename} & the name of the file in which the data to be clustered are stored. \\
+\hline
+{\em params\+Filename} & the name of the configuration file. \\
+\hline
+\end{DoxyParams}
 
-Constructor 2. \mbox{\Hypertarget{class_fuzzy_c_means_ae3175d6a98d93d476c37da164252f7de}\label{class_fuzzy_c_means_ae3175d6a98d93d476c37da164252f7de}} 
+
+Definition at line 11 of file Fuzzy\+C\+Means.\+cpp.
+
+\mbox{\label{class_fuzzy_c_means_a8b5bc87675a4a267b781581a927859c7}} 
+\index{Fuzzy\+C\+Means@{Fuzzy\+C\+Means}!Fuzzy\+C\+Means@{Fuzzy\+C\+Means}}
+\index{Fuzzy\+C\+Means@{Fuzzy\+C\+Means}!Fuzzy\+C\+Means@{Fuzzy\+C\+Means}}
+\subsubsection{Fuzzy\+C\+Means()\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Fuzzy\+C\+Means\+::\+Fuzzy\+C\+Means (\begin{DoxyParamCaption}\item[{std\+::string}]{data\+Filename,  }\item[{int}]{dimension\+\_\+,  }\item[{int}]{k\+\_\+,  }\item[{int}]{max\+Num\+Of\+Iterations\+\_\+,  }\item[{int}]{m\+\_\+,  }\item[{double}]{eps\+\_\+ }\end{DoxyParamCaption})}
+
+Constructor 2. 
+\begin{DoxyParams}{Parameters}
+{\em data\+Filename} & the name of the file in which the data to be clustered are stored. \\
+\hline
+{\em params\+Filename} & the name of the configuration file. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 57 of file Fuzzy\+C\+Means.\+cpp.
+
+\mbox{\label{class_fuzzy_c_means_ae3175d6a98d93d476c37da164252f7de}} 
 \index{Fuzzy\+C\+Means@{Fuzzy\+C\+Means}!````~Fuzzy\+C\+Means@{$\sim$\+Fuzzy\+C\+Means}}
 \index{````~Fuzzy\+C\+Means@{$\sim$\+Fuzzy\+C\+Means}!Fuzzy\+C\+Means@{Fuzzy\+C\+Means}}
-\subsubsection{\texorpdfstring{$\sim$\+Fuzzy\+C\+Means()}{~FuzzyCMeans()}}
+\subsubsection{$\sim$\+Fuzzy\+C\+Means()}
 {\footnotesize\ttfamily Fuzzy\+C\+Means\+::$\sim$\+Fuzzy\+C\+Means (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 Destructor. 
 
+Definition at line 96 of file Fuzzy\+C\+Means.\+cpp.
+
+
+
 \subsection{Member Function Documentation}
-\mbox{\Hypertarget{class_fuzzy_c_means_acd89ddb387a57ddc8838ed29c9ec31bd}\label{class_fuzzy_c_means_acd89ddb387a57ddc8838ed29c9ec31bd}} 
+\mbox{\label{class_fuzzy_c_means_ab3b80b7e5ab918bfd801e1df9a370390}} 
+\index{Fuzzy\+C\+Means@{Fuzzy\+C\+Means}!compute\+Clusters@{compute\+Clusters}}
+\index{compute\+Clusters@{compute\+Clusters}!Fuzzy\+C\+Means@{Fuzzy\+C\+Means}}
+\subsubsection{compute\+Clusters()}
+{\footnotesize\ttfamily void Fuzzy\+C\+Means\+::compute\+Clusters (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+It computes the clusters in every iteration of the algorithm. 
+
+Definition at line 108 of file Fuzzy\+C\+Means.\+cpp.
+
+\mbox{\label{class_fuzzy_c_means_a3a9758bfef32ece7efa7c17a65f55371}} 
+\index{Fuzzy\+C\+Means@{Fuzzy\+C\+Means}!compute\+New\+Membership\+Coefficients@{compute\+New\+Membership\+Coefficients}}
+\index{compute\+New\+Membership\+Coefficients@{compute\+New\+Membership\+Coefficients}!Fuzzy\+C\+Means@{Fuzzy\+C\+Means}}
+\subsubsection{compute\+New\+Membership\+Coefficients()}
+{\footnotesize\ttfamily void Fuzzy\+C\+Means\+::compute\+New\+Membership\+Coefficients (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+It computes the membership coefficients of points to clusters in every iteration of the algorithm. 
+
+Definition at line 129 of file Fuzzy\+C\+Means.\+cpp.
+
+\mbox{\label{class_fuzzy_c_means_a286c6b1a551e5c77422f40d3aacba856}} 
+\index{Fuzzy\+C\+Means@{Fuzzy\+C\+Means}!compute\+Objective\+Function@{compute\+Objective\+Function}}
+\index{compute\+Objective\+Function@{compute\+Objective\+Function}!Fuzzy\+C\+Means@{Fuzzy\+C\+Means}}
+\subsubsection{compute\+Objective\+Function()}
+{\footnotesize\ttfamily double Fuzzy\+C\+Means\+::compute\+Objective\+Function (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+It computes the value of the objective function that controls the convergence of the algorithm. 
+
+Definition at line 225 of file Fuzzy\+C\+Means.\+cpp.
+
+\mbox{\label{class_fuzzy_c_means_acd89ddb387a57ddc8838ed29c9ec31bd}} 
 \index{Fuzzy\+C\+Means@{Fuzzy\+C\+Means}!is\+Over@{is\+Over}}
 \index{is\+Over@{is\+Over}!Fuzzy\+C\+Means@{Fuzzy\+C\+Means}}
-\subsubsection{\texorpdfstring{is\+Over()}{isOver()}}
+\subsubsection{is\+Over()}
 {\footnotesize\ttfamily bool Fuzzy\+C\+Means\+::is\+Over (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-Checks if the algorithm converged. \mbox{\Hypertarget{class_fuzzy_c_means_a79db259f351e533d5c9d011b41935152}\label{class_fuzzy_c_means_a79db259f351e533d5c9d011b41935152}} 
+It checks if the algorithm converged. \begin{DoxyReturn}{Returns}
+true if the algorithm converged, false otherwise. 
+\end{DoxyReturn}
+
+
+Definition at line 166 of file Fuzzy\+C\+Means.\+cpp.
+
+\mbox{\label{class_fuzzy_c_means_adaf587cc5ae0613f373860079d9b9447}} 
+\index{Fuzzy\+C\+Means@{Fuzzy\+C\+Means}!print\+Centroids@{print\+Centroids}}
+\index{print\+Centroids@{print\+Centroids}!Fuzzy\+C\+Means@{Fuzzy\+C\+Means}}
+\subsubsection{print\+Centroids()}
+{\footnotesize\ttfamily void Fuzzy\+C\+Means\+::print\+Centroids (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+It prints the centroids to the standard output. 
+
+Definition at line 215 of file Fuzzy\+C\+Means.\+cpp.
+
+\mbox{\label{class_fuzzy_c_means_abe9686594626cb7867da45fadd8a44ce}} 
+\index{Fuzzy\+C\+Means@{Fuzzy\+C\+Means}!print\+Partition\+Matrix@{print\+Partition\+Matrix}}
+\index{print\+Partition\+Matrix@{print\+Partition\+Matrix}!Fuzzy\+C\+Means@{Fuzzy\+C\+Means}}
+\subsubsection{print\+Partition\+Matrix()}
+{\footnotesize\ttfamily void Fuzzy\+C\+Means\+::print\+Partition\+Matrix (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+It prints the partition matrix to the standard output. 
+
+Definition at line 205 of file Fuzzy\+C\+Means.\+cpp.
+
+\mbox{\label{class_fuzzy_c_means_a79db259f351e533d5c9d011b41935152}} 
 \index{Fuzzy\+C\+Means@{Fuzzy\+C\+Means}!run\+Fuzzy\+C\+Means@{run\+Fuzzy\+C\+Means}}
 \index{run\+Fuzzy\+C\+Means@{run\+Fuzzy\+C\+Means}!Fuzzy\+C\+Means@{Fuzzy\+C\+Means}}
-\subsubsection{\texorpdfstring{run\+Fuzzy\+C\+Means()}{runFuzzyCMeans()}}
+\subsubsection{run\+Fuzzy\+C\+Means()}
 {\footnotesize\ttfamily void Fuzzy\+C\+Means\+::run\+Fuzzy\+C\+Means (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-Runs the Fuzzy c-\/means routine. 
+It runs the Fuzzy c-\/means routine. 
+
+Definition at line 180 of file Fuzzy\+C\+Means.\+cpp.
+
+\mbox{\label{class_fuzzy_c_means_a80c4f0bfed3da5b0e0f910085d826727}} 
+\index{Fuzzy\+C\+Means@{Fuzzy\+C\+Means}!update\+Membership\+Coefficients@{update\+Membership\+Coefficients}}
+\index{update\+Membership\+Coefficients@{update\+Membership\+Coefficients}!Fuzzy\+C\+Means@{Fuzzy\+C\+Means}}
+\subsubsection{update\+Membership\+Coefficients()}
+{\footnotesize\ttfamily void Fuzzy\+C\+Means\+::update\+Membership\+Coefficients (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+It updates the membership coefficients of points to clusters in every iteration of the algorithm. 
+
+Definition at line 158 of file Fuzzy\+C\+Means.\+cpp.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\label{class_fuzzy_c_means_a3d3b7598064323842312bdc7845540cd}} 
+\index{Fuzzy\+C\+Means@{Fuzzy\+C\+Means}!clusters@{clusters}}
+\index{clusters@{clusters}!Fuzzy\+C\+Means@{Fuzzy\+C\+Means}}
+\subsubsection{clusters}
+{\footnotesize\ttfamily std\+::vector$<$\textbf{ Cluster}$>$ Fuzzy\+C\+Means\+::clusters}
+
+the clusters to be constructed 
+
+Definition at line 24 of file Fuzzy\+C\+Means.\+h.
+
+\mbox{\label{class_fuzzy_c_means_ab75d3a803819d861585ff2d0fea218fa}} 
+\index{Fuzzy\+C\+Means@{Fuzzy\+C\+Means}!points@{points}}
+\index{points@{points}!Fuzzy\+C\+Means@{Fuzzy\+C\+Means}}
+\subsubsection{points}
+{\footnotesize\ttfamily std\+::vector$<$\textbf{ Point}$>$ Fuzzy\+C\+Means\+::points}
+
+the data to be clustered 
+
+Definition at line 22 of file Fuzzy\+C\+Means.\+h.
+
+
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-Fuzzy\+C\+Means.\+h\item 
-Fuzzy\+C\+Means.\+cpp\end{DoxyCompactItemize}
+\textbf{ Fuzzy\+C\+Means.\+h}\item 
+\textbf{ Fuzzy\+C\+Means.\+cpp}\end{DoxyCompactItemize}

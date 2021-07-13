@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['fuzzycmeans',['FuzzyCMeans',['../class_fuzzy_c_means.html',1,'FuzzyCMeans'],['../class_fuzzy_c_means.html#a061d8ad3ae21e92a3a1e6b7d005ca3cf',1,'FuzzyCMeans::FuzzyCMeans(std::string dataset_filename, std::string properties_fileName)'],['../class_fuzzy_c_means.html#a24014c19f6ab66fdb228bd2fc9588ce1',1,'FuzzyCMeans::FuzzyCMeans(std::string dataset_filename, int dimension_, int k_, int max_num_Of_iterations_, int m_, double eps_)']]],
-  ['fuzzycmeans',['FuzzyCMeans',['../md__r_e_a_d_m_e.html',1,'']]]
+  ['datatypes_2eh',['DataTypes.h',['../_data_types_8h.html',1,'']]],
+  ['doublevector',['DoubleVector',['../_data_types_8h.html#a82f6bc76e1c7a0f51bf3e95ad5d3c590',1,'DataTypes.h']]],
+  ['doublevector2d',['DoubleVector2D',['../_data_types_8h.html#a7e70d37182fdafec492c4dd396c9698c',1,'DataTypes.h']]]
 ];

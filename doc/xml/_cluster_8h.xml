@@ -1,0 +1,172 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="_cluster_8h" kind="file" language="C++">
+    <compoundname>Cluster.h</compoundname>
+    <includes refid="_data_types_8h" local="yes">DataTypes.h</includes>
+    <includes refid="_point_8h" local="yes">Point.h</includes>
+    <includedby refid="_cluster_8cpp" local="yes">Cluster.cpp</includedby>
+    <includedby refid="_fuzzy_c_means_8h" local="yes">FuzzyCMeans.h</includedby>
+    <incdepgraph>
+      <node id="36">
+        <label>functional</label>
+      </node>
+      <node id="21">
+        <label>DataTypes.h</label>
+        <link refid="_data_types_8h"/>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>Cluster.h</label>
+        <link refid="_cluster_8h"/>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+      </node>
+      <node id="37">
+        <label>Point.h</label>
+        <link refid="_point_8h"/>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>cmath</label>
+      </node>
+      <node id="34">
+        <label>numeric</label>
+      </node>
+      <node id="25">
+        <label>string</label>
+      </node>
+      <node id="32">
+        <label>map</label>
+      </node>
+      <node id="23">
+        <label>fstream</label>
+      </node>
+      <node id="27">
+        <label>ctime</label>
+      </node>
+      <node id="30">
+        <label>unistd.h</label>
+      </node>
+      <node id="31">
+        <label>vector</label>
+      </node>
+      <node id="24">
+        <label>sstream</label>
+      </node>
+      <node id="26">
+        <label>cstdlib</label>
+      </node>
+      <node id="22">
+        <label>iostream</label>
+      </node>
+      <node id="29">
+        <label>climits</label>
+      </node>
+      <node id="35">
+        <label>complex</label>
+      </node>
+      <node id="33">
+        <label>algorithm</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="38">
+        <label>Cluster.h</label>
+        <link refid="_cluster_8h"/>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+      </node>
+      <node id="40">
+        <label>FuzzyCMeans.h</label>
+        <link refid="_fuzzy_c_means_8h"/>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+      </node>
+      <node id="42">
+        <label>main.cpp</label>
+        <link refid="main_8cpp"/>
+      </node>
+      <node id="39">
+        <label>Cluster.cpp</label>
+        <link refid="_cluster_8cpp"/>
+      </node>
+      <node id="41">
+        <label>FuzzyCMeans.cpp</label>
+        <link refid="_fuzzy_c_means_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_cluster" prot="public">Cluster</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>CLUSTER_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CLUSTER_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_data_types_8h" kindref="compound">DataTypes.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_point_8h" kindref="compound">Point.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7" refid="class_cluster" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_cluster" kindref="compound">Cluster</ref></highlight></codeline>
+<codeline lineno="8"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ID;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="11" refid="class_cluster_1a8d0287687a64e865c19383c5a704a1d5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_data_types_8h_1a82f6bc76e1c7a0f51bf3e95ad5d3c590" kindref="member">DoubleVector</ref><sp/><ref refid="class_cluster_1a8d0287687a64e865c19383c5a704a1d5" kindref="member">centroid</ref>;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_cluster_1a9089dbe281f8114647b5f80c67c5f26a" kindref="member">Cluster</ref>(<ref refid="_data_types_8h_1a82f6bc76e1c7a0f51bf3e95ad5d3c590" kindref="member">DoubleVector</ref>&amp;<sp/><ref refid="class_cluster_1a8d0287687a64e865c19383c5a704a1d5" kindref="member">centroid</ref>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ID);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_cluster_1a4bddfc88ac859610acab15dd12851b58" kindref="member">~Cluster</ref>();</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_cluster_1a6b6cf07bd9eb4ed49231265e33ea335a" kindref="member">setID</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ID);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_cluster_1a7e3843eaa486b9dd28de25a7c9f4e1f9" kindref="member">getID</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_cluster_1a253de897eacb0f3f3545e1b85a6638d5" kindref="member">setCentroid</ref>(<ref refid="_data_types_8h_1a82f6bc76e1c7a0f51bf3e95ad5d3c590" kindref="member">DoubleVector</ref>&amp;<sp/><ref refid="class_cluster_1a8d0287687a64e865c19383c5a704a1d5" kindref="member">centroid</ref>);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_data_types_8h_1a82f6bc76e1c7a0f51bf3e95ad5d3c590" kindref="member">DoubleVector</ref>*<sp/><ref refid="class_cluster_1a58fcdc4cd0a31be1f39e3c53cb769695" kindref="member">getCentroid</ref>();</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_cluster_1aab54f4f732ea8e4219c863f459552fa6" kindref="member">printCentroid</ref>();</highlight></codeline>
+<codeline lineno="54"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/><sp/>//<sp/><sp/>CLUSTER_H</highlight></codeline>
+    </programlisting>
+    <location file="Cluster.h"/>
+  </compounddef>
+</doxygen>

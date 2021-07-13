@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="_r_e_a_d_m_e_8md" kind="file" language="Markdown">
+    <compoundname>README.md</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">This<sp/>repo<sp/>contains<sp/>an<sp/>implementation<sp/>of<sp/>the<sp/>fuzzy<sp/>C-means<sp/>clustering<sp/>machine<sp/>learning<sp/>algorithm:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">https://en.wikipedia.org/wiki/Fuzzy_clustering</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">as<sp/>a<sp/>native<sp/>C++<sp/>application.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">The<sp/>documentation<sp/>of<sp/>the<sp/>project<sp/>is<sp/>in<sp/>the<sp/>/doc<sp/>directory.</highlight></codeline>
+    </programlisting>
+    <location file="README.md"/>
+  </compounddef>
+</doxygen>
