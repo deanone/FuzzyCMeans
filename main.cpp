@@ -6,9 +6,9 @@
 
 int main()
 {
-	std::string dataset_filename = gf::getExecutablePathAndMatchItWithFilename("data.csv");
-	std::string properties_fileName = gf::getExecutablePathAndMatchItWithFilename("fcm.properties");
-	FuzzyCMeans fcm(dataset_filename, properties_fileName);
+	std::string dataFilename = gf::getExecutablePathAndMatchItWithFilename("data.csv");
+	std::string paramsFilename = gf::getExecutablePathAndMatchItWithFilename("fcm.properties");
+	FuzzyCMeans fcm(dataFilename, paramsFilename);
 	fcm.runFuzzyCMeans();
 	fcm.printCentroids();
 	fcm.printPartitionMatrix();
