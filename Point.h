@@ -28,20 +28,20 @@ class Point
 public:
 
 	/*!
- 	 * Default constructor.
- 	 */
+	 * Default constructor.
+	 */
 	Point();
 
 	/*!
- 	 * Constructor.
- 	 * @param ID the ID of the Point.
- 	 * @param k the number of clusters.
- 	 */
+	 * Constructor.
+	 * @param ID the ID of the Point.
+	 * @param k the number of clusters.
+	 */
 	Point(int ID, int k);
 	
 	/*!
- 	 * Destructor.
- 	 */
+	 * Destructor.
+	 */
 	~Point();
 
 	/*! 
@@ -57,16 +57,16 @@ public:
 	int getID() const;
 
 	/*!
- 	 * Adds a value to the vector of values of the Point.
- 	 * @param val the value to be added.
- 	 */
+	 * Adds a value to the vector of values of the Point.
+	 * @param val the value to be added.
+	 */
 	void addValue(double val);
 
 	/*!
- 	 * Returns a specific value from the vector of values of the Point.
- 	 * @param index the index of the specific value.
- 	 * @return the specific value.
- 	 */
+	 * Returns a specific value from the vector of values of the Point.
+	 * @param index the index of the specific value.
+	 * @return the specific value.
+	 */
 	double getValue(size_t index);
 	
 	/*!

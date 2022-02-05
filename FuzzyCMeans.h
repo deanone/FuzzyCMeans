@@ -48,17 +48,17 @@ public:
 public:
 
 	/*!
- 	 * Constructor 1.
- 	 * @param dataFilename the name of the file in which the data to be clustered are stored.
- 	 * @param paramsFilename the name of the configuration file.
- 	 */
+	 * Constructor 1.
+	 * @param dataFilename the name of the file in which the data to be clustered are stored.
+	 * @param paramsFilename the name of the configuration file.
+	 */
 	FuzzyCMeans(std::string dataFilename, std::string paramsFilename);
 	
 	/*!
- 	 * Constructor 2.
- 	 * @param dataFilename the name of the file in which the data to be clustered are stored.
- 	 * @param paramsFilename the name of the configuration file.
- 	 */
+	 * Constructor 2.
+	 * @param dataFilename the name of the file in which the data to be clustered are stored.
+	 * @param paramsFilename the name of the configuration file.
+	 */
 	FuzzyCMeans(std::string dataFilename, int dimension_, int k_, int maxNumOfIterations_, int m_, double eps_);
 	
 	/*!
@@ -88,23 +88,23 @@ public:
 	bool isOver();
 
 	/*!
- 	 * It runs the Fuzzy c-means routine.
- 	 */
+	 * It runs the Fuzzy c-means routine.
+	 */
 	void runFuzzyCMeans();
 
 	/*!
- 	 * It prints the partition matrix to the standard output.
- 	 */
+	 * It prints the partition matrix to the standard output.
+	 */
 	void printPartitionMatrix();
 
 	/*!
- 	 * It prints the centroids to the standard output.
- 	 */
+	 * It prints the centroids to the standard output.
+	 */
 	void printCentroids();
 
 	/*!
- 	 * It computes the value of the objective function that controls the convergence of the algorithm.
- 	 */
+	 * It computes the value of the objective function that controls the convergence of the algorithm.
+	 */
 	double computeObjectiveFunction();
 };
 

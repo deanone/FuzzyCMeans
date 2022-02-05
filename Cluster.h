@@ -13,15 +13,15 @@ public:
 public:
 	
 	/*!
- 	 * Constructor.
- 	 * @param centroid the centroid of the Cluster.
- 	 * @param ID the ID of the cluster.
- 	 */
+	 * Constructor.
+	 * @param centroid the centroid of the Cluster.
+	 * @param ID the ID of the cluster.
+	 */
 	Cluster(DoubleVector& centroid, int ID);
 	
 	/*!
- 	 * Destructor.
- 	 */
+	 * Destructor.
+	 */
 	~Cluster();
 
 	/*! 
