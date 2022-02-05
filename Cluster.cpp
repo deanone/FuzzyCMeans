@@ -33,7 +33,7 @@ void Cluster::setCentroid(DoubleVector& centroid)
 {
 	for (size_t i = 0; i < centroid.size(); ++i) 
 	{
-		this->centroid[i] =centroid[i];
+		this->centroid[i] = centroid[i];
 	}
 }
 

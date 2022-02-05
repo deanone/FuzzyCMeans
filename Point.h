@@ -5,13 +5,24 @@
 
 class Point
 {
+	/*!
+	 * The ID of the point. 
+	 */
 	int ID;
+
+	/*!
+	 * The numerical values that define the dimensions of the point.
+	 */
 	DoubleVector values;
 	
-	/*! cluster membership coefficients */
+	/*! 
+	 * Cluster membership coefficients.
+	 */
 	DoubleVector wOld;
 
-	/*! cluster membership coefficients */
+	/*! 
+	 * Cluster membership coefficients.
+	 */
 	DoubleVector wNew;	
 
 public:

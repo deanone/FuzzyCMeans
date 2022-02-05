@@ -7,21 +7,44 @@
 
 class FuzzyCMeans
 {
-	/*! the dimension of the input data (i.e., number of features) */
+	/*! 
+	 * The dimension of the input data (i.e., number of features).
+	 */
 	int	dimension;
-	/*! the number of clusters */
+
+	/*! 
+	 * The number of clusters. 
+	 */
 	int k;
-	/*! the maximum number of iterations for the algorithm to converge*/
+
+	/*! 
+	 * 
+	 * The maximum number of iterations for the algorithm to converge.
+	 */
 	int maxNumOfIterations;
-	/*! fuzzifier */
+
+	/*! 
+	 * Fuzzifier.
+	 */
+
 	int m;
-	/*! the threshold controlling the convergence of the algorithm */
+	
+	/*! The threshold controlling the convergence of the algorithm.
+	 * 
+	 */
 	double eps;
+
 public:
-	/*! the data to be clustered */
+	/*! 
+	 * Data to be clustered.
+	 */
 	std::vector<Point> points;
-	/*! the clusters to be constructed */
+	
+	/*! 
+	 * The clusters to be constructed 
+	 */
 	std::vector<Cluster> clusters;
+
 public:
 
 	/*!

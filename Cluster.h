@@ -9,6 +9,7 @@ class Cluster
 	int ID;
 public:
 	DoubleVector centroid;
+	
 public:
 	
 	/*!
