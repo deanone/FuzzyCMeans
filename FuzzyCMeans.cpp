@@ -38,7 +38,7 @@ FuzzyCMeans::FuzzyCMeans(std::string dataFilename, std::string paramsFilename)
 			// initialize values vector in the constructor and then change the values in each iteration
 			for (size_t i = 1; i < items.size(); ++i) 
 			{
-				point.addValue(std::stod(items[i]));
+				point.add(std::stod(items[i]));
 			}
 			items.clear();
 			points.push_back(point);
@@ -77,7 +77,7 @@ FuzzyCMeans::FuzzyCMeans(std::string dataFilename, int dimension_, int k_, int m
 			Point point(ID, k);
 			for (size_t i = 1; i < items.size(); ++i) 
 			{
-				point.addValue(std::stod(items[i]));
+				point.add(std::stod(items[i]));
 			}
 			items.clear();
 			points.push_back(point);

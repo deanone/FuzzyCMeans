@@ -45,12 +45,12 @@ int Point::getID() const
 	return ID;
 }
 
-void Point::addValue(double val)
+void Point::add(double val)
 {
 	values.push_back(val);
 }
 
-double Point::getValue(size_t index)
+double Point::get(size_t index)
 {
 	if (index >= 0 && index < values.size())
 	{
@@ -62,12 +62,12 @@ double Point::getValue(size_t index)
 	}
 }
 
-size_t Point::getValuesSize()
+size_t Point::size()
 {
 	return values.size();
 }
 
-void Point::changeValue(size_t index, double valNew)
+void Point::update(size_t index, double valNew)
 {
 	if (index >= 0 && index < values.size())
 	{

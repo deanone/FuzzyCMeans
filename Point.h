@@ -60,27 +60,27 @@ public:
 	 * Adds a value to the vector of values of the Point.
 	 * @param val the value to be added.
 	 */
-	void addValue(double val);
+	void add(double val);
 
 	/*!
 	 * Returns a specific value from the vector of values of the Point.
 	 * @param index the index of the specific value.
 	 * @return the specific value.
 	 */
-	double getValue(size_t index);
+	double get(size_t index);
 	
 	/*!
 	 * Returns the size of the vector of values of the Point.
 	 * @return the size of the vector of values of the Point.
 	 */
-	size_t getValuesSize();
+	size_t size();
 
 	/*!
-	 * Changes a specific value of the vector of values of the Point.
+	 * Update a specific value of the vector of values of the Point.
 	 * @param index the index of the specific value
 	 * @param valNew the new value.
 	 */
-	void changeValue(size_t index, double valNew);
+	void update(size_t index, double valNew);
 	
 	/*!
 	 * Returns the vector of values of the Point.
