@@ -5,13 +5,14 @@
 
 // Whenever you define a template class or (as in this case) a namespace of template functions
 // YOU CANNOT SEPARATE THE HEADER AND IMPLEMENTATION FILES because you will have link errors (unresolved externals).
-// Therefore, the implementation should be included in the header file.
+// Therefore, both the declarations and the definitions should be included in the header file.
 
 namespace mfnc
 {
 	template <typename T>
 	std::vector<T> multiplyVectorByConstant(const std::vector<T>& v, const T& c)
 	{
+		// TODO: consider changing the return type std::vector<T> (e.g., to something like a reference to std::vector<T>)
 		std::vector<T> result;
 		for (size_t i = 0; i < v.size(); ++i)
 		{
@@ -23,6 +24,7 @@ namespace mfnc
 	template <typename T>
 	std::vector<T> addVectors(const std::vector<T>& v_1, const std::vector<T>& v_2)
 	{
+		// TODO: consider changing the return type std::vector<T> (e.g., to something like a reference to std::vector<T>)
 		// TODO: add check for vectors with different sizes
 		std::vector<T> result;
 		for (size_t i = 0; i < v_1.size(); ++i)
