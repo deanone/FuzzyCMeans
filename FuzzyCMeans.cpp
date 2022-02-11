@@ -10,7 +10,10 @@
 
 FuzzyCMeans::FuzzyCMeans(std::string dataFilename, std::string paramsFilename)
 {
+	// reproducible results
 	srand(static_cast<unsigned int>(time(NULL)));
+
+	// reading properties from file
 	PropertiesParser pp(paramsFilename);
 	dimension = pp.getPropertyAsIntOrDefaultTo("dimension", 4);
 	k = pp.getPropertyAsIntOrDefaultTo("k", 200);
@@ -18,7 +21,7 @@ FuzzyCMeans::FuzzyCMeans(std::string dataFilename, std::string paramsFilename)
 	m = pp.getPropertyAsIntOrDefaultTo("m", 2);
 	eps = pp.getPropertyAsDoubleOrDefaultTo("eps", 1e-6);
 	
-	std::string dataline;
+	std::string dataline = "";
 	std::ifstream in;
 	in.open(dataFilename);
 	if (in.is_open())
@@ -26,25 +29,27 @@ FuzzyCMeans::FuzzyCMeans(std::string dataFilename, std::string paramsFilename)
 		while (std::getline(in, dataline))
 		{
 			std::stringstream ss(dataline);
-			std::string item;
+			std::string item = "";
 			StringVector items;
-			while (getline(ss, item, ','))
+			while (getline(ss, item, ','))	// comma-separated values
 			{
 				items.push_back(item);
 			}
+			
 			int ID = std::stoi(items[0]);
+			
 			Point point(ID, k);
-			// TODO: instead of adding value in each iteration by calling addValue function,
-			// initialize values vector in the constructor and then change the values in each iteration
 			for (size_t i = 1; i < items.size(); ++i) 
 			{
 				point.add(std::stod(items[i]));
 			}
 			items.clear();
+
 			points.push_back(point);
 		}
 		in.close();
 	}
+
 	for (size_t clusterID = 0; clusterID < k; ++clusterID)
 	{
 		DoubleVector initialCentroid;
@@ -57,9 +62,10 @@ FuzzyCMeans::FuzzyCMeans(std::string dataFilename, std::string paramsFilename)
 FuzzyCMeans::FuzzyCMeans(std::string dataFilename, int dimension_, int k_, int maxNumOfIterations_, int m_, double eps_) :
 	dimension(dimension_), k(k_), maxNumOfIterations(maxNumOfIterations_), m(m_), eps(eps_)
 {
+	// reproducible results
 	srand(static_cast<unsigned int>(time(NULL)));
 	
-	std::string dataline;
+	std::string dataline = "";
 	std::ifstream in;
 	in.open(dataFilename);
 	if (in.is_open())
@@ -69,21 +75,26 @@ FuzzyCMeans::FuzzyCMeans(std::string dataFilename, int dimension_, int k_, int m
 			std::stringstream ss(dataline);
 			std::string item;
 			StringVector items;
-			while (getline(ss, item, ',')) 
+			while (getline(ss, item, ','))	// comma-separated values
 			{
 				items.push_back(item);
 			}
+
 			int ID = std::stoi(items[0]);
+			
 			Point point(ID, k);
 			for (size_t i = 1; i < items.size(); ++i) 
 			{
 				point.add(std::stod(items[i]));
 			}
+			
 			items.clear();
+			
 			points.push_back(point);
 		}
 		in.close();
 	}
+
 	for (size_t clusterID = 0; clusterID < k; ++clusterID)
 	{
 		DoubleVector initialCentroid;
@@ -133,10 +144,10 @@ void FuzzyCMeans::computeNewMembershipCoefficients()
 		DoubleVector distances;
 		for (size_t clusterID = 0; clusterID < clusters.size(); ++clusterID)
 		{
-			//dist = mfnc::ComputeEuclideanDistance(*(points[pointID].getValues()), *center);
 			double dist = mfnc::computeEuclideanDistance(*(points[pointID].getValues()), *(clusters[clusterID].getCentroid()));
 			distances.push_back(dist);
 		}
+
 		DoubleVector wNew;
 		for (size_t firstOtherClusterID = 0; firstOtherClusterID < clusters.size(); ++firstOtherClusterID)
 		{
@@ -198,7 +209,9 @@ void FuzzyCMeans::runFuzzyCMeans()
 		}
 	}
 	int stop = clock();
+
 	double elapsedTime = (stop - start) / static_cast<double>(CLOCKS_PER_SEC);
+	
 	std::cout << "Fuzzy c-means finished after " << (iter + 1) << " iteration(s) (" << elapsedTime << " sec.).\n\n";
 }
 

@@ -104,6 +104,7 @@ public:
 
 	/*!
 	 * It computes the value of the objective function that controls the convergence of the algorithm.
+	 * @return the value of the objective function.
 	 */
 	double computeObjectiveFunction();
 };
